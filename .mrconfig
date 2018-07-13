@@ -9,6 +9,9 @@ checkout = git clone 'git@github.com:duckietown/Software.git' 'Software'
 [src/amodeus]
 checkout = git clone 'git@github.com:duckietown/amodeus.git' 'amodeus'
 
+[src/aido-localization]
+checkout = git clone 'git@github.com:duckietown/aido-localization.git' 'aido-localization'
+
 [src/duckie-ros]
 checkout = git clone 'git@github.com:duckietown/duckie-ros.git' 'duckie-ros'
 
