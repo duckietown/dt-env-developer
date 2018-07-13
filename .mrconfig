@@ -1,1 +1,55 @@
 
+
+[src/AIDO18_baselines]
+checkout = git clone 'git@github.com:duckietown/AIDO18_baselines.git' 'AIDO18_baselines'
+
+[src/Software]
+checkout = git clone 'git@github.com:duckietown/Software.git' 'Software'
+
+[src/amodeus]
+checkout = git clone 'git@github.com:duckietown/amodeus.git' 'amodeus'
+
+[src/duckie-ros]
+checkout = git clone 'git@github.com:duckietown/duckie-ros.git' 'duckie-ros'
+
+[src/duckietown-shell]
+checkout = git clone 'git@github.com:duckietown/duckietown-shell.git' 'duckietown-shell'
+
+[src/duckietown-slimremote]
+checkout = git clone 'git@github.com:duckietown/duckietown-slimremote.git' 'duckietown-slimremote'
+
+[src/duckietown-unity]
+checkout = git clone 'git@github.com:duckietown/duckietown-unity.git' 'duckietown-unity'
+
+[src/gym-duckietown]
+checkout = git clone 'git@github.com:duckietown/gym-duckietown.git' 'gym-duckietown'
+
+[src/map-utils]
+checkout = git clone 'git@github.com:duckietown/map-utils.git' 'map-utils'
+
+[src/scripts]
+checkout = git clone 'git@github.com:duckietown/scripts.git' 'scripts'
+
+[docs/duckuments]
+checkout = git clone 'git@github.com:AndreaCensi/duckuments.git' 'duckuments'
+
+[containers/ducker]
+checkout = git clone 'git@github.com:duckietown/ducker.git' 'ducker'
+
+[containers/rpi-duckiebot-calibration]
+checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-calibration' 'rpi-duckiebot-calibration'
+
+[containers/rpi-duckiebot-joystick-demo]
+checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-joystick-demo.git' 'rpi-duckiebot-joystick-demo'
+
+[containers/rpi-duckiebot-lanefollowing-demo]
+checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-lanefollowing-demo.git' 'rpi-duckiebot-lanefollowing-demo'
+
+[containers/rpi-ros-kinetic-dev]
+checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-dev.git' 'rpi-ros-kinetic-dev'
+
+[containers/rpi-ros-kinetic-roscore]
+checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-roscore.git' 'rpi-ros-kinetic-roscore'
+
+[containers/slimremote]
+checkout = git clone 'git@github.com:duckietown/slimremote.git' 'slimremote'
