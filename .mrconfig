@@ -48,11 +48,59 @@ checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-joystick-demo.git'
 [containers/rpi-duckiebot-lanefollowing-demo]
 checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-lanefollowing-demo.git' 'rpi-duckiebot-lanefollowing-demo'
 
-[containers/rpi-ros-kinetic-dev]
-checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-dev.git' 'rpi-ros-kinetic-dev'
-
 [containers/rpi-ros-kinetic-roscore]
 checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-roscore.git' 'rpi-ros-kinetic-roscore'
 
 [containers/slimremote]
 checkout = git clone 'git@github.com:duckietown/slimremote.git' 'slimremote'
+
+[containers/rpi-docker-python-picamera]
+checkout = git clone 'git@github.com:duckietown/rpi-docker-python-picamera.git' 'rpi-docker-python-picamera'
+
+[containers/rpi-duckiebot-camera-node]
+checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-camera-node.git' 'rpi-duckiebot-camera-node'
+
+[containers/rpi-duckiebot-keyboard-demo]
+checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-keyboard-demo.git' 'rpi-duckiebot-keyboard-demo'
+
+[containers/rpi-duckiebot-ros-picam]
+checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-ros-picam.git' 'rpi-duckiebot-ros-picam'
+
+[containers/rpi-duckiebot-simple-python]
+checkout = git clone 'https://github.com/duckietown/rpi-duckiebot-simple-python.git' 'rpi-duckiebot-simple-python'
+
+[containers/rpi-duckiebot-web_video_server]
+checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-web_video_server.git' 'rpi-duckiebot-web_video_server'
+
+[containers/rpi-gui-tools]
+checkout = git clone 'git@github.com:duckietown/rpi-gui-tools.git' 'rpi-gui-tools'
+
+[containers/rpi-health]
+checkout = git clone 'git@github.com:duckietown/rpi-health.git' 'rpi-health'
+
+[containers/rpi-ros-kinetic-base]
+checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-base' 'rpi-ros-kinetic-base'
+
+[containers/rpi-simple-server]
+checkout = git clone 'git@github.com:duckietown/rpi-simple-server' 'rpi-simple-server'
+
+[src/challenge-aido1_luck]
+checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck.git' 'challenge-aido1_luck'
+
+[src/duckietown-challenges]
+checkout = git clone 'git@github.com:duckietown/duckietown-challenges.git' 'duckietown-challenges'
+
+[src/duckietown-challenges-server]
+checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
+
+[src/duckietown-shell-commands]
+checkout = git clone 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'
+
+[containers/rpi-duckiebot-rosbridge-websocket]
+checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-rosbridge-websocket.git' 'rpi-duckiebot-rosbridge-websocket'
+
+[containers/rpi-ros-kinetic-blockly-backend]
+checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-blockly-backend.git' 'rpi-ros-kinetic-blockly-backend'
+
+[containers/rpi-duckiebot-blockly-controller]
+checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-blockly-controller.git' 'rpi-duckiebot-blockly-controller'
