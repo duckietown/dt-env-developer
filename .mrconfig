@@ -1,86 +1,86 @@
 
 
 [src/AIDO18_baselines]
-checkout = git clone 'git@github.com:duckietown/AIDO18_baselines.git' 'AIDO18_baselines'
+checkout = git lfs clone 'git@github.com:duckietown/AIDO18_baselines.git' 'AIDO18_baselines'
 
 [src/Software]
-checkout = git clone 'git@github.com:duckietown/Software.git' 'Software'
+checkout = git lfs clone 'git@github.com:duckietown/Software.git' 'Software'
 
 [src/amodeus]
-checkout = git clone 'git@github.com:duckietown/amodeus.git' 'amodeus'
+checkout = git lfs clone 'git@github.com:duckietown/amodeus.git' 'amodeus'
 
 [src/aido-localization]
-checkout = git clone 'git@github.com:duckietown/aido-localization.git' 'aido-localization'
+checkout = git lfs clone 'git@github.com:duckietown/aido-localization.git' 'aido-localization'
 
 [src/duckie-ros]
-checkout = git clone 'git@github.com:duckietown/duckie-ros.git' 'duckie-ros'
+checkout = git lfs clone 'git@github.com:duckietown/duckie-ros.git' 'duckie-ros'
 
 [src/duckietown-shell]
-checkout = git clone 'git@github.com:duckietown/duckietown-shell.git' 'duckietown-shell'
+checkout = git lfs clone 'git@github.com:duckietown/duckietown-shell.git' 'duckietown-shell'
 
 [src/duckietown-slimremote]
-checkout = git clone 'git@github.com:duckietown/duckietown-slimremote.git' 'duckietown-slimremote'
+checkout = git lfs clone 'git@github.com:duckietown/duckietown-slimremote.git' 'duckietown-slimremote'
 
 [src/duckietown-unity]
-checkout = git clone 'git@github.com:duckietown/duckietown-unity.git' 'duckietown-unity'
+checkout = git lfs clone 'git@github.com:duckietown/duckietown-unity.git' 'duckietown-unity'
 
 [src/gym-duckietown]
-checkout = git clone 'git@github.com:duckietown/gym-duckietown.git' 'gym-duckietown'
+checkout = git lfs clone 'git@github.com:duckietown/gym-duckietown.git' 'gym-duckietown'
 
 [src/map-utils]
-checkout = git clone 'git@github.com:duckietown/map-utils.git' 'map-utils'
+checkout = git lfs clone 'git@github.com:duckietown/map-utils.git' 'map-utils'
 
 [docs/docs-AIDO]
-checkout = git clone 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
+checkout = git lfs clone 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
 
 [docs/docs-duckumentation]
-checkout = git clone 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
+checkout = git lfs clone 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
 
 [docs/docs-duckietown_high_school]
-checkout = git clone 'git@github.com:duckietown/docs-duckietown_high_school.git' 'docs-duckietown_high_school'
+checkout = git lfs clone 'git@github.com:duckietown/docs-duckietown_high_school.git' 'docs-duckietown_high_school'
 
 [docs/docs-exercises]
-checkout = git clone 'git@github.com:duckietown/docs-exercises.git' 'docs-exercises'
+checkout = git lfs clone 'git@github.com:duckietown/docs-exercises.git' 'docs-exercises'
 
 [docs/docs-fall2017_info]
-checkout = git clone 'git@github.com:duckietown/docs-fall2017_info.git' 'docs-fall2017_info'
+checkout = git lfs clone 'git@github.com:duckietown/docs-fall2017_info.git' 'docs-fall2017_info'
 
 [docs/docs-fall2017_projects]
-checkout = git clone 'git@github.com:duckietown/docs-fall2017_projects.git' 'docs-fall2017_projects'
+checkout = git lfs clone 'git@github.com:duckietown/docs-fall2017_projects.git' 'docs-fall2017_projects'
 
 [docs/docs-guide_for_instructors]
-checkout = git clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-AIDO'
+checkout = git lfs clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-guide_for_instructors'
 
 [docs/docs-learning_materials]
-checkout = git clone 'git@github.com:duckietown/docs-learning_materials.git' 'docs-AIDO'
+checkout = git lfs clone 'git@github.com:duckietown/docs-learning_materials.git' 'docs-learning_materials'
 
 [docs/docs-opmanual_duckiebot]
-checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-AIDO'
+checkout = git lfs clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
 
 [docs/docs-guide_for_instructors]
-checkout = git clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-AIDO'
+checkout = git lfs clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-guide_for_instructors'
 
 
 [docs/docs-opmanual_duckietown]
-checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-AIDO'
+checkout = git lfs clone 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-opmanual_duckietown'
 
 
 [docs/docs-preliminaries]
-checkout = git clone 'git@github.com:duckietown/docs-preliminaries.git' 'docs-AIDO'
+checkout = git lfs clone 'git@github.com:duckietown/docs-preliminaries.git' 'docs-preliminaries'
 
 
 [docs/docs-software_architecture]
-checkout = git clone 'git@github.com:duckietown/docs-software_architecture.git' 'docs-AIDO'
+checkout = git lfs clone 'git@github.com:duckietown/docs-software_architecture.git' 'docs-software_architecture'
 
 
 [docs/docs-software_devel]
-checkout = git clone 'git@github.com:duckietown/docs-software_devel.git' 'docs-AIDO'
+checkout = git lfs clone 'git@github.com:duckietown/docs-software_devel.git' 'docs-software_devel'
 
 [docs/docs-software_reference]
-checkout = git clone 'git@github.com:duckietown/docs-software_reference.git' 'docs-AIDO'
+checkout = git lfs clone 'git@github.com:duckietown/docs-software_reference.git' 'docs-software_reference'
 
 [docs/docs-the_duckietown_project]
-checkout = git clone 'git@github.com:duckietown/docs-the_duckietown_project.git' 'docs-AIDO'
+checkout = git lfs clone 'git@github.com:duckietown/docs-the_duckietown_project.git' 'docs-the_duckietown_project'
 
 
 
@@ -90,16 +90,16 @@ checkout = git clone 'git@github.com:duckietown/docs-the_duckietown_project.git'
 
 
 [src/challenge-aido1_luck]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck.git' 'challenge-aido1_luck'
+checkout = git lfs clone 'git@github.com:duckietown/challenge-aido1_luck.git' 'challenge-aido1_luck'
 
 [src/duckietown-challenges]
-checkout = git clone 'git@github.com:duckietown/duckietown-challenges.git' 'duckietown-challenges'
+checkout = git lfs clone 'git@github.com:duckietown/duckietown-challenges.git' 'duckietown-challenges'
 
 [src/duckietown-challenges-server]
-checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
+checkout = git lfs clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
 
 [src/duckietown-shell-commands]
-checkout = git clone 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'
+checkout = git lfs clone 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'
 
 # docs-brown
 # docs-opmanual_sky
@@ -108,56 +108,56 @@ checkout = git clone 'git@github.com:duckietown/duckietown-shell-commands.git' '
 
 
 [containers/rpi-duckiebot-calibration]
-checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-calibration' 'rpi-duckiebot-calibration'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-duckiebot-calibration' 'rpi-duckiebot-calibration'
 
 [containers/rpi-duckiebot-joystick-demo]
-checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-joystick-demo.git' 'rpi-duckiebot-joystick-demo'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-duckiebot-joystick-demo.git' 'rpi-duckiebot-joystick-demo'
 
 [containers/rpi-duckiebot-lanefollowing-demo]
-checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-lanefollowing-demo.git' 'rpi-duckiebot-lanefollowing-demo'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-duckiebot-lanefollowing-demo.git' 'rpi-duckiebot-lanefollowing-demo'
 
 [containers/rpi-ros-kinetic-roscore]
-checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-roscore.git' 'rpi-ros-kinetic-roscore'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-ros-kinetic-roscore.git' 'rpi-ros-kinetic-roscore'
 
 [containers/slimremote]
-checkout = git clone 'git@github.com:duckietown/slimremote.git' 'slimremote'
+checkout = git lfs clone 'git@github.com:duckietown/slimremote.git' 'slimremote'
 
 [containers/rpi-docker-python-picamera]
-checkout = git clone 'git@github.com:duckietown/rpi-docker-python-picamera.git' 'rpi-docker-python-picamera'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-docker-python-picamera.git' 'rpi-docker-python-picamera'
 
 [containers/rpi-duckiebot-camera-node]
-checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-camera-node.git' 'rpi-duckiebot-camera-node'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-duckiebot-camera-node.git' 'rpi-duckiebot-camera-node'
 
 [containers/rpi-duckiebot-keyboard-demo]
-checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-keyboard-demo.git' 'rpi-duckiebot-keyboard-demo'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-duckiebot-keyboard-demo.git' 'rpi-duckiebot-keyboard-demo'
 
 [containers/rpi-duckiebot-ros-picam]
-checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-ros-picam.git' 'rpi-duckiebot-ros-picam'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-duckiebot-ros-picam.git' 'rpi-duckiebot-ros-picam'
 
 [containers/rpi-duckiebot-simple-python]
-checkout = git clone 'https://github.com/duckietown/rpi-duckiebot-simple-python.git' 'rpi-duckiebot-simple-python'
+checkout = git lfs clone 'https://github.com/duckietown/rpi-duckiebot-simple-python.git' 'rpi-duckiebot-simple-python'
 
 [containers/rpi-duckiebot-web_video_server]
-checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-web_video_server.git' 'rpi-duckiebot-web_video_server'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-duckiebot-web_video_server.git' 'rpi-duckiebot-web_video_server'
 
 [containers/rpi-gui-tools]
-checkout = git clone 'git@github.com:duckietown/rpi-gui-tools.git' 'rpi-gui-tools'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-gui-tools.git' 'rpi-gui-tools'
 
 [containers/rpi-health]
-checkout = git clone 'git@github.com:duckietown/rpi-health.git' 'rpi-health'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-health.git' 'rpi-health'
 
 [containers/rpi-ros-kinetic-base]
-checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-base' 'rpi-ros-kinetic-base'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-ros-kinetic-base' 'rpi-ros-kinetic-base'
 
 [containers/rpi-simple-server]
-checkout = git clone 'git@github.com:duckietown/rpi-simple-server' 'rpi-simple-server'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-simple-server' 'rpi-simple-server'
 
 
 [containers/rpi-duckiebot-rosbridge-websocket]
-checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-rosbridge-websocket.git' 'rpi-duckiebot-rosbridge-websocket'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-duckiebot-rosbridge-websocket.git' 'rpi-duckiebot-rosbridge-websocket'
 
 [containers/rpi-ros-kinetic-blockly-backend]
-checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-blockly-backend.git' 'rpi-ros-kinetic-blockly-backend'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-ros-kinetic-blockly-backend.git' 'rpi-ros-kinetic-blockly-backend'
 
 [containers/rpi-duckiebot-blockly-controller]
-checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-blockly-controller.git' 'rpi-duckiebot-blockly-controller'
+checkout = git lfs clone 'git@github.com:duckietown/rpi-duckiebot-blockly-controller.git' 'rpi-duckiebot-blockly-controller'

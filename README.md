@@ -21,6 +21,11 @@ Clone this repository:
     $ git clone git@github.com:duckietown/duckietown-env-developer.git
     $ cd duckietown-env-developer
 
+## Setup `mrtrust`
+
+
+    $ echo $PWD/.mrconfig >> ~/.mrtrust
+
 ## Checkout
 
 Check out all the repos:
