@@ -30,14 +30,82 @@ checkout = git clone 'git@github.com:duckietown/gym-duckietown.git' 'gym-duckiet
 [src/map-utils]
 checkout = git clone 'git@github.com:duckietown/map-utils.git' 'map-utils'
 
-[src/scripts]
-checkout = git clone 'git@github.com:duckietown/scripts.git' 'scripts'
+[docs/docs-AIDO]
+checkout = git clone 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
 
-[docs/duckuments]
-checkout = git clone 'git@github.com:AndreaCensi/duckuments.git' 'duckuments'
+[docs/docs-duckumentation]
+checkout = git clone 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
 
-[containers/ducker]
-checkout = git clone 'git@github.com:duckietown/ducker.git' 'ducker'
+[docs/docs-duckietown_high_school]
+checkout = git clone 'git@github.com:duckietown/docs-duckietown_high_school.git' 'docs-duckietown_high_school'
+
+[docs/docs-exercises]
+checkout = git clone 'git@github.com:duckietown/docs-exercises.git' 'docs-exercises'
+
+[docs/docs-fall2017_info]
+checkout = git clone 'git@github.com:duckietown/docs-fall2017_info.git' 'docs-fall2017_info'
+
+[docs/docs-fall2017_projects]
+checkout = git clone 'git@github.com:duckietown/docs-fall2017_projects.git' 'docs-fall2017_projects'
+
+[docs/docs-guide_for_instructors]
+checkout = git clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-AIDO'
+
+[docs/docs-learning_materials]
+checkout = git clone 'git@github.com:duckietown/docs-learning_materials.git' 'docs-AIDO'
+
+[docs/docs-opmanual_duckiebot]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-AIDO'
+
+[docs/docs-guide_for_instructors]
+checkout = git clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-AIDO'
+
+
+[docs/docs-opmanual_duckietown]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-AIDO'
+
+
+[docs/docs-preliminaries]
+checkout = git clone 'git@github.com:duckietown/docs-preliminaries.git' 'docs-AIDO'
+
+
+[docs/docs-software_architecture]
+checkout = git clone 'git@github.com:duckietown/docs-software_architecture.git' 'docs-AIDO'
+
+
+[docs/docs-software_devel]
+checkout = git clone 'git@github.com:duckietown/docs-software_devel.git' 'docs-AIDO'
+
+[docs/docs-software_reference]
+checkout = git clone 'git@github.com:duckietown/docs-software_reference.git' 'docs-AIDO'
+
+[docs/docs-the_duckietown_project]
+checkout = git clone 'git@github.com:duckietown/docs-the_duckietown_project.git' 'docs-AIDO'
+
+
+
+
+
+
+
+
+[src/challenge-aido1_luck]
+checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck.git' 'challenge-aido1_luck'
+
+[src/duckietown-challenges]
+checkout = git clone 'git@github.com:duckietown/duckietown-challenges.git' 'duckietown-challenges'
+
+[src/duckietown-challenges-server]
+checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
+
+[src/duckietown-shell-commands]
+checkout = git clone 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'
+
+# docs-brown
+# docs-opmanual_sky
+# duckuments
+
+
 
 [containers/rpi-duckiebot-calibration]
 checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-calibration' 'rpi-duckiebot-calibration'
@@ -84,17 +152,6 @@ checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-base' 'rpi-ros-k
 [containers/rpi-simple-server]
 checkout = git clone 'git@github.com:duckietown/rpi-simple-server' 'rpi-simple-server'
 
-[src/challenge-aido1_luck]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck.git' 'challenge-aido1_luck'
-
-[src/duckietown-challenges]
-checkout = git clone 'git@github.com:duckietown/duckietown-challenges.git' 'duckietown-challenges'
-
-[src/duckietown-challenges-server]
-checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
-
-[src/duckietown-shell-commands]
-checkout = git clone 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'
 
 [containers/rpi-duckiebot-rosbridge-websocket]
 checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-rosbridge-websocket.git' 'rpi-duckiebot-rosbridge-websocket'

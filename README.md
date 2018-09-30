@@ -27,13 +27,25 @@ Check out all the repos:
 
     $ mr checkout
 
+Note: you might not have permissions to access some of the repos.
+Please notify us promptly---every time we add a repo, we need to update the permissions for particular groups.
+
+## Status
+
+You can check the status of the repos with this:
+
+    $ mr status
+
+This will tell you if you have modified files.
+
+## Update  
+
 Update:
 
     $ mr update
 
-Status:
 
-    $ mr status
+## Complete docs
 
 [See here for the complete documentation about `mr`][docs].
 
