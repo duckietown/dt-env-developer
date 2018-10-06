@@ -93,15 +93,15 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck.git' 'chall
 [src/duckietown-challenges]
 checkout = git lfs clone 'git@github.com:duckietown/duckietown-challenges.git' 'duckietown-challenges'
 
-[src/duckietown-challenges-server]
-checkout = git lfs clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
-
 [src/duckietown-shell-commands]
 checkout = git lfs clone 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'
 
 # docs-brown
 # docs-opmanual_sky
 # duckuments
+
+#[pri/duckietown-challenges-server]
+#checkout = git lfs clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
 
 
 
@@ -179,3 +179,6 @@ checkout = git clone 'https://github.com/duckietown/challenge-aido1_log_processi
 
 [src/gym-duckietown-agent]
 checkout = git clone 'git@github.com:duckietown/gym-duckietown-agent.git' 'gym-duckietown-agent'
+
+[containers/rpi-1-base/rpi-duckiebot-raspberrypi3-python]
+checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-raspberrypi3-python.git' 'rpi-duckiebot-raspberrypi3-python'

@@ -1,25 +1,28 @@
-#!/usr/bin/zsh
+#!/bin/zsh
 
-set -e
-make -C rpi-ros-kinetic-base build-no-cache
+set -ex
 
-make -C rpi-ros-kinetic-roscore build-no-cache
+t=build-no-cache
+
+make -C rpi-ros-kinetic-base $t
+
+make -C rpi-ros-kinetic-roscore $t
 
 #rpi-duckiebot-base
-make -C ../src/Software docker-build-no-cache
+make -C ../../src/Software docker-$t
 
 
-make -C rpi-duckiebot-camera-node  build-no-cache
-make -C rpi-duckiebot-joystick-demo build-no-cache
-make -C rpi-duckiebot-lanefollowing-demo build-no-cache
-make -C rpi-duckiebot-ros-picam build-no-cache
-make -C rpi-duckiebot-rosbridge-websocket build-no-cache
-make -C rpi-duckiebot-web_video_server build-no-cache
+make -C rpi-duckiebot-camera-node $t
+make -C rpi-duckiebot-joystick-demo $t
+make -C rpi-duckiebot-lanefollowing-demo $t
+make -C rpi-duckiebot-ros-picam $t
+#make -C rpi-duckiebot-rosbridge-websocket $t
+make -C rpi-duckiebot-web_video_server $t
 
 
 dockviz images --tree duckietown/rpi-ros-kinetic-base:master18
 
-echo "wait"
+echo "if you press I will also push"
 read
 
 images=(
