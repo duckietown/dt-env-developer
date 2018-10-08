@@ -87,7 +87,7 @@ checkout = git lfs clone 'git@github.com:duckietown/docs-the_duckietown_project.
 
 
 
-[src/challenge-aido1_luck]
+[challenges/challenge-aido1_luck]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck.git' 'challenge-aido1_luck'
 
 [src/duckietown-challenges]
@@ -171,10 +171,10 @@ checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-system-monitor.g
 [containers/rpi-5-devel/rpi-duckiebot-simple-python]
 checkout = git clone 'https://github.com/duckietown/rpi-duckiebot-simple-python.git' 'rpi-duckiebot-simple-python'
 
-[src/challenge-aido1_dummy_sim]
+[challenges/challenge-aido1_dummy_sim]
 checkout = git clone 'git@github.com:duckietown/challenges-aido1_dummy_sim.git' 'challenge-aido1_dummy_sim'
 
-[src/challenge-aido1_log_processing]
+[challenges/challenge-aido1_log_processing]
 checkout = git clone 'https://github.com/duckietown/challenge-aido1_log_processing.git' 'challenge-aido1_log_processing'
 
 [src/gym-duckietown-agent]
@@ -182,3 +182,6 @@ checkout = git clone 'git@github.com:duckietown/gym-duckietown-agent.git' 'gym-d
 
 [containers/rpi-1-base/rpi-duckiebot-raspberrypi3-python]
 checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-raspberrypi3-python.git' 'rpi-duckiebot-raspberrypi3-python'
+
+[challenges/challenge-aido1_test_multistep]
+checkout = git clone 'git@github.com:duckietown/challenge-aido1_test_multistep.git' 'challenge-aido1_test_multistep'
