@@ -39,7 +39,7 @@ def go():
     add_label('build_timestamp', datetime.datetime.now().isoformat())
 
     d = os.path.basename(os.path.realpath(os.getcwd()))
-    prefix = 'duckietown/dt18/%s/' % d
+    prefix = 'org.duckietown.DT18.%s.' % d
     args = []
     for k, v in labels.items():
         j = json.dumps(v)

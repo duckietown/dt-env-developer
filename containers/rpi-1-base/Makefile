@@ -2,13 +2,24 @@ all:
 
 build:
 	# order is important
-	make -C rpi-duckiebot-raspberrypi3-python build
+	env -u DOCKER_CONTENT_TRUST make -C rpi-duckiebot-raspberrypi3-python build
 
 	# these are derived
 	make -C rpi-duckiebot-loader build
 	make -C rpi-duckiebot-online build
 	make -C rpi-health build
 	make -C rpi-simple-server build
+
+
+build-no-cache:
+	# order is important
+	env -u DOCKER_CONTENT_TRUST  make -C rpi-duckiebot-raspberrypi3-python build-no-cache
+
+	# these are derived
+	make -C rpi-duckiebot-loader build-no-cache
+	make -C rpi-duckiebot-online build-no-cache
+	make -C rpi-health build-no-cache
+	make -C rpi-simple-server build-no-cache
 
 
 
