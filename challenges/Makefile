@@ -12,16 +12,27 @@ all:
 	@echo '    $$ env -u DTSERVER make define-challenge'
 	@echo '    $$ env -u DTSERVER make submit'
 	@echo
-	@echo
+	@echo ''
+
+
+
+define-challenge-no-cache:
+	make -C challenge-aido1_luck/evaluation             define-challenge-no-cache
+	make -C challenge-aido1_log_processing/evaluation   define-challenge-no-cache
+	make -C challenge-aido1_dummy_sim/evaluation        define-challenge-no-cache
+	make -C challenge-aido1_test_multistep/evaluation   define-challenge-no-cache
+	make -C challenge-aido1_amod1/evaluation        define-challenge-no-cache
 
 define-challenge:
 	make -C challenge-aido1_luck/evaluation             define-challenge
 	make -C challenge-aido1_log_processing/evaluation   define-challenge
 	make -C challenge-aido1_dummy_sim/evaluation        define-challenge
 	make -C challenge-aido1_test_multistep/evaluation   define-challenge
+	make -C challenge-aido1_amod1/evaluation        define-challenge
 
 submit:
 	(cd challenge-aido1_luck/submission-random &&           dts challenges submit)
 	(cd challenge-aido1_log_processing/submission &&        dts challenges submit)
 	(cd challenge-aido1_dummy_sim/submission &&             dts challenges submit)
 	(cd challenge-aido1_test_multistep/submission &&        dts challenges submit)
+	(cd challenge-aido1_amod1/submission &&             dts challenges submit)

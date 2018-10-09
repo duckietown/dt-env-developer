@@ -185,3 +185,13 @@ checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-raspberrypi3-pytho
 
 [challenges/challenge-aido1_test_multistep]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_test_multistep.git' 'challenge-aido1_test_multistep'
+
+[challenges/challenge-dummy-solution]
+checkout = git clone 'git@github.com:duckietown/challenge-dummy-solution.git' 'challenge-dummy-solution'
+
+[challenges/challenge-aido1_amod1-template-java]
+checkout = git clone 'git@github.com:duckietown/challenge-aido1_amod1-template-java.git' 'challenge-aido1_amod1-template-java'
+
+[challenges/challenge-aido1_amod1-template-python]
+checkout = git clone 'git@github.com:duckietown/challenge-aido1_amod1-template-python.git' 'challenge-aido1_amod1-template-python'
+
