@@ -1,7 +1,4 @@
 
-[/data/work/vmware-michela-shared/DT/dt-env/dt-env-developer]
-checkout = git clone 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'
-
 [_archived_/duckie-ros]
 checkout = git clone 'git@github.com:duckietown/duckie-ros.git' 'duckie-ros'
 
@@ -62,8 +59,8 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido1_amod1-template-p
 [challenges/challenge-groups/aido1/tasks_embodied/AIDO18_baselines]
 checkout = git clone 'git@github.com:duckietown/AIDO18_baselines.git' 'AIDO18_baselines'
 
-[challenges/challenge-groups/aido1/tasks_embodied/challenge-aido1_dummy_sim]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_dummy_sim.git' 'challenge-aido1_dummy_sim'
+[challenges/challenge-groups/aido1/tasks_embodied/challenge-aido1_LF1]
+checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1.git' 'challenge-aido1_LF1'
 
 [challenges/challenge-groups/developing/challenge-dummy-solution]
 checkout = git clone 'git@github.com:duckietown/challenge-dummy-solution.git' 'challenge-dummy-solution'
