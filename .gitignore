@@ -19,3 +19,14 @@ src/scripts
 .diea
 .idea
 pri
+src/shell/duckietown-shell
+src/shell/duckietown-shell-commands
+src/simulators/duckietown-sim-server
+src/simulators/duckietown-slimremote
+src/simulators/duckietown-unity
+src/simulators/gym-duckietown
+src/simulators/gym-duckietown-agent
+src/simulators/gym-gazebo
+src/simulators/simulator
+src/simulators/slimremote-experimental
+containers/_tosort_
