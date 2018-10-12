@@ -249,3 +249,6 @@ checkout = git clone 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-de
 
 [challenges/challenge-groups/aido1/tasks_embodied/challenge-aido1_LF1-template-tensorflow]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-tensorflow.git' 'challenge-aido1_LF1-template-tensorflow'
+
+[challenges/challenge-groups/testing/challenge-aido1_luck-template-python]
+checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck-template-python.git' 'challenge-aido1_luck-template-python'
