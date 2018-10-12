@@ -252,3 +252,6 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-ten
 
 [challenges/challenge-groups/testing/challenge-aido1_luck-template-python]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck-template-python.git' 'challenge-aido1_luck-template-python'
+
+[challenges/challenge-groups/aido1/tasks_embodied/challenge-aido1_LF1-template-random]
+checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-random.git' 'challenge-aido1_LF1-template-random'
