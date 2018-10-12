@@ -39,16 +39,30 @@ define-challenge:
 	make -C aido1/tasks_embodied/challenge-aido1_LF1     define-challenge
 	make -C aido1/tasks_amod/challenge-aido1_amod1       define-challenge
 
+
+make-readme:
+
+	dt-challenges-make-readme -C testing/challenge-aido1_luck
+	dt-challenges-make-readme -C testing/challenge-aido1_test_multistep
+	dt-challenges-make-readme -C testing/challenge-aido1_log_processing
+	dt-challenges-make-readme -C aido1/tasks_embodied/challenge-aido1_LF1
+	dt-challenges-make-readme -C aido1/tasks_amod/challenge-aido1_amod1
+
+
+
 submit:
 	echo $(DTSERVER)
 	-grep -r v3-devel . 
 	
-	dts challenges submit -C testing/challenge-aido1_luck/submission-random
+	dts challenges submit -C testing/challenge-aido1_luck-template-python
+
 	dts challenges submit -C testing/challenge-aido1_log_processing/submission
 	dts challenges submit -C testing/challenge-aido1_test_multistep/submission
 	
 	make -C aido1/tasks_embodied/challenge-aido1_LF1-template-tensorflow submit
+
 	make -C aido1/tasks_amod/challenge-aido1_amod1-template-python submit
+	make -C aido1/tasks_amod/challenge-aido1_amod1-template-java submit
 	
 
 
