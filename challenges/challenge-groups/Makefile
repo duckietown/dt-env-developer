@@ -48,6 +48,13 @@ make-readme:
 	dt-challenges-make-readme -C aido1/tasks_embodied/challenge-aido1_LF1
 	dt-challenges-make-readme -C aido1/tasks_amod/challenge-aido1_amod1
 
+make-readme-templates:
+
+	dt-challenges-make-readme-templates -C aido1/tasks_embodied/challenge-aido1_LF1-template-tensorflow
+	dt-challenges-make-readme-templates -C aido1/tasks_embodied/challenge-aido1_LF1-template-random
+
+	dt-challenges-make-readme-templates -C aido1/tasks_amod/challenge-aido1_amod1-template-python
+	dt-challenges-make-readme-templates -C aido1/tasks_amod/challenge-aido1_amod1-template-java
 
 
 submit:
