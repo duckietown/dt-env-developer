@@ -60,6 +60,7 @@ submit:
 	dts challenges submit -C testing/challenge-aido1_test_multistep/submission
 	
 	make -C aido1/tasks_embodied/challenge-aido1_LF1-template-tensorflow submit
+	make -C aido1/tasks_embodied/challenge-aido1_LF1-template-random submit
 
 	make -C aido1/tasks_amod/challenge-aido1_amod1-template-python submit
 	make -C aido1/tasks_amod/challenge-aido1_amod1-template-java submit
