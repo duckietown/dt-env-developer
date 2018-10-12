@@ -1,6 +1,6 @@
 # `duckietown-env-developer`
 
-This "environment" repository contains pointers to all other repositories.
+This "environment" repository contains pointers to the most important repositories in Duckietown. 
 
 These are managed using a tool called [`mr`][mr].
 
