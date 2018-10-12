@@ -61,6 +61,8 @@ checkout = git clone 'git@github.com:duckietown/AIDO18_baselines.git' 'AIDO18_ba
 
 [challenges/challenge-groups/aido1/tasks_embodied/challenge-aido1_LF1]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1.git' 'challenge-aido1_LF1'
+           git checkout v3
+update = git pull origin v3
 
 [challenges/challenge-groups/developing/challenge-dummy-solution]
 checkout = git clone 'git@github.com:duckietown/challenge-dummy-solution.git' 'challenge-dummy-solution'
@@ -244,11 +246,13 @@ checkout = git clone 'git@github.com:duckietown/docs-the_duckietown_project.git'
 
 
 
-[/data/work/vmware-michela-shared/DT/dt-env/dt-env-developer]
-checkout = git clone 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'
+# [/data/work/vmware-michela-shared/DT/dt-env/dt-env-developer] FIXME: I can see your guts here!
+# checkout = git clone 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'
 
 [challenges/challenge-groups/aido1/tasks_embodied/challenge-aido1_LF1-template-tensorflow]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-tensorflow.git' 'challenge-aido1_LF1-template-tensorflow'
+           git checkout v3
+update = git pull origin v3
 
 [challenges/challenge-groups/testing/challenge-aido1_luck-template-python]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck-template-python.git' 'challenge-aido1_luck-template-python'
