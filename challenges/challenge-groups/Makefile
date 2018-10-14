@@ -42,11 +42,11 @@ define-challenge:
 
 make-readme:
 
-	dt-challenges-make-readme -C testing/challenge-aido1_luck
-	dt-challenges-make-readme -C testing/challenge-aido1_test_multistep
-	dt-challenges-make-readme -C testing/challenge-aido1_log_processing
-	dt-challenges-make-readme -C aido1/tasks_embodied/challenge-aido1_LF1
-	dt-challenges-make-readme -C aido1/tasks_amod/challenge-aido1_amod1
+	dt-challenges-make-readme-definitions -C testing/challenge-aido1_luck
+	dt-challenges-make-readme-definitions -C testing/challenge-aido1_test_multistep
+	dt-challenges-make-readme-definitions -C testing/challenge-aido1_log_processing
+	dt-challenges-make-readme-definitions -C aido1/tasks_embodied/challenge-aido1_LF1
+	dt-challenges-make-readme-definitions -C aido1/tasks_amod/challenge-aido1_amod1
 
 make-readme-templates:
 
