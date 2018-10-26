@@ -16,9 +16,7 @@ all:
 
 
 
-define-challenge-no-cache:
-	echo $(DTSERVER)
-	-grep -r v3-devel . 
+define-challenge-no-cache: 
 	
 	make -C testing/challenge-aido1_luck             define-challenge-no-cache
 	make -C testing/challenge-aido1_log_processing   define-challenge-no-cache
@@ -28,9 +26,7 @@ define-challenge-no-cache:
 	
 	make -C aido1/tasks_amod/challenge-aido1_amod1        define-challenge-no-cache
 
-define-challenge:
-	echo $(DTSERVER)
-	-grep -r v3-devel . 
+define-challenge: 
 	
 	make -C testing/challenge-aido1_luck             define-challenge
 	make -C testing/challenge-aido1_test_multistep   define-challenge
@@ -57,17 +53,21 @@ make-readme-templates:
 	dt-challenges-make-readme-templates -C aido1/tasks_amod/challenge-aido1_amod1-template-java
 
 
-submit:
-	echo $(DTSERVER)
-	-grep -r v3-devel . 
+submit: 
 	
 	dts challenges submit -C testing/challenge-aido1_luck-template-python
 
 	dts challenges submit -C testing/challenge-aido1_log_processing/submission
 	dts challenges submit -C testing/challenge-aido1_test_multistep/submission
 	
-	make -C aido1/tasks_embodied/challenge-aido1_LF1-template-tensorflow submit
+	make -C aido1/tasks_embodied/challenge-aido1_LF1-template-pytorch submit
 	make -C aido1/tasks_embodied/challenge-aido1_LF1-template-random submit
+	make -C aido1/tasks_embodied/challenge-aido1_LF1-template-ros submit
+	make -C aido1/tasks_embodied/challenge-aido1_LF1-template-tensorflow submit
+	make -C challenge-aido1_LF1-baseline-IL-logs-tensorflow
+	make -C challenge-aido1_LF1-baseline-IL-sim-tensorflow
+	make -C challenge-aido1_LF1-baseline-RL-sim-pytorch
+	make -C challenge-aido1_LF1-baseline-duckietown
 
 	make -C aido1/tasks_amod/challenge-aido1_amod1-template-python submit
 	make -C aido1/tasks_amod/challenge-aido1_amod1-template-java submit
