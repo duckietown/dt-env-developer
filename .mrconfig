@@ -1,45 +1,4 @@
-
-[_archived_/duckie-ros]
-checkout = git clone 'git@github.com:duckietown/duckie-ros.git' 'duckie-ros'
-
-[_archived_/duckiefleet-fall2017]
-checkout = git clone 'git@github.com:duckietown/duckiefleet-fall2017.git' 'duckiefleet-fall2017'
-
-[_archived_/spring2016]
-checkout = git clone 'git@github.com:duckietown/spring2016.git' 'spring2016'
-
-[_archived_/spring2016_nctu]
-checkout = git clone 'git@github.com:duckietown/spring2016_nctu.git' 'spring2016_nctu'
-
-[_to_sort_/compose]
-checkout = git clone 'git@github.com:duckietown/compose.git' 'compose'
-
-[_to_sort_/compose-pkg-duckietown]
-checkout = git clone 'git@github.com:duckietown/compose-pkg-duckietown.git' 'compose-pkg-duckietown'
-
-[_to_sort_/hatchery]
-checkout = git clone 'git@github.com:duckietown/hatchery.git' 'hatchery'
-
-[_to_sort_/image-builder]
-checkout = git clone 'git@github.com:duckietown/image-builder.git' 'image-builder'
-
-[_to_sort_/lab4]
-checkout = git clone 'git@github.com:duckietown/lab4.git' 'lab4'
-
-[_to_sort_/map-utils]
-checkout = git clone 'git@github.com:duckietown/map-utils.git' 'map-utils'
-
-[_to_sort_/PythonRobotics]
-checkout = git clone 'git@github.com:duckietown/PythonRobotics.git' 'PythonRobotics'
-
-[_to_sort_/trajectory-utils]
-checkout = git clone 'git@github.com:duckietown/trajectory-utils.git' 'trajectory-utils'
-
-[_to_sort_/transfer_rl]
-checkout = git clone 'git@github.com:duckietown/transfer_rl.git' 'transfer_rl'
-
-[_to_sort_/viso2]
-checkout = git clone 'git@github.com:duckietown/viso2.git' 'viso2'
+ 
 
 [challenges/challenge-groups/aido1/tasks_amod/amod]
 checkout = git clone 'git@github.com:idsc-frazzoli/amod.git' 'amod'
@@ -58,7 +17,6 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido1_amod1-template-p
 
 [challenges/challenge-groups/aido1/tasks_embodied/challenge-aido1_LF1]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1.git' 'challenge-aido1_LF1'
-update = git pull origin v3
 
 [challenges/challenge-groups/developing/challenge-dummy-solution]
 checkout = git clone 'git@github.com:duckietown/challenge-dummy-solution.git' 'challenge-dummy-solution'
@@ -241,13 +199,8 @@ checkout = git clone 'git@github.com:duckietown/docs-the_duckietown_project.git'
 
 
 
-
-# [/data/work/vmware-michela-shared/DT/dt-env/dt-env-developer] FIXME: I can see your guts here!
-# checkout = git clone 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'
-
 [challenges/challenge-groups/aido1/tasks_embodied/challenge-aido1_LF1-template-tensorflow]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-tensorflow.git' 'challenge-aido1_LF1-template-tensorflow'
-update = git pull origin v3
 
 [challenges/challenge-groups/testing/challenge-aido1_luck-template-python]
 checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck-template-python.git' 'challenge-aido1_luck-template-python'
