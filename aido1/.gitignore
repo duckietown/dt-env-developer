@@ -1,7 +1,8 @@
-challenge-aido1_LF1-template-random
-challenge-aido1_LF1-template-tensorflow
-challenge-aido1_LF1/
-AIDO18_baselines/
+*mp4
+AIDO18_baselines
+amod
+amod-target-output
+amodeus
 challenge-aido1_LF1
 challenge-aido1_LF1-baseline-IL-logs-tensorflow
 challenge-aido1_LF1-baseline-IL-sim-tensorflow
@@ -11,3 +12,13 @@ challenge-aido1_LF1-template-pytorch
 challenge-aido1_LF1-template-random
 challenge-aido1_LF1-template-ros
 challenge-aido1_LF1-template-tensorflow
+challenge-aido1_amod1
+challenge-aido1_amod1-template-java
+challenge-aido1_amod1-template-python
+challenge-aido1_dummy_learning
+challenge-aido1_log_processing
+challenge-aido1_luck
+challenge-aido1_luck-template-python
+challenge-aido1_test_multistep
+challenge-dummy-solution
+tasks_embodied

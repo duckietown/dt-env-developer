@@ -30,3 +30,4 @@ src/simulators/gym-gazebo
 src/simulators/simulator
 src/simulators/slimremote-experimental
 containers/_tosort_
+ros-hack

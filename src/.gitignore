@@ -7,3 +7,15 @@ duckietown-shell-commands
 challenge-aido1_dummy_sim/
 challenge-aido1_log_processing
 gym-duckietown-agent
+aido-protocols
+zuper_nodes
+duckietown-challenges-runner
+duckietown-project-template
+duckietown-sim-server
+duckietown-world
+gym-gazebo
+duckietown-serialization
+zuper_json
+sim-duckiebot-lanefollowing-demo
+simulator
+slimremote-experimental
