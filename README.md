@@ -1,4 +1,4 @@
-# `duckietown-env-developer`
+# `dt-env-developer`
 
 This "environment" repository contains pointers to the most important repositories in Duckietown. 
 
@@ -18,8 +18,8 @@ Install `mr` on Mac:
 
 Clone this repository:
 
-    $ git clone git@github.com:duckietown/duckietown-env-developer.git
-    $ cd duckietown-env-developer
+    $ git clone git@github.com:duckietown/dt-env-developer.git
+    $ cd dt-env-developer
 
 ## Setup `mrtrust`
 
