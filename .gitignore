@@ -1,3 +1,4 @@
+challenges
 containers/ducker
 containers/rpi-duckiebot-calibration
 containers/rpi-duckiebot-joystick-demo
@@ -8,6 +9,7 @@ containers/slimremote
 docs/duckuments
 src/AIDO18_baselines
 src/Software
+src/duckiebot-interface
 src/amodeus
 src/duckie-ros
 src/duckietown-shell

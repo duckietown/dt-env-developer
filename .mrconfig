@@ -136,6 +136,8 @@ checkout = git clone 'git@github.com:duckietown/slimremote-experimental.git' 'sl
 [src/Software]
 checkout = git clone 'git@github.com:duckietown/Software.git' 'Software'
 
+[src/duckiebot-interface]
+checkout = git clone 'git@github.com:duckietown/duckiebot-interface.git' 'duckiebot-interface'
 
 
 [docs/docs-AIDO]
