@@ -29,7 +29,7 @@ This rebuilds all the challenges:
    
 This makes all test submissions:
 
-    make define 
+    make make-submissions 
     
     
 ## Run the local evaluator
