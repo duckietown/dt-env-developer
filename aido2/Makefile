@@ -6,7 +6,11 @@ all:
 
 build-base-containers: build-aido2-base-container build-gym-base-container
 
-define-challenges: define-challenge-prediction define-challenge-aido2_LF
+define-challenges: define-challenge-prediction define-challenge-aido2_LF define-challenge-amod
+
+
+define-challenge-amod:
+	make -C ${DT_ENV_DEVELOPER}/aido1/challenge-aido1_amod1 define-challenge
 
 make-submissions: make-submissions-prediction make-submissions-aido2_LF
 
