@@ -12,7 +12,17 @@ define-challenges: define-challenge-prediction define-challenge-aido2_LF define-
 define-challenge-amod:
 	make -C ${DT_ENV_DEVELOPER}/aido1/challenge-aido1_amod1 define-challenge
 
-make-submissions: make-submissions-prediction make-submissions-aido2_LF
+make-submissions: make-submissions-prediction make-submissions-aido2_LF make-submissions-aido2_amod
+
+
+make-submissions-aido2_amod: make-submissions-aido2_amod-java make-submissions-aido2_amod-python
+
+
+make-submissions-aido2_amod-java:
+	make -C ${DT_ENV_DEVELOPER}//aido1/challenge-aido1_amod1-template-java submit
+
+make-submissions-aido2_amod-python:
+	make -C ${DT_ENV_DEVELOPER}//aido1/challenge-aido1_amod1-template-python submit
 
 push-base-containers: push-gym-base-container  push-aido2-base-container
 
