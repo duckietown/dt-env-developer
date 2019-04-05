@@ -1,2 +1,17 @@
 challenge-aido2_LF
 challenge-prediction
+challenge-aido_LF
+challenge-aido_LF-baseline-IL-logs-tensorflow
+challenge-aido_LF-baseline-IL-sim-tensorflow
+challenge-aido_LF-baseline-RL-sim-pytorch
+challenge-aido_LF-baseline-duckietown
+challenge-aido_LF-template-pytorch
+challenge-aido_LF-template-random
+challenge-aido_LF-template-ros
+challenge-aido_LF-template-tensorflow
+challenge-aido_amod
+challenge-aido_amod-template-java
+challenge-aido_amod-template-python
+challenge-prediction
+amod
+amodeus
