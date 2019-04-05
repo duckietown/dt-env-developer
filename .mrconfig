@@ -131,8 +131,8 @@ checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-blockly-backend.
 [containers/rpi-4-software-extra/rpi-ros-kinetic-system-monitor]
 checkout = git clone 'git@github.com:duckietown/rpi-ros-kinetic-system-monitor.git' 'rpi-ros-kinetic-system-monitor'
 
-[containers/rpi-5-devel/rpi-duckiebot-simple-python]
-checkout = git clone 'https:/github.com/duckietown/rpi-duckiebot-simple-python.git' 'rpi-duckiebot-simple-python'
+#[containers/rpi-5-devel/rpi-duckiebot-simple-python]
+#checkout = git clone 'https:/github.com/duckietown/rpi-duckiebot-simple-python.git' 'rpi-duckiebot-simple-python'
 
 [src/duckietown-shell]
 checkout = git clone 'git@github.com:duckietown/duckietown-shell.git' 'duckietown-shell'
