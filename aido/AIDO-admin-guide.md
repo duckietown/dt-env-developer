@@ -4,6 +4,29 @@ AI-DO admin guide
 This guide contains notes for the admins to make sure everything is done correctly.
 
 
+## Chain of dependencies
+
+
+`duckietown-challenges`: bump-upload. Note version.
+
+`duckietown-shell`: update version of `duckietown-challenges` in setup.py and requirements.txt.
+Do `make bump-upload`.
+
+`duckietown-shell-commands`: define minimum version of `duckietown-shell`.
+
+`duckietown-challenges-runner`: build without cache
+
+
+Re-create the base container: 
+
+    make -C ${DT_ENV_DEVELOPER}/src/aido-protocols/minimal-nodes-stubs/ build-no-cache push
+
+
+
+## Define challenges
+
+Run the tester guide without the DTSERVER variable.
+
 
 ## Remember to commit any local changes to branches
 
@@ -27,8 +50,4 @@ Re-build the base images:
 Push the base images: 
 
     make push-base-containers
-
-## Define challenges
-
-Run the tester guide without the DTSERVER variable.
 

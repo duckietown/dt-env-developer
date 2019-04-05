@@ -1,39 +1,69 @@
 
  
 
-[aido1//amod]
+[aido/amod]
 checkout = git clone 'git@github.com:idsc-frazzoli/amod.git' 'amod'
 
-[aido1//amodeus]
+[aido/amodeus]
 checkout = git clone 'git@github.com:duckietown/amodeus.git' 'amodeus'
 
-[aido1//challenge-aido1_amod1]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_test_amod.git' 'challenge-aido1_amod1'
+[aido/challenge-aido_amod]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_amod.git' 'challenge-aido_amod'
 
-[aido1//challenge-aido1_amod1-template-java]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_amod1-template-java.git' 'challenge-aido1_amod1-template-java'
+[aido/challenge-aido_amod-template-java]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_amod-template-java.git' 'challenge-aido1_amod1-template-java'
 
-[aido1//challenge-aido1_amod1-template-python]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_amod1-template-python.git' 'challenge-aido1_amod1-template-python'
+[aido/challenge-aido_amod-template-python]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_amod-template-python.git' 'challenge-aido1_amod1-template-python'
 
-[aido1/challenge-aido1_LF1]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1.git' 'challenge-aido1_LF1'
 
-[aido1/challenge-dummy-solution]
-checkout = git clone 'git@github.com:duckietown/challenge-dummy-solution.git' 'challenge-dummy-solution'
+[aido/challenge-aido_LF]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF.git' 'challenge-aido_LF'
 
-[aido1/challenge-aido1_log_processing]
-checkout = git clone 'https:/github.com/duckietown/challenge-aido1_log_processing.git' 'challenge-aido1_log_processing'
 
-[aido1/challenge-aido1_luck]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck.git' 'challenge-aido1_luck'
+[aido/challenge-aido_LF-template-pytorch]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-template-pytorch.git' 'challenge-aido_LF-template-pytorch'
 
-[aido1/challenge-aido1_test_multistep]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_test_multistep.git' 'challenge-aido1_test_multistep'
+
+[aido/challenge-aido_LF-template-tensorflow]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-template-tensorflow.git' 'challenge-aido_LF-template-tensorflow'
+
+
+[aido/challenge-aido_LF-template-random]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-template-random.git' 'challenge-aido_LF-template-random'
+
+[aido/challenge-aido_LF-baseline-IL-logs-tensorflow]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-IL-logs-tensorflow.git' 'challenge-aido_LF-baseline-IL-logs-tensorflow'
+
+[aido/challenge-aido_LF-baseline-IL-sim-tensorflow]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-IL-sim-tensorflow.git' 'challenge-aido_LF-baseline-IL-sim-tensorflow'
+
+[aido/challenge-aido_LF-baseline-RL-sim-pytorch]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-RL-sim-pytorch.git' 'challenge-aido_LF-baseline-RL-sim-pytorch'
+
+[aido/challenge-aido_LF-baseline-duckietown]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-duckietown.git' 'challenge-aido_LF-baseline-duckietown'
+
+[aido/challenge-aido_LF-template-pytorch]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-template-pytorch.git' 'challenge-aido_LF-template-pytorch'
+
+[aido/challenge-aido_LF-template-ros]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-template-ros.git' 'challenge-aido_LF-template-ros'
+
+
+[aido/challenge-prediction]
+checkout = git clone 'git@github.com:duckietown/challenge-prediction.git' 'challenge-prediction'
+
+
+[src/sim-duckiebot-lanefollowing-demo]
+checkout = git clone 'git@github.com:duckietown/sim-duckiebot-lanefollowing-demo.git' 'sim-duckiebot-lanefollowing-demo'
+
 
 [src/duckietown-challenges]
 checkout = git clone 'git@github.com:duckietown/duckietown-challenges.git' 'duckietown-challenges'
 
+[src/duckietown-challenges-server]
+checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
 
 [containers/laptop-1-setup/rpi-duckiebot-calibration]
 checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-calibration' 'rpi-duckiebot-calibration'
@@ -193,45 +223,10 @@ checkout = git clone 'git@github.com:duckietown/docs-software_reference.git' 'do
 [docs/docs-the_duckietown_project]
 checkout = git clone 'git@github.com:duckietown/docs-the_duckietown_project.git' 'docs-the_duckietown_project'
 
-[aido2/challenge-aido2_LF]
-checkout = git clone 'git@github.com:duckietown/challenge-aido2_LF.git' 'challenge-aido2_LF'
 
-
-[aido1/challenge-aido1_LF1-template-tensorflow]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-tensorflow.git' 'challenge-aido1_LF1-template-tensorflow'
-
-[challenges/challenge-groups/testing/challenge-aido1_luck-template-python]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_luck-template-python.git' 'challenge-aido1_luck-template-python'
-
-[aido1/challenge-aido1_LF1-template-random]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-random.git' 'challenge-aido1_LF1-template-random'
-
-[src/sim-duckiebot-lanefollowing-demo]
-checkout = git clone 'git@github.com:duckietown/sim-duckiebot-lanefollowing-demo.git' 'sim-duckiebot-lanefollowing-demo'
-
-[aido1/challenge-aido1_LF1-baseline-IL-logs-tensorflow]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-baseline-IL-logs-tensorflow.git' 'challenge-aido1_LF1-baseline-IL-logs-tensorflow'
-
-[aido1/challenge-aido1_LF1-baseline-IL-sim-tensorflow]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-baseline-IL-sim-tensorflow.git' 'challenge-aido1_LF1-baseline-IL-sim-tensorflow'
-
-[aido1/challenge-aido1_LF1-baseline-RL-sim-pytorch]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-baseline-RL-sim-pytorch.git' 'challenge-aido1_LF1-baseline-RL-sim-pytorch'
-
-[aido1/challenge-aido1_LF1-baseline-duckietown]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-baseline-duckietown.git' 'challenge-aido1_LF1-baseline-duckietown'
-
-[aido1/challenge-aido1_LF1-template-pytorch]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-pytorch.git' 'challenge-aido1_LF1-template-pytorch'
-
-[aido1/challenge-aido1_LF1-template-ros]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-ros.git' 'challenge-aido1_LF1-template-ros'
 
 [src/duckietown-world]
 checkout = git clone 'git@github.com:duckietown/duckietown-world.git' 'duckietown-world'
-
-[aido1/challenge-aido1_LF1-template-pytorch]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_LF1-template-pytorch.git' 'challenge-aido1_LF1-template-pytorch'
 
 [src/duckietown-serialization]
 checkout = git clone 'git@github.com:duckietown/duckietown-serialization.git' 'duckietown-serialization'
@@ -244,6 +239,3 @@ checkout = git clone 'git@github.com:duckietown/planning-exercise-solution.git' 
 
 [src/duckietown-challenges-runner]
 checkout = git clone 'git@github.com:duckietown/duckietown-challenges-runner.git' 'duckietown-challenges-runner'
-
-[aido2/challenge-prediction]
-checkout = git clone 'git@github.com:duckietown/challenge-prediction.git' 'challenge-prediction'
