@@ -11,10 +11,10 @@ checkout = git clone 'git@github.com:duckietown/amodeus.git' 'amodeus'
 checkout = git clone 'git@github.com:duckietown/challenge-aido_amod.git' 'challenge-aido_amod'
 
 [aido/challenge-aido_amod-template-java]
-checkout = git clone 'git@github.com:duckietown/challenge-aido_amod-template-java.git' 'challenge-aido1_amod1-template-java'
+checkout = git clone 'git@github.com:duckietown/challenge-aido_amod-template-java.git' 'challenge-aido_amod-template-java'
 
 [aido/challenge-aido_amod-template-python]
-checkout = git clone 'git@github.com:duckietown/challenge-aido_amod-template-python.git' 'challenge-aido1_amod1-template-python'
+checkout = git clone 'git@github.com:duckietown/challenge-aido_amod-template-python.git' 'challenge-aido_amod-template-python'
 
 
 [aido/challenge-aido_LF]
@@ -183,11 +183,11 @@ checkout = git clone 'git@github.com:duckietown/docs-duckietown_high_school.git'
 [docs/docs-exercises]
 checkout = git clone 'git@github.com:duckietown/docs-exercises.git' 'docs-exercises'
 
-[docs/docs-fall2017_info]
-checkout = git clone 'git@github.com:duckietown/docs-fall2017_info.git' 'docs-fall2017_info'
+# [docs/docs-fall2017_info]
+# checkout = git clone 'git@github.com:duckietown/docs-fall2017_info.git' 'docs-fall2017_info'
 
-[docs/docs-fall2017_projects]
-checkout = git clone 'git@github.com:duckietown/docs-fall2017_projects.git' 'docs-fall2017_projects'
+# [docs/docs-fall2017_projects]
+# checkout = git clone 'git@github.com:duckietown/docs-fall2017_projects.git' 'docs-fall2017_projects'
 
 [docs/docs-guide_for_instructors]
 checkout = git clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-guide_for_instructors'
@@ -199,7 +199,7 @@ checkout = git clone 'git@github.com:duckietown/docs-learning_materials.git' 'do
 checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
 
 [docs/docs-guide_for_instructors]
-checkout = git lfs clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-guide_for_instructors'
+checkout = git clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-guide_for_instructors'
 
 
 [docs/docs-opmanual_duckietown]
