@@ -1,10 +1,13 @@
-AI-DO admin guide
-=================
+AI-DO admin guide (draft)
+=========================
 
 This guide contains notes for the admins to make sure everything is done correctly.
 
 
 ## Chain of dependencies
+
+    make -C ${DT_ENV_DEVELOPER}/src/zuper-nodes bump-upload
+    make -C ${DT_ENV_DEVELOPER}/src/zuper-utils bump-upload
 
 
 `duckietown-challenges`: bump-upload. Note version.
@@ -17,11 +20,12 @@ Do `make bump-upload`.
 `duckietown-challenges-runner`: build without cache
 
 
-Re-create the base container: 
+Re-create the base container and **push**: 
 
-    make -C ${DT_ENV_DEVELOPER}/src/aido-protocols/minimal-nodes-stubs/ build-no-cache push
+    echo '#' >> ${DT_ENV_DEVELOPER}/src/aido-protocols/minimal-nodes-stubs/aido2-base-python3/requirements.txt
+    make -C ${DT_ENV_DEVELOPER}/src/aido-protocols build-base-images push-base-images
 
-
+ 
 
 ## Define challenges
 
@@ -33,10 +37,8 @@ Run the tester guide without the DTSERVER variable.
 
 Make sure the following are up to date:
 
-	git -C ${DT_ENV_DEVELOPER}/src/duckietown-challenges status
-	git -C ${DT_ENV_DEVELOPER}/src/zuper_nodes status
-	git -C ${DT_ENV_DEVELOPER}/src/zuper_json status
-	git -C ${DT_ENV_DEVELOPER}/src/zuper_json status
+	git -C ${DT_ENV_DEVELOPER}/src/duckietown-challenges status 
+	
 	git -C ${DT_ENV_DEVELOPER}/src/aido-protocols status
 
 ## Base images
