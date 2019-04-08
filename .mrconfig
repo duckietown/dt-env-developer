@@ -54,6 +54,11 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-template-ros.g
 [aido/challenge-prediction]
 checkout = git clone 'git@github.com:duckietown/challenge-prediction.git' 'challenge-prediction'
 
+[aido2/aido-robotarium-evaluation-form]
+checkout = git clone 'git@github.com:duckietown/aido-robotarium-evaluation-form.git' 'aido-robotarium-evaluation-form'
+
+[aido2/ETHZ-autolab-fleet-roster]
+checkout = git clone 'git@github.com:duckietown/ETHZ-autolab-fleet-roster.git' 'ETHZ-autolab-fleet-roster'
 
 [src/sim-duckiebot-lanefollowing-demo]
 checkout = git clone 'git@github.com:duckietown/sim-duckiebot-lanefollowing-demo.git' 'sim-duckiebot-lanefollowing-demo'
