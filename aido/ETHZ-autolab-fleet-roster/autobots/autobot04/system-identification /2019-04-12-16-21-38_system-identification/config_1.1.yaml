@@ -1,0 +1,31 @@
+# General
+config_file_version: 1.1
+vehicle_name: mete # only necessary while debugging through an IDE
+debug: False # needs to be set True while debugging through an IDE
+save_experiment_results: True # save the plots under the results
+save_to_pickle: False
+show_plots: True # display the plots
+multitag_pose_estimation: False # not yet implemented
+
+# Optimization
+model: kinematic_drive
+cost_function_type: AsRMSE # see include/calibration/cost_function_library.py for available options
+
+# Data preperation - see include/calibration/data_preperation_utils.py (smooth function) for more details.
+filter_type: flat
+filter_length: 17
+discard_first_n_data: 20
+discard_last_n_data: 5
+
+# Velocity estimation from position data
+spline_type: lsq_spline # lsq_spline or b_spline
+spline_smoothing_factor: 10
+lsq_spline_order: 3
+lsq_spline_knot_every: 20
+lsq_discard_n_at_boundary: 1
+densification_factor: 3
+discard_n_after_spline_fitting: 5
+
+# Model assessment logic - see include/calibration/model_assessment.py for more details.
+assessment_rule: nsap_threshold
+nsap_threshold: 1.7

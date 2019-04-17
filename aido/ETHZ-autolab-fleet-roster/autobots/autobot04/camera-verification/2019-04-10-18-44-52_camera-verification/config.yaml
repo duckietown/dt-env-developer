@@ -1,0 +1,13 @@
+config_file_name: camera_calibration_test
+config_file_version: d60f5124be0b3b7541d57a0b7359f771555c0bbd
+at_list:
+- 83
+- 84
+- 85
+rotational_error_tolerance: 2
+translational_error_tolerance: 0.01
+rotational_std_tolerance: 0.05
+translational_std_tolerance: 0.001
+number_of_images_to_process: 10
+debug: false
+vehicle_name: mete

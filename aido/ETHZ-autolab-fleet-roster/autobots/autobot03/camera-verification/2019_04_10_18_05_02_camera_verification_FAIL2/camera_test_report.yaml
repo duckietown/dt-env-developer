@@ -1,0 +1,64 @@
+config_version: d60f5124be0b3b7541d57a0b7359f771555c0bbd
+measurements:
+  83:
+    posy_med:
+      err: 0.015935008972883233
+      pass: false
+    posx_std:
+      err: 4.1875405231860296e-05
+      pass: true
+    posy_std:
+      err: 1.3113616380740042e-05
+      pass: true
+    rotz_std:
+      err: 0.0003002441638336553
+      pass: true
+    rotz_med:
+      err: 1.3363698864418816
+      pass: true
+    posx_med:
+      err: 0.009868034720420804
+      pass: true
+  84:
+    posy_med:
+      err: 0.015655465051531793
+      pass: false
+    posx_std:
+      err: 0.000176751345281268
+      pass: true
+    posy_std:
+      err: 1.1468616715260122e-05
+      pass: true
+    rotz_std:
+      err: 0.002350880860904049
+      pass: true
+    rotz_med:
+      err: 0.005893295933492482
+      pass: true
+    posx_med:
+      err: 0.0031275570392608754
+      pass: true
+  85:
+    posy_med:
+      err: 0.018547216802835456
+      pass: false
+    posx_std:
+      err: 4.563786557218539e-05
+      pass: true
+    posy_std:
+      err: 1.8461374626977512e-05
+      pass: true
+    rotz_std:
+      err: 0.0005724926870241174
+      pass: true
+    rotz_med:
+      err: 0.023098138527219425
+      pass: true
+    posx_med:
+      err: 0.003663074970245317
+      pass: true
+hostname: autobot03
+experiment_time: '2019_04_10_18_05_02'
+platform: armv7l
+experiment_name: default
+verdict: FAIL

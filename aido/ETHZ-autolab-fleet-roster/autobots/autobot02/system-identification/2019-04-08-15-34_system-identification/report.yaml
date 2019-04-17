@@ -1,0 +1,11 @@
+config_version: 1.1
+used_model: kinematic_drive
+optimization_converged: true
+osap_error: 0.06677743536893482
+nsap_error: 1.0082109416045082
+optimization_solve_time: '0.0358059406281'
+hostname: autobot02
+experiment_time: '2019_04_08_15_34_47'
+platform: armv7l
+verdict: PASS
+sysid_code_version: v1.0
