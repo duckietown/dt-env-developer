@@ -203,6 +203,9 @@ checkout = git clone 'git@github.com:duckietown/docs-learning_materials.git' 'do
 [docs/docs-opmanual_duckiebot]
 checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
 
+[docs/docs-robotarium]
+checkout = git clone 'git@github.com:duckietown/docs-robotarium.git' 'docs-robotarium'
+
 [docs/docs-guide_for_instructors]
 checkout = git clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-guide_for_instructors'
 
