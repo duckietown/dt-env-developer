@@ -157,8 +157,8 @@ checkout = git clone 'git@github.com:duckietown/duckietown-unity.git' 'duckietow
 [src/gym-duckietown]
 checkout = git clone 'git@github.com:duckietown/gym-duckietown.git' 'gym-duckietown'
 
-[src/gym-duckietown-agent]
-checkout = git clone 'git@github.com:duckietown/gym-duckietown-agent.git' 'gym-duckietown-agent'
+[src/gym-duckietown-ros-agent]
+checkout = git clone -b daffy 'git@github.com:duckietown/gym-duckietown-ros-agent.git' 'gym-duckietown-ros-agent'
 
 [src/gym-gazebo]
 checkout = git clone 'git@github.com:duckietown/gym-gazebo.git' 'gym-gazebo'
