@@ -60,7 +60,11 @@ checkout = git clone 'git@github.com:duckietown/aido-robotarium-evaluation-form.
 [aido/ETHZ-autolab-fleet-roster]
 checkout = git clone 'git@github.com:duckietown/ETHZ-autolab-fleet-roster.git' 'ETHZ-autolab-fleet-roster'
 
-[src/sim-duckiebot-lanefollowing-demo]
+
+
+
+
+[old/sim-duckiebot-lanefollowing-demo]
 checkout = git clone 'git@github.com:duckietown/sim-duckiebot-lanefollowing-demo.git' 'sim-duckiebot-lanefollowing-demo'
 
 
@@ -70,13 +74,13 @@ checkout = git clone 'git@github.com:duckietown/duckietown-challenges.git' 'duck
 [src/duckietown-challenges-server]
 checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
 
-[containers/laptop-1-setup/rpi-duckiebot-calibration]
+[old/laptop-1-setup/rpi-duckiebot-calibration]
 checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-calibration' 'rpi-duckiebot-calibration'
 
-[containers/laptop-1-setup/rpi-duckiebot-keyboard-demo]
+[old/laptop-1-setup/rpi-duckiebot-keyboard-demo]
 checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-keyboard-demo.git' 'rpi-duckiebot-keyboard-demo'
 
-[containers/laptop-1-setup/rpi-gui-tools]
+[old/laptop-1-setup/rpi-gui-tools]
 checkout = git clone 'git@github.com:duckietown/rpi-gui-tools.git' 'rpi-gui-tools'
 
 [containers/rpi-1-base/rpi-duckiebot-loader]
@@ -106,10 +110,10 @@ checkout = git clone 'git@github.com:duckietown/rpi-python-slim.git' 'rpi-python
 [containers/rpi-3-software-main/rpi-duckiebot-camera-node]
 checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-camera-node.git' 'rpi-duckiebot-camera-node'
 
-[containers/rpi-3-software-main/rpi-duckiebot-joystick-demo]
+[old/rpi-3-software-main/rpi-duckiebot-joystick-demo]
 checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-joystick-demo.git' 'rpi-duckiebot-joystick-demo'
 
-[containers/rpi-3-software-main/rpi-duckiebot-lanefollowing-demo]
+[old/rpi-3-software-main/rpi-duckiebot-lanefollowing-demo]
 checkout = git clone 'git@github.com:duckietown/rpi-duckiebot-lanefollowing-demo.git' 'rpi-duckiebot-lanefollowing-demo'
 
 [containers/rpi-3-software-main/rpi-duckiebot-ros-picam]
@@ -148,7 +152,7 @@ checkout = git clone 'git@github.com:duckietown/duckietown-shell-commands.git' '
 [src/duckietown-sim-server]
 checkout = git clone 'git@github.com:duckietown/duckietown-sim-server.git' 'duckietown-sim-server'
 
-[src/duckietown-slimremote]
+[old/duckietown-slimremote]
 checkout = git clone 'git@github.com:duckietown/duckietown-slimremote.git' 'duckietown-slimremote'
 
 [src/duckietown-unity]
@@ -163,10 +167,10 @@ checkout = git clone -b daffy 'git@github.com:duckietown/gym-duckietown-ros-agen
 [src/gym-gazebo]
 checkout = git clone 'git@github.com:duckietown/gym-gazebo.git' 'gym-gazebo'
 
-[src/simulator]
+[old/simulator]
 checkout = git clone 'git@github.com:duckietown/simulator.git' 'simulator'
 
-[src/slimremote-experimental]
+[old/slimremote-experimental]
 checkout = git clone 'git@github.com:duckietown/slimremote-experimental.git' 'slimremote-experimental'
 
 [src/Software]
@@ -175,6 +179,11 @@ checkout = git clone 'git@github.com:duckietown/Software.git' 'Software'
 [src/duckiebot-interface]
 checkout = git clone 'git@github.com:duckietown/duckiebot-interface.git' 'duckiebot-interface'
 
+[src/dt-core]
+checkout = git clone 'git@github.com:duckietown/dt-core.git' 'dt-core'
+
+[src/dt-ros-commons]
+checkout = git clone 'git@github.com:duckietown/dt-ros-commons.git' 'dt-ros-commons'
 
 [docs/docs-AIDO]
 checkout = git clone 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
