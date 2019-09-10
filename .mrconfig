@@ -176,59 +176,6 @@ checkout = git clone 'git@github.com:duckietown/Software.git' 'Software'
 checkout = git clone 'git@github.com:duckietown/duckiebot-interface.git' 'duckiebot-interface'
 
 
-[docs/docs-AIDO]
-checkout = git clone 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
-
-[docs/docs-duckumentation]
-checkout = git clone 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
-
-[docs/docs-duckietown_high_school]
-checkout = git clone 'git@github.com:duckietown/docs-duckietown_high_school.git' 'docs-duckietown_high_school'
-
-[docs/docs-exercises]
-checkout = git clone 'git@github.com:duckietown/docs-exercises.git' 'docs-exercises'
-
-# [docs/docs-fall2017_info]
-# checkout = git clone 'git@github.com:duckietown/docs-fall2017_info.git' 'docs-fall2017_info'
-
-# [docs/docs-fall2017_projects]
-# checkout = git clone 'git@github.com:duckietown/docs-fall2017_projects.git' 'docs-fall2017_projects'
-
-[docs/docs-guide_for_instructors]
-checkout = git clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-guide_for_instructors'
-
-[docs/docs-learning_materials]
-checkout = git clone 'git@github.com:duckietown/docs-learning_materials.git' 'docs-learning_materials'
-
-[docs/docs-opmanual_duckiebot]
-checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
-
-[docs/docs-guide_for_instructors]
-checkout = git clone 'git@github.com:duckietown/docs-guide_for_instructors.git' 'docs-guide_for_instructors'
-
-
-[docs/docs-opmanual_duckietown]
-checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-opmanual_duckietown'
-
-
-[docs/docs-preliminaries]
-checkout = git clone 'git@github.com:duckietown/docs-preliminaries.git' 'docs-preliminaries'
-
-
-[docs/docs-software_architecture]
-checkout = git clone 'git@github.com:duckietown/docs-software_architecture.git' 'docs-software_architecture'
-
-
-[docs/docs-software_devel]
-checkout = git clone 'git@github.com:duckietown/docs-software_devel.git' 'docs-software_devel'
-
-[docs/docs-software_reference]
-checkout = git clone 'git@github.com:duckietown/docs-software_reference.git' 'docs-software_reference'
-
-[docs/docs-the_duckietown_project]
-checkout = git clone 'git@github.com:duckietown/docs-the_duckietown_project.git' 'docs-the_duckietown_project'
-
-
 
 [src/duckietown-world]
 checkout = git clone 'git@github.com:duckietown/duckietown-world.git' 'duckietown-world'

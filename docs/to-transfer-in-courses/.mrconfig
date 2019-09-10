@@ -1,0 +1,24 @@
+
+
+
+[docs-preliminaries]
+checkout = git clone 'git@github.com:duckietown/docs-preliminaries.git' 'docs-preliminaries'
+
+
+[docs-software_architecture]
+checkout = git clone 'git@github.com:duckietown/docs-software_architecture.git' 'docs-software_architecture'
+
+
+[docs-software_devel]
+checkout = git clone 'git@github.com:duckietown/docs-software_devel.git' 'docs-software_devel'
+
+[docs-software_reference]
+checkout = git clone 'git@github.com:duckietown/docs-software_reference.git' 'docs-software_reference'
+
+[docs-exercises]
+checkout = git clone 'git@github.com:duckietown/docs-exercises.git' 'docs-exercises'
+
+
+[docs-learning_materials]
+checkout = git clone 'git@github.com:duckietown/docs-learning_materials.git' 'docs-learning_materials'
+

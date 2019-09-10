@@ -1,0 +1,21 @@
+
+
+
+[docs-duckumentation]
+checkout = git clone 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
+
+
+[docs-opmanual_duckietown]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-opmanual_duckietown'
+
+[docs-opmanual_duckiesky]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_sky.git' 'docs-opmanual_sky'
+
+
+[docs-opmanual_autolab]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_autolab.git' 'docs-opmanual_autolab'
+
+
+[docs-opmanual_duckiebot]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
+

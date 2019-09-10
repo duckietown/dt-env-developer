@@ -1,0 +1,2 @@
+[docs-AIDO]
+checkout = git clone 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
