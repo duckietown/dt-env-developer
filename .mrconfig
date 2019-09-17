@@ -1,5 +1,5 @@
 
- 
+
 
 [aido/amod]
 checkout = git clone 'git@github.com:idsc-frazzoli/amod.git' 'amod'
@@ -191,3 +191,7 @@ checkout = git clone 'git@github.com:duckietown/planning-exercise-solution.git' 
 
 [src/duckietown-challenges-runner]
 checkout = git clone 'git@github.com:duckietown/duckietown-challenges-runner.git' 'duckietown-challenges-runner'
+
+[docs]
+skip = true
+chain = true

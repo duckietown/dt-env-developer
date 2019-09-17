@@ -1,0 +1,15 @@
+[shelf-courses]
+chain = true
+status = true
+
+[shelf-operation-manuals]
+chain = true
+status = true
+
+[shelf-research]
+chain = true
+status = true
+
+[to-transfer-in-courses]
+chain = true
+status = true

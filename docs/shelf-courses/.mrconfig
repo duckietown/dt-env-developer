@@ -1,11 +1,15 @@
 
 [course-duckiesky]
 checkout = git clone 'git@github.com:duckietown/docs-brown.git' 'docs-duckiesky'
+
 [course-RH]
 checkout = git clone 'git@github.com:duckietown/course-RH.git' 'docs-RH'
+
 [course-CRA]
 checkout = git clone 'git@github.com:duckietown/course-CRA.git' 'docs-CRA'
+
 [course-LRA]
 checkout = git clone 'git@github.com:duckietown/course-LRA.git' 'docs-LRA'
+
 [course-extra]
 checkout = git clone 'git@github.com:duckietown/docs-extra.git' 'docs-extra'
