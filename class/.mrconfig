@@ -1,0 +1,6 @@
+
+[planning-exercises]
+checkout = git clone 'git@github.com:duckietown/planning-exercises.git' 'planning-exercises'
+
+[planning-exercise-solution]
+checkout = git clone 'git@github.com:duckietown/planning-exercise-solution.git' 'planning-exercise-solution'
