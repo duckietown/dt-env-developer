@@ -1,18 +1,15 @@
 [shelf-courses]
 chain = true
-status = true
+skip = true
 
 [shelf-operation-manuals]
 chain = true
-status = true
+skip = true
 
 [shelf-research]
 chain = true
-status = true
+skip = true
 
 [to-transfer-in-courses]
 chain = true
-status = true
-
-[/Users/andrea/DT/dt-env/dt-env-developer/docs/docs-template]
-checkout = git clone 'git@github.com:duckietown/docs-template.git' 'docs-template'
+skip = true

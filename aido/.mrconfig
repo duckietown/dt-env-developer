@@ -57,5 +57,5 @@ checkout = git clone 'git@github.com:duckietown/aido-robotarium-evaluation-form.
 [ETHZ-autolab-fleet-roster]
 checkout = git clone 'git@github.com:duckietown/ETHZ-autolab-fleet-roster.git' 'ETHZ-autolab-fleet-roster'
 
-[/Users/andrea/DT/dt-env/dt-env-developer/aido/challenge-multistep]
+[challenge-multistep]
 checkout = git clone 'git@github.com:duckietown/challenge-multistep.git' 'challenge-multistep'
