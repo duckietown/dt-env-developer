@@ -4,18 +4,32 @@
 [docs-duckumentation]
 checkout = git clone 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
 
+[docs-duckumentation/resources]
+checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
 
 [docs-opmanual_duckietown]
 checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-opmanual_duckietown'
 
+[docs-opmanual_duckietown/resources]
+checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
+
+
 [docs-opmanual_sky]
 checkout = git clone 'git@github.com:duckietown/docs-opmanual_sky.git' 'docs-opmanual_sky'
+
+[docs-opmanual_sky/resources]
+checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
+
 
 
 [docs-opmanual_autolab]
 checkout = git clone 'git@github.com:duckietown/docs-opmanual_autolab.git' 'docs-opmanual_autolab'
 
+[docs-opmanual_autolab/resources]
+checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
 
 [docs-opmanual_duckiebot]
 checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
 
+[docs-opmanual_duckiebot/resources]
+checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
