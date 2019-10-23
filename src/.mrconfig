@@ -54,3 +54,6 @@ checkout = git clone 'git@github.com:duckietown/duckietown-serialization.git' 'd
 
 [duckietown-challenges-runner]
 checkout = git clone 'git@github.com:duckietown/duckietown-challenges-runner.git' 'duckietown-challenges-runner'
+
+[aido-protocols]
+checkout = git clone 'git@github.com:duckietown/aido-protocols.git' 'aido-protocols'
