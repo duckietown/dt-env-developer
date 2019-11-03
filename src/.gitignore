@@ -19,3 +19,14 @@ zuper_json
 sim-duckiebot-lanefollowing-demo
 simulator
 slimremote-experimental
+gym-duckietown-ros-agent/
+dt-ros-commons/
+dt-duckiebot-interface/
+dt-core/
+dt-core/dt-car-interface/
+gym-duckietown-ros-agent/
+dt-ros-commons/
+dt-duckiebot-interface/
+dt-core/
+dt-core
+dt-car-interface/

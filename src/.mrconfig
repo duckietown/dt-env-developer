@@ -21,7 +21,7 @@ checkout = git clone 'git@github.com:duckietown/duckietown-unity.git' 'duckietow
 checkout = git clone 'git@github.com:duckietown/gym-duckietown.git' 'gym-duckietown'
 
 [gym-duckietown-ros-agent]
-checkout = git clone 'git@github.com:duckietown/gym-duckietown-agent.git' 'gym-duckietown-agent'
+checkout = git clone 'git@github.com:duckietown/gym-duckietown-ros-agent.git' 'gym-duckietown-ros-agent'
 
 [gym-gazebo]
 checkout = git clone 'git@github.com:duckietown/gym-gazebo.git' 'gym-gazebo'
