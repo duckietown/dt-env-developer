@@ -33,3 +33,6 @@ checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'do
 
 [docs-opmanual_duckiebot/resources]
 checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
+
+[docs-duckiesky_high_school]
+checkout = git clone 'git@github.com:duckietown/docs-duckiesky_high_school.git' 'docs-duckiesky_high_school'
