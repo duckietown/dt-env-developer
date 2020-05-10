@@ -93,3 +93,6 @@ checkout = git clone 'git@github.com:duckietown/docs-sphinxapi.git' 'docs-sphinx
 
 [download-manifest-from-dockerhub]
 checkout = git clone 'git@github.com:TomasTomecek/download-manifest-from-dockerhub.git' 'download-manifest-from-dockerhub'
+
+[template-library]
+checkout = git clone 'git@github.com:duckietown/template-library.git' 'template-library'
