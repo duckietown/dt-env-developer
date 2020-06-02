@@ -13,3 +13,6 @@ skip = true
 [to-transfer-in-courses]
 chain = true
 skip = true
+
+[duckuments-presentation-config]
+checkout = git clone 'git@github.com:duckietown/duckuments-presentation-config.git' 'duckuments-presentation-config'
