@@ -35,7 +35,4 @@ checkout = git clone 'git@github.com:duckietown/docs-extra.git' 'docs-extra'
 checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
 
 [course-DOLE-1]
-checkout = git clone 'git@github.com:duckietown/course-DOLE-1.git' 'docs-DOLE-1'
-
-[course-DOLE-1/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
+checkout = git clone 'git@github.com:duckietown/mooc-notes.git'  --recurse-submodules
