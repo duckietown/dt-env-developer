@@ -1,18 +1,18 @@
 
-[amod]
-checkout = git clone 'git@github.com:idsc-frazzoli/amod.git' 'amod'
+# [amod]
+# checkout = git clone 'git@github.com:idsc-frazzoli/amod.git' 'amod'
 
-[amodeus]
-checkout = git clone 'git@github.com:duckietown/amodeus.git' 'amodeus'
+# [amodeus]
+# checkout = git clone 'git@github.com:duckietown/amodeus.git' 'amodeus'
 
-[challenge-aido_amod]
-checkout = git clone 'git@github.com:duckietown/challenge-aido1_test_amod.git' 'challenge-aido_amod'
+# [challenge-aido_amod]
+# checkout = git clone 'git@github.com:duckietown/challenge-aido1_test_amod.git' 'challenge-aido_amod'
 
-[challenge-aido_amod-template-java]
-checkout = git clone 'git@github.com:duckietown/challenge-aido_amod-template-java.git' 'challenge-aido_amod-template-java'
+# [challenge-aido_amod-template-java]
+# checkout = git clone 'git@github.com:duckietown/challenge-aido_amod-template-java.git' 'challenge-aido_amod-template-java'
 
-[challenge-aido_amod-template-python]
-checkout = git clone 'git@github.com:duckietown/challenge-aido_amod-template-python.git' 'challenge-aido_amod-template-python'
+# [challenge-aido_amod-template-python]
+# checkout = git clone 'git@github.com:duckietown/challenge-aido_amod-template-python.git' 'challenge-aido_amod-template-python'
 
 [challenge-aido_LF]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_LF.git' 'challenge-aido_LF'

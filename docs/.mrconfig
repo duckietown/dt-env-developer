@@ -51,8 +51,8 @@ checkout = git clone 'git@github.com:duckietown/course-extra.git' 'course-extra'
 checkout = git clone 'git@github.com:duckietown/course-CRA.git' 'course-CRA'
  
 
-[docs-template]
-checkout = git clone 'git@github.com:duckietown/docs-template.git' 'docs-template'
+# [docs-template]
+# checkout = git clone 'git@github.com:duckietown/docs-template.git' 'docs-template'
 
 
 [docs-duckumentation]
