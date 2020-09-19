@@ -1,3 +1,7 @@
+
+[.]
+checkout = git clone 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'
+
 [templates]
 skip = true
 chain = true
@@ -14,7 +18,6 @@ chain = true
 skip = true
 chain = true
 
-
 [class]
 skip = true
 chain = true
@@ -23,95 +26,6 @@ chain = true
 skip = true
 chain = true
 
-[docs/to-transfer-in-courses/docs-software_devel]
-checkout = git clone 'git@github.com:duckietown/docs-software_devel.git' 'docs-software_devel'
-
-[docs/to-transfer-in-courses/docs-learning_materials]
-checkout = git clone 'git@github.com:duckietown/docs-learning_materials.git' 'docs-learning_materials'
-
-[docs/to-transfer-in-courses/docs-preliminaries]
-checkout = git clone 'git@github.com:duckietown/docs-preliminaries.git' 'docs-preliminaries'
-
-[docs/to-transfer-in-courses/docs-software_architecture]
-checkout = git clone 'git@github.com:duckietown/docs-software_architecture.git' 'docs-software_architecture'
-
-[docs/to-transfer-in-courses/docs-exercises]
-checkout = git clone 'git@github.com:duckietown/docs-exercises.git' 'docs-exercises'
-
-[docs/to-transfer-in-courses/docs-software_reference]
-checkout = git clone 'git@github.com:duckietown/docs-software_reference.git' 'docs-software_reference'
-
-[docs/shelf-research/docs-AIDO/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
-
-[docs/shelf-research/docs-AIDO]
-checkout = git clone 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
-
-[docs/shelf-operation-manuals/docs-opmanual_duckiebot]
-checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
-
-[docs/shelf-operation-manuals/docs-opmanual_duckietown/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
-
-[docs/shelf-operation-manuals/docs-opmanual_duckietown]
-checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-opmanual_duckietown'
-
-[docs/shelf-operation-manuals/docs-duckumentation/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
-
-[docs/shelf-operation-manuals/docs-duckumentation]
-checkout = git clone 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
-
-[docs/shelf-operation-manuals/docs-opmanual_autolab/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
-
-[docs/shelf-operation-manuals/docs-opmanual_autolab]
-checkout = git clone 'git@github.com:duckietown/docs-opmanual_autolab.git' 'docs-opmanual_autolab'
-
-[docs/shelf-operation-manuals/docs-opmanual_sky/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
-
-[docs/shelf-operation-manuals/docs-opmanual_sky]
-checkout = git clone 'git@github.com:duckietown/docs-opmanual_sky.git' 'docs-opmanual_sky'
-
-[docs/shelf-operation-manuals/docs-duckiesky_high_school]
-checkout = git clone 'git@github.com:duckietown/docs-duckiesky_high_school.git' 'docs-duckiesky_high_school'
-
-[docs/shelf-courses/course-duckiesky/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
-
-[docs/shelf-courses/course-duckiesky]
-checkout = git clone 'git@github.com:duckietown/docs-brown.git' 'course-duckiesky'
-
-[docs/shelf-courses/course-RH/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
-
-[docs/shelf-courses/course-RH]
-checkout = git clone 'git@github.com:duckietown/course-RH.git' 'course-RH'
-
-[docs/shelf-courses/course-LRA/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
-
-[docs/shelf-courses/course-LRA]
-checkout = git clone 'git@github.com:duckietown/course-LRA.git' 'course-LRA'
-
-[docs/shelf-courses/course-extra/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
-
-[docs/shelf-courses/course-extra]
-checkout = git clone 'git@github.com:duckietown/course-extra.git' 'course-extra'
-
-[docs/shelf-courses/course-CRA/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
-
-[docs/shelf-courses/course-CRA]
-checkout = git clone 'git@github.com:duckietown/course-CRA.git' 'course-CRA'
-
-[docs/docs-template/resources]
-checkout = git clone 'https://github.com/AndreaCensi/docs-resources2.git' 'resources'
-
-[docs/docs-template]
-checkout = git clone 'git@github.com:duckietown/docs-template.git' 'docs-template'
 
 [aido/challenge-aido_LF-baseline-IL-logs-tensorflow]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-IL-logs-tensorflow.git' 'challenge-aido_LF-baseline-IL-logs-tensorflow'
@@ -151,6 +65,3 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido1_test_amod.git' '
 
 [aido/challenge-aido_LF-minimal-agent]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-minimal-agent.git' 'challenge-aido_LF-minimal-agent'
-
-[.]
-checkout = git clone 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'

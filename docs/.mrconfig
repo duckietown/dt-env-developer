@@ -1,18 +1,10 @@
-[shelf-courses]
-chain = true
-skip = true
-
-[shelf-operation-manuals]
-chain = true
-skip = true
-
-[shelf-research]
-chain = true
-skip = true
 
 [to-transfer-in-courses]
-chain = true
 skip = true
+chain = true
+
+[docs-AIDO]
+checkout = git clone 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
 
 [duckuments-presentation-config]
 checkout = git clone 'git@github.com:duckietown/duckuments-presentation-config.git' 'duckuments-presentation-config'
@@ -20,5 +12,99 @@ checkout = git clone 'git@github.com:duckietown/duckuments-presentation-config.g
 [docs-build]
 checkout = git clone 'git@github.com:duckietown/docs-build.git' 'docs-build'
 
-[template-docs]
-checkout = git clone 'git@github.com:duckietown/template-docs.git' 'template-docs'
+ 
+[docs-AIDO]
+checkout = git clone 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
+
+[docs-opmanual_duckiebot]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
+ 
+[docs-opmanual_duckietown]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-opmanual_duckietown'
+ 
+
+[docs-duckumentation]
+checkout = git clone 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
+ 
+[docs-opmanual_autolab]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_autolab.git' 'docs-opmanual_autolab 
+
+[docs-opmanual_sky]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_sky.git' 'docs-opmanual_sky'
+
+[course-duckiesky]
+checkout = git clone 'git@github.com:duckietown/docs-brown.git' 'course-duckiesky'
+ 
+
+[course-RH]
+checkout = git clone 'git@github.com:duckietown/course-RH.git' 'course-RH'
+ 
+
+[course-LRA]
+checkout = git clone 'git@github.com:duckietown/course-LRA.git' 'course-LRA' 
+
+[course-extra]
+checkout = git clone 'git@github.com:duckietown/course-extra.git' 'course-extra'
+ 
+
+[course-CRA]
+checkout = git clone 'git@github.com:duckietown/course-CRA.git' 'course-CRA'
+ 
+
+[docs-template]
+checkout = git clone 'git@github.com:duckietown/docs-template.git' 'docs-template'
+
+
+[docs-duckumentation]
+checkout = git clone 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
+ 
+[docs-opmanual_duckietown]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-opmanual_duckietown'
+ 
+
+[docs-opmanual_sky]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_sky.git' 'docs-opmanual_sky'
+ 
+
+
+[docs-opmanual_autolab]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_autolab.git' 'docs-opmanual_autolab'
+ 
+[docs-opmanual_duckiebot]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
+
+[docs-duckiesky_high_school]
+checkout = git clone 'git@github.com:duckietown/docs-duckiesky_high_school.git' 'docs-duckiesky_high_school'
+
+[docs-opmanual_developer]
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_developer.git' 'docs-opmanual_developer'
+
+[docs-duckiesky_high_school_student]
+checkout = git clone 'git@github.com:duckietown/docs-duckiesky_high_school_student.git' 'docs-duckiesky_high_school_student'
+
+
+[course-duckiesky]
+checkout = git clone 'git@github.com:duckietown/docs-brown.git' 'docs-duckiesky'
+
+ 
+
+
+[course-RH]
+checkout = git clone 'git@github.com:duckietown/course-RH.git' 'docs-RH'
+ 
+
+[course-CRA]
+checkout = git clone 'git@github.com:duckietown/course-CRA.git' 'docs-CRA'
+ 
+
+
+[course-LRA]
+checkout = git clone 'git@github.com:duckietown/course-LRA.git' 'docs-LRA'
+ 
+
+[course-extra]
+checkout = git clone 'git@github.com:duckietown/docs-extra.git' 'docs-extra'
+ 
+
+[mooc-notes]
+checkout = git clone 'git@github.com:duckietown/mooc-notes.git'  --recurse-submodules
