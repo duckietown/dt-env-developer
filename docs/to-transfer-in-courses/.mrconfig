@@ -22,3 +22,4 @@ checkout = git clone 'git@github.com:duckietown/docs-exercises.git' 'docs-exerci
 [docs-learning_materials]
 checkout = git clone 'git@github.com:duckietown/docs-learning_materials.git' 'docs-learning_materials'
 
+ 

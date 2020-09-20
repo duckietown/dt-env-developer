@@ -33,3 +33,9 @@ src/simulators/simulator
 src/simulators/slimremote-experimental
 containers/_tosort_
 ros-hack
+docs/shelf-operation-manuals/docs-duckiesky_high_school/
+aido/autolab_control_flask_scripts/
+aido/compose-pkg-lab_controls/
+attic
+docs/template-docs/
+src/sensor-selection-simulator/

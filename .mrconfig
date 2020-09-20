@@ -1,3 +1,7 @@
+
+[.]
+checkout = git clone 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'
+
 [templates]
 skip = true
 chain = true
@@ -14,7 +18,6 @@ chain = true
 skip = true
 chain = true
 
-
 [class]
 skip = true
 chain = true
@@ -22,3 +25,4 @@ chain = true
 [docs]
 skip = true
 chain = true
+
