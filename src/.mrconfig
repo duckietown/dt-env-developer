@@ -67,9 +67,6 @@ checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git
 [gym-duckietown-agent]
 checkout = git clone 'git@github.com:duckietown/gym-duckietown-agent.git' 'gym-duckietown-agent'
 
-[duckietown-project-template]
-checkout = git clone 'git@github.com:duckietown/duckietown-project-template.git' 'duckietown-project-template'
-
 [duckiebot-interface]
 checkout = git clone 'git@github.com:duckietown/duckiebot-interface.git' 'duckiebot-interface'
 
@@ -84,9 +81,6 @@ checkout = git clone 'git@github.com:duckietown/aido-agents.git' 'aido-agents'
 
 [docs-sphinxapi]
 checkout = git clone 'git@github.com:duckietown/docs-sphinxapi.git' 'docs-sphinxapi'
- 
-[template-library]
-checkout = git clone 'git@github.com:duckietown/template-library.git' 'template-library'
 
 [mooc-exercises]
 checkout = git clone 'git@github.com:duckietown/mooc-exercises.git' 'mooc-exercises'

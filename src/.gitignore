@@ -1,14 +1,11 @@
-challenge-aido1_luck
-src/duckietown-challenges-server/
+
+
 duckietown-challenges
 duckietown-challenges-server
-duckietown-swarm
 duckietown-shell-commands
-challenge-aido1_dummy_sim/
-challenge-aido1_log_processing
+challenge-aido1_dummy_sim
 gym-duckietown-agent
 aido-protocols
-zuper_nodes
 duckietown-challenges-runner
 duckietown-project-template
 duckietown-sim-server
@@ -36,7 +33,7 @@ aido-agents
 aido-analyze
 aido-base-python3
 aido-protocols
-docs-sphinxapi 
+docs-sphinxapi
 dt-car-interface
 dt-core
 dt-duckiebot-interface
@@ -58,6 +55,5 @@ gym-duckietown-agent
 gym-duckietown-ros-agent
 gym-gazebo
 sim-duckiebot-lanefollowing-demo
-template-library
 mooc-exercises
 aido-utils

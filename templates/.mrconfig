@@ -18,8 +18,8 @@ checkout =  git clone git@github.com:duckietown/template-docs.git
 checkout =  git clone git@github.com:duckietown/template-compose.git
 
 
-
-
-
 [template-library]
 checkout = git clone 'git@github.com:duckietown/template-library.git' 'template-library'
+
+[duckietown-project-template]
+checkout = git clone 'git@github.com:duckietown/duckietown-project-template.git' 'duckietown-project-template'
