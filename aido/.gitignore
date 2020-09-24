@@ -19,3 +19,5 @@ autolab_control_flask_scripts
 challenge-aido_LF-minimal-agent
 challenge-aido_LF-minimal-agent-full
 compose-pkg-lab_controls
+aido-submission-ci-test/
+challenge-aido_LF-baseline-JBR

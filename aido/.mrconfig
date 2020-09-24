@@ -80,3 +80,9 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-scenario_maker
 
 [challenge-aido_LF-minimal-agent-full]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-minimal-agent-full.git' 'challenge-aido_LF-minimal-agent-full'
+
+[aido-submission-ci-test]
+checkout = git clone 'git@github.com:duckietown/aido-submission-ci-test.git' 'aido-submission-ci-test'
+
+[challenge-aido_LF-baseline-JBR]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-JBR.git' 'challenge-aido_LF-baseline-JBR'
