@@ -87,3 +87,6 @@ checkout = git clone 'git@github.com:duckietown/mooc-exercises.git' 'mooc-exerci
 
 [aido-utils]
 checkout = git clone 'git@github.com:duckietown/aido-utils.git' 'aido-utils'
+
+[mooc-fifos-connector]
+checkout = git clone 'git@github.com:duckietown/mooc-fifos-connector.git' 'mooc-fifos-connector'
