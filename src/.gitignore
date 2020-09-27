@@ -58,3 +58,6 @@ sim-duckiebot-lanefollowing-demo
 mooc-exercises
 aido-utils
 mooc-fifos-connector
+dt-base-environment
+duckietown-docker-utils
+duckietown-challenges-cli

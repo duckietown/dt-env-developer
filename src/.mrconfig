@@ -1,6 +1,12 @@
 
 
 
+
+
+[dt-base-environment]
+checkout = git clone 'git@github.com:duckietown/dt-base-environment.git' 'dt-base-environment'
+
+
 [duckietown-challenges]
 checkout = git clone 'git@github.com:duckietown/duckietown-challenges.git' 'duckietown-challenges'
 
@@ -90,3 +96,9 @@ checkout = git clone 'git@github.com:duckietown/aido-utils.git' 'aido-utils'
 
 [mooc-fifos-connector]
 checkout = git clone 'git@github.com:duckietown/mooc-fifos-connector.git' 'mooc-fifos-connector'
+
+[duckietown-docker-utils]
+checkout = git clone 'git@github.com:duckietown/duckietown-docker-utils.git' 'duckietown-docker-utils'
+
+[duckietown-challenges-cli]
+checkout = git clone 'git@github.com:duckietown/duckietown-challenges-cli.git' 'duckietown-challenges-cli'
