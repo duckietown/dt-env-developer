@@ -61,3 +61,4 @@ mooc-fifos-connector
 dt-base-environment
 duckietown-docker-utils
 duckietown-challenges-cli
+dt-duckiebot-fifos-bridge

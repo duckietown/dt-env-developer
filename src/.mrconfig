@@ -102,3 +102,6 @@ checkout = git clone 'git@github.com:duckietown/duckietown-docker-utils.git' 'du
 
 [duckietown-challenges-cli]
 checkout = git clone 'git@github.com:duckietown/duckietown-challenges-cli.git' 'duckietown-challenges-cli'
+
+[dt-duckiebot-fifos-bridge]
+checkout = git clone 'git@github.com:duckietown/dt-duckiebot-fifos-bridge.git' 'dt-duckiebot-fifos-bridge'

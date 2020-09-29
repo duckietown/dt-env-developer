@@ -40,3 +40,4 @@ attic
 docs/template-docs/
 src/sensor-selection-simulator/
 templates/duckietown-project-template/
+.idea-old

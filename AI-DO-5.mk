@@ -106,7 +106,7 @@ build: \
 
 
 build-experiment_manager: bases
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/challenge-aido_LF-experiment_manager  build push
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-experiment_manager  build push
 
 
 
