@@ -43,8 +43,6 @@ checkout = git clone 'git@github.com:duckietown/course-RH.git' 'course-RH'
 [course-LRA]
 checkout = git clone 'git@github.com:duckietown/course-LRA.git' 'course-LRA' 
 
-[course-extra]
-checkout = git clone 'git@github.com:duckietown/course-extra.git' 'course-extra'
  
 
 [course-CRA]
@@ -103,8 +101,8 @@ checkout = git clone 'git@github.com:duckietown/course-LRA.git' 'docs-LRA'
  
 
 [course-extra]
-checkout = git clone 'git@github.com:duckietown/docs-extra.git' 'docs-extra'
- 
+checkout = git clone 'git@github.com:duckietown/course-extra.git' 'course-extra'
+
 
 [mooc-notes]
 checkout = git clone 'git@github.com:duckietown/mooc-notes.git'  --recurse-submodules
