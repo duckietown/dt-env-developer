@@ -89,3 +89,4 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-JBR.g
 
 [challenge-aido_LF-experiment_manager]
 checkout = git clone 'git@github.com:AndreaCensi/challenge-aido_LF-experiment_manager.git' 'challenge-aido_LF-experiment_manager'
+ 

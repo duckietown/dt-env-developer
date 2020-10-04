@@ -128,6 +128,8 @@ build-duckietown-challenges-runner: lib-duckietown-challenges lib-duckietown-cha
 #build-server:
 #	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-server build push
 
+libs_targets=
+
 libs: \
 	lib-aido-utils \
 	lib-aido-agents \
@@ -138,13 +140,19 @@ libs: \
 	lib-duckietown-challenges \
 	lib-duckietown-challenges-runner \
 	lib-duckietown-tokens \
-	lib-duckietown-docker-utils
+	lib-duckietown-docker-utils \
+	lib-duckietown-aido-ros-bridge
 
 lib-aido-utils:
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/aido-utils  upload
 
 lib-duckietown-docker-utils:
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-docker-utils  upload
+
+lib-duckietown-aido-ros-bridge:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-aido-ros-bridge  upload
+
+libs_targets +=  lib-duckietown-aido-ros-bridge
 
 lib-aido-agents:
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/aido-agents upload

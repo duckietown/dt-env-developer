@@ -1,4 +1,4 @@
-
+../aido/.gitignore 
 
 duckietown-challenges
 duckietown-challenges-server
@@ -62,3 +62,4 @@ dt-base-environment
 duckietown-docker-utils
 duckietown-challenges-cli
 dt-duckiebot-fifos-bridge
+duckietown-aido-ros-bridge
