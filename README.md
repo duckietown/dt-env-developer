@@ -25,6 +25,7 @@ Clone this repository:
 
 
     $ echo $PWD/.mrconfig >> ~/.mrtrust
+    $ echo $PWD/docs/.mrconfig >> ~/.mrtrust
 
 ## Checkout
 

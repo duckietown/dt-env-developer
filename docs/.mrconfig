@@ -32,21 +32,13 @@ checkout = git clone 'git@github.com:duckietown/docs-opmanual_autolab.git' 'docs
 [docs-opmanual_sky]
 checkout = git clone 'git@github.com:duckietown/docs-opmanual_sky.git' 'docs-opmanual_sky'
 
-[course-duckiesky]
-checkout = git clone 'git@github.com:duckietown/docs-brown.git' 'course-duckiesky'
  
-
-[course-RH]
-checkout = git clone 'git@github.com:duckietown/course-RH.git' 'course-RH'
- 
-
-[course-LRA]
-checkout = git clone 'git@github.com:duckietown/course-LRA.git' 'course-LRA' 
 
  
 
-[course-CRA]
-checkout = git clone 'git@github.com:duckietown/course-CRA.git' 'course-CRA'
+
+ 
+
  
 
 # [docs-template]
@@ -81,22 +73,21 @@ checkout = git clone 'git@github.com:duckietown/docs-opmanual_developer.git' 'do
 checkout = git clone 'git@github.com:duckietown/docs-duckiesky_high_school_student.git' 'docs-duckiesky_high_school_student'
 
 
-[course-duckiesky]
+[docs-duckiesky]
 checkout = git clone 'git@github.com:duckietown/docs-brown.git' 'docs-duckiesky'
 
  
 
 
-[course-RH]
+[docs-RH]
 checkout = git clone 'git@github.com:duckietown/course-RH.git' 'docs-RH'
  
 
-[course-CRA]
+[docs-CRA]
 checkout = git clone 'git@github.com:duckietown/course-CRA.git' 'docs-CRA'
  
 
-
-[course-LRA]
+[docs-LRA]
 checkout = git clone 'git@github.com:duckietown/course-LRA.git' 'docs-LRA'
  
 
