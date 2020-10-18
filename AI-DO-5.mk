@@ -21,16 +21,16 @@ templates:  \
 	template-ros \
 	template-tensorflow
 
-template-pytorch: bases
+template-pytorch: bases define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-pytorch build push submit-bea
 
-template-random: bases
+template-random: bases define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-random build push  submit-bea
 
-template-ros: bases
+template-ros: bases define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-ros build push submit-bea
 
-template-tensorflow: bases
+template-tensorflow: bases define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-tensorflow build push  submit-bea
 
 baselines: \
@@ -43,35 +43,38 @@ baselines: \
 	baseline-JBR
 
 
-baseline-tensorflow-IL-logs: bases template-tensorflow
+baseline-tensorflow-IL-logs: bases template-tensorflow define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-logs-tensorflow submit-bea
 
-baseline-tensorflow-IL-sim: bases template-tensorflow
+baseline-tensorflow-IL-sim: bases template-tensorflow define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-sim-tensorflow  submit-bea
 
-baseline-pytorch: bases template-pytorch
+baseline-pytorch: bases template-pytorch define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-RL-sim-pytorch  submit-bea
 
-baseline-JBR: bases
+baseline-JBR: bases define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-JBR  submit-bea
 
-baseline-duckietown: bases
+baseline-duckietown: bases define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  submit-bea
 
-baseline-minimal-agent: bases lib-aido-analyze lib-aido-agents
+baseline-minimal-agent: bases lib-aido-analyze lib-aido-agents define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
 
-baseline-minimal-agent-full: bases  lib-aido-analyze lib-aido-agents
+baseline-minimal-agent-full: bases  lib-aido-analyze lib-aido-agents define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
 
-other:
+other: define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full submit-bea
+
+build-minimal-agent-full:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full build push
 
 
 define-challenges: define-LF define-multistep define-prediction define-robotarium
 
-define-LF: build-scenario-maker  build-simulator-gym  build-experiment_manager
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF define-challenge-parallel
+define-LF: build-scenario-maker  build-simulator-gym  build-experiment_manager build-minimal-agent-full
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF define-challenge
 
 build-scenario-maker: bases lib-duckietown-world
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-scenario_maker build push
@@ -82,13 +85,13 @@ build-gym-duckietown: bases
 build-simulator-gym: build-gym-duckietown lib-duckietown-gym
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-simulator-gym build push
 
-define-multistep:
+define-multistep: bases
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-multistep define-challenge
 
-define-prediction:
+define-prediction: bases
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-prediction define-challenge
 
-define-robotarium:
+define-robotarium: define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/aido-robotarium-evaluation-form define-challenge
 
 
@@ -100,7 +103,8 @@ build: \
 	build-aido-submission-ci-test\
 	build-experiment_manager \
 	build-duckietown-challenges-cli \
-	build-duckietown-challenges-runner
+	build-duckietown-challenges-runner \
+	build-minimal-agent-full
 
 	# build-server
 
@@ -152,7 +156,6 @@ lib-duckietown-docker-utils:
 lib-duckietown-aido-ros-bridge:
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-aido-ros-bridge  upload
 
-libs_targets +=  lib-duckietown-aido-ros-bridge
 
 lib-aido-agents:
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/aido-agents upload
@@ -184,8 +187,8 @@ mooc: mooc-fifos-connector
 mooc-fifos-connector: bases
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/mooc-fifos-connector build push
 
-update-baselines-circleci:
-	./update-circleci-baselines.sh
+#update-baselines-circleci:
+#	./update-circleci-baselines.sh
 
 
 

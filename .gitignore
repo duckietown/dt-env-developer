@@ -41,3 +41,9 @@ docs/template-docs/
 src/sensor-selection-simulator/
 templates/duckietown-project-template/
 .idea-old
+src/glTF-Sample-Models/
+src/gltflib/
+src/GLTFUtility/
+src/pyglet/
+src/pyrender/
+src/duckietown-rendering-pyrender/

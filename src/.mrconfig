@@ -108,3 +108,12 @@ checkout = git clone 'git@github.com:duckietown/dt-duckiebot-fifos-bridge.git' '
 
 [duckietown-aido-ros-bridge]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_lf-ros-bridge.git' 'duckietown-aido-ros-bridge'
+
+[duckietown-shell/lib-dt-data-api]
+checkout = git clone 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-data-api'
+
+[lib-dt-authentication]
+checkout = git clone 'git@github.com:duckietown/lib-dt-authentication.git' 'lib-dt-authentication'
+
+[dt-commons]
+checkout = git clone 'git@github.com:duckietown/dt-commons.git' 'dt-commons'

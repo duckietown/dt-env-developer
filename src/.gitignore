@@ -63,3 +63,5 @@ duckietown-docker-utils
 duckietown-challenges-cli
 dt-duckiebot-fifos-bridge
 duckietown-aido-ros-bridge
+lib-dt-authentication
+dt-commons

@@ -1,0 +1,39 @@
+# TODO: '/opt/conda/lib/python3.7/site-packages
+
+
+
+- host: ${DT_ENV_DEVELOPER}/src/duckietown-challenges-cli/src/duckietown_challenges_cli
+  guest: /usr/local/lib/python3.8/dist-packages/duckietown_challenges_cli
+
+- host: ${DT_ENV_DEVELOPER}/src/duckietown-challenges/src/duckietown_challenges
+  guest: /usr/local/lib/python3.8/dist-packages/duckietown_challenges
+
+- host: ${DT_ENV_DEVELOPER}/src/duckietown-challenges-runner/src/duckietown_challenges_runner
+  guest: /usr/local/lib/python3.8/dist-packages/duckietown_challenges_runner
+
+- host: ${DT_ENV_DEVELOPER}/src/duckietown-docker-utils/src/duckietown_docker_utils
+  guest: /usr/local/lib/python3.8/dist-packages/duckietown_docker_utils
+
+- host: ${DT_ENV_DEVELOPER}/src/duckietown-world/src/duckietown_world
+  guest: /usr/local/lib/python3.8/dist-packages/duckietown_world
+
+- host: ${DT_ENV_DEVELOPER}/src/duckietown-shell/src/dt_shell
+  guest: /usr/local/lib/python3.8/dist-packages/dt_shell
+
+- host: ${DT_ENV_DEVELOPER}/src/duckietown-tokens/src/duckietown_tokens
+  guest: /usr/local/lib/python3.8/dist-packages/duckietown_tokens
+
+- host: ${DT_ENV_DEVELOPER}/src/duckietown-aido-ros-bridge/src/duckietown_aido_ros_bridge
+  guest: /usr/local/lib/python3.8/dist-packages/duckietown_aido_ros_bridge
+
+- host: ${DT_ENV_DEVELOPER}/src/gym-duckietown/src/gym-duckietown
+  guest: /usr/local/lib/python3.8/dist-packages/gym-duckietown
+
+- host: ${DT_ENV_DEVELOPER}/src/aido-agents/src/aido_agents
+  guest: /usr/local/lib/python3.8/dist-packages/aido_agents
+
+- host: ${DT_ENV_DEVELOPER}/src/aido-analyze/src/aido_analyze
+  guest: /usr/local/lib/python3.8/dist-packages/aido_analyze
+
+- host: ${DT_ENV_DEVELOPER}/src/aido-protocols/src/aido_protocols
+  guest: /usr/local/lib/python3.8/dist-packages/aido_protocols
