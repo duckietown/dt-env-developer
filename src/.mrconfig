@@ -6,6 +6,20 @@
 [dt-base-environment]
 checkout = git clone 'git@github.com:duckietown/dt-base-environment.git' 'dt-base-environment'
 
+[dt-commons]
+checkout = git clone 'git@github.com:duckietown/dt-commons.git' 'dt-commons'
+
+[dt-ros-commons]
+checkout = git clone 'git@github.com:duckietown/dt-ros-commons.git' 'dt-ros-commons'
+
+[dt-duckiebot-interface]
+checkout = git clone 'git@github.com:duckietown/dt-duckiebot-interface.git' 'dt-duckiebot-interface'
+
+[dt-car-interface]
+checkout = git clone 'git@github.com:duckietown/dt-car-interface.git' 'dt-car-interface'
+
+[dt-core]
+checkout = git clone 'git@github.com:duckietown/dt-core.git' 'dt-core'
 
 [duckietown-challenges]
 checkout = git clone 'git@github.com:duckietown/duckietown-challenges.git' 'duckietown-challenges'
@@ -36,17 +50,7 @@ checkout = git clone 'git@github.com:duckietown/gym-gazebo.git' 'gym-gazebo'
 [Software]
 checkout = git clone 'git@github.com:duckietown/Software.git' 'Software'
 
-[dt-duckiebot-interface]
-checkout = git clone 'git@github.com:duckietown/dt-duckiebot-interface.git' 'dt-duckiebot-interface'
 
-[dt-car-interface]
-checkout = git clone 'git@github.com:duckietown/dt-car-interface.git' 'dt-car-interface'
-
-[dt-core]
-checkout = git clone 'git@github.com:duckietown/dt-core.git' 'dt-core'
-
-[dt-ros-commons]
-checkout = git clone 'git@github.com:duckietown/dt-ros-commons.git' 'dt-ros-commons'
 
 [duckietown-world]
 checkout = git clone 'git@github.com:duckietown/duckietown-world.git' 'duckietown-world'
@@ -113,8 +117,6 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido_lf-ros-bridge.git
 [lib-dt-authentication]
 checkout = git clone 'git@github.com:duckietown/lib-dt-authentication.git' 'lib-dt-authentication'
 
-[dt-commons]
-checkout = git clone 'git@github.com:duckietown/dt-commons.git' 'dt-commons'
 
 [lib-dt-data-api]
 checkout = git clone 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-data-api'
