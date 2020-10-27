@@ -66,3 +66,4 @@ duckietown-aido-ros-bridge
 lib-dt-authentication
 dt-commons
 lib-dt-data-api
+duckietown-utils

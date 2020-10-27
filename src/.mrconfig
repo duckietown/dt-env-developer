@@ -120,3 +120,6 @@ checkout = git clone 'git@github.com:duckietown/lib-dt-authentication.git' 'lib-
 
 [lib-dt-data-api]
 checkout = git clone 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-data-api'
+
+[duckietown-utils]
+checkout = git clone 'git@github.com:duckietown/duckietown-utils.git' 'duckietown-utils'
