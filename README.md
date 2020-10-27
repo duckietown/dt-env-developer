@@ -58,3 +58,23 @@ Update:
 
 [mr]: https://github.com/RichiH/myrepos
 [docs]: http://myrepos.branchable.com/
+
+
+# Setting up development environments
+
+## Environment variables
+
+
+You have to set the `DT_ENV_DEVELOPER` variables to the root of this folder.
+
+## Misc requirements
+
+    pip3 install bump2version twine
+
+## Setting up packages
+
+You have to run `python setup.py develop` in all the folders.
+
+Run:
+
+    make setup-develop-nodeps setup-develop

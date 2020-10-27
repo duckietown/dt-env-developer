@@ -47,3 +47,4 @@ src/GLTFUtility/
 src/pyglet/
 src/pyrender/
 src/duckietown-rendering-pyrender/
+.vscode
