@@ -1,5 +1,6 @@
 AIDO_REGISTRY ?= docker.io
 PIP_INDEX_URL ?= https://pypi.org/simple
+DT_ENV_DEVELOPER ?= .
 
 all:
 
@@ -34,14 +35,15 @@ template-tensorflow: bases define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-tensorflow build push  submit-bea
 
 baselines: \
-	baseline-tensorflow-IL-logs \
-	baseline-tensorflow-IL-sim \
-	baseline-pytorch \
 	baseline-duckietown \
 	baseline-minimal-agent \
-	baseline-minimal-agent-full \
-	baseline-JBR
+	baseline-minimal-agent-full
 
+	#	baseline-JBR
+
+	# baseline-tensorflow-IL-logs \
+	# baseline-tensorflow-IL-sim \
+	# baseline-pytorch \
 
 baseline-tensorflow-IL-logs: bases template-tensorflow define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-logs-tensorflow submit-bea
@@ -104,9 +106,8 @@ build: \
 	build-experiment_manager \
 	build-duckietown-challenges-cli \
 	build-duckietown-challenges-runner \
-	build-minimal-agent-full
-
-	# build-server
+	build-minimal-agent-full \
+	build-server
 
 
 build-experiment_manager: bases
@@ -129,8 +130,8 @@ build-duckietown-challenges-runner: lib-duckietown-challenges lib-duckietown-cha
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-runner build push
 
 #
-#build-server:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-server build push
+build-server: lib-duckietown-challenges lib-duckietown-challenges-runner lib-duckietown-tokens
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-server build push
 
 libs_targets=
 
