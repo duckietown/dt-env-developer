@@ -14,10 +14,6 @@ chain = true
 skip = true
 chain = true
 
-[containers]
-skip = true
-chain = true
-
 [class]
 skip = true
 chain = true

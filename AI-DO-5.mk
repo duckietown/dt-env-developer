@@ -75,7 +75,7 @@ build-minimal-agent-full:
 
 define-challenges: define-LF define-multistep define-prediction define-robotarium
 
-define-LF: build-scenario-maker  build-simulator-gym  build-experiment_manager build-minimal-agent-full
+define-LF: build-scenario-maker  build-simulator-gym  build-experiment_manager build-minimal-agent-full build-duckietown-challenges-cli
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF define-challenge
 
 build-scenario-maker: bases lib-duckietown-world
@@ -84,7 +84,7 @@ build-scenario-maker: bases lib-duckietown-world
 build-gym-duckietown: bases
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/gym-duckietown build push
 
-build-simulator-gym: build-gym-duckietown lib-duckietown-gym
+build-simulator-gym: build-gym-duckietown lib-duckietown-gym lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-simulator-gym build push
 
 define-multistep: bases
@@ -110,7 +110,7 @@ build: \
 	build-server
 
 
-build-experiment_manager: bases
+build-experiment_manager: bases lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-experiment_manager  build push
 
 
