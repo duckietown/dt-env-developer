@@ -4,3 +4,12 @@ checkout = git clone 'git@github.com:duckietown/planning-exercises.git' 'plannin
 
 [planning-exercise-solution]
 checkout = git clone 'git@github.com:duckietown/planning-exercise-solution.git' 'planning-exercise-solution'
+
+[dt-activities]
+checkout = git clone 'git@github.com:duckietown/mooc-activities.git'
+
+[dt-exercises]
+checkout = git clone 'git@github.com:duckietown/dt-exercises.git'
+
+[dt-exercise-solutions]
+checkout = git clone 'git@github.com:duckietown/mooc-exercise-solutions.git'
