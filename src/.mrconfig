@@ -95,8 +95,8 @@ checkout = git clone 'git@github.com:duckietown/docs-sphinxapi.git' 'docs-sphinx
 [mooc-exercises]
 checkout = git clone 'git@github.com:duckietown/mooc-exercises.git' 'mooc-exercises'
 
-[aido-utils]
-checkout = git clone 'git@github.com:duckietown/aido-utils.git' 'aido-utils'
+[duckietown-build-utils]
+checkout = git clone 'git@github.com:duckietown/duckietown-build-utils.git' 'duckietown-build-utils'
 
 [mooc-fifos-connector]
 checkout = git clone 'git@github.com:duckietown/mooc-fifos-connector.git' 'mooc-fifos-connector'

@@ -9,7 +9,7 @@ all:
 aido: ci build define-challenges templates baselines
 
 
-bases: lib-duckietown-challenges lib-duckietown-challenges-runner lib-duckietown-tokens lib-aido-protocols
+bases: lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/aido-base-python3 build push
 
 
@@ -122,21 +122,22 @@ build-aido-submission-ci-test: bases
 build-mooc-fifos-connector: bases
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/mooc-fifos-connector  build push
 
-build-duckietown-challenges-cli: lib-duckietown-challenges-runner lib-duckietown-challenges lib-duckietown-docker-utils
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-cli  build push
+build-duckietown-challenges-cli: lib-duckietown-challenges-runner lib-duckietown-challenges lib-duckietown-docker-utils lib-duckietown-build-utils
+	echo REMOVED TMP
+	# $(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-cli  build push
 
 
 build-duckietown-challenges-runner: lib-duckietown-challenges lib-duckietown-challenges-runner
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-runner build push
 
-#
-build-server: lib-duckietown-challenges lib-duckietown-challenges-runner lib-duckietown-tokens
+# note: build the evaluator first so that the servers can update before the server
+build-server: lib-duckietown-challenges lib-duckietown-challenges-runner lib-duckietown-tokens build-duckietown-challenges-runner
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-server build push
 
 libs_targets=
 
 libs: \
-	lib-aido-utils \
+	lib-duckietown-build-utils \
 	lib-aido-agents \
 	lib-aido-analyze \
 	lib-aido-protocols \
@@ -146,10 +147,10 @@ libs: \
 	lib-duckietown-challenges-runner \
 	lib-duckietown-tokens \
 	lib-duckietown-docker-utils \
-	lib-duckietown-aido-ros-bridge
+	lib-duckietown-aido-ros-bridge 
 
-lib-aido-utils:
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/aido-utils  upload
+lib-duckietown-build-utils:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-build-utils  upload
 
 lib-duckietown-docker-utils:
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-docker-utils  upload
