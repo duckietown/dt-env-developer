@@ -22,6 +22,12 @@ templates:  \
 	template-ros \
 	template-tensorflow
 
+templates-ONLY:  \
+	template-pytorch-ONLY \
+	template-random-ONLY \
+	template-ros-ONLY \
+	template-tensorflow-ONLY
+
 template-pytorch: bases define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-pytorch build push submit-bea
 
@@ -34,11 +40,28 @@ template-ros: bases define-LF
 template-tensorflow: bases define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-tensorflow build push  submit-bea
 
+
+template-pytorch-ONLY:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-pytorch build push submit-bea
+
+template-random-ONLY:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-random build push  submit-bea
+
+template-ros-ONLY:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-ros build push submit-bea
+
+template-tensorflow-ONLY:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-tensorflow build push  submit-bea
+
 baselines: \
 	baseline-duckietown \
 	baseline-minimal-agent \
 	baseline-minimal-agent-full
 
+baselines-ONLY: \
+	baseline-duckietown-ONLY \
+	baseline-minimal-agent-ONLY \
+	baseline-minimal-agent-full-ONLY
 	#	baseline-JBR
 
 	# baseline-tensorflow-IL-logs \
@@ -65,6 +88,35 @@ baseline-minimal-agent: bases lib-aido-analyze lib-aido-agents define-LF
 
 baseline-minimal-agent-full: bases  lib-aido-analyze lib-aido-agents define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
+
+
+baseline-tensorflow-IL-logs-ONLY:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-logs-tensorflow submit-bea
+
+baseline-tensorflow-IL-sim-ONLY:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-sim-tensorflow  submit-bea
+
+baseline-pytorch-ONLY:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-RL-sim-pytorch  submit-bea
+
+baseline-JBR-ONLY:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-JBR  submit-bea
+
+baseline-duckietown-ONLY:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  submit-bea
+
+baseline-minimal-agent-ONLY:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
+
+baseline-minimal-agent-full-ONLY:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
+
+
+
+
+
+
+
 
 other: define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full submit-bea
@@ -147,7 +199,7 @@ libs: \
 	lib-duckietown-challenges-runner \
 	lib-duckietown-tokens \
 	lib-duckietown-docker-utils \
-	lib-duckietown-aido-ros-bridge 
+	lib-duckietown-aido-ros-bridge
 
 lib-duckietown-build-utils:
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-build-utils  upload

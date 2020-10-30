@@ -22,3 +22,5 @@ compose-pkg-lab_controls
 aido-submission-ci-test
 challenge-aido_LF-baseline-JBR
 challenge-aido_LF-experiment_manager challenge-aido_LF-baseline-behavior-cloning/
+challenge-aido_LF-baseline-behavior-cloning
+challenge-aido_LF-experiment_manager
