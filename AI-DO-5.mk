@@ -118,10 +118,10 @@ baseline-minimal-agent-full-ONLY:
 
 
 
-other: define-LF
+other: define-LF bases
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full submit-bea
 
-build-minimal-agent-full:
+build-minimal-agent-full: bases 
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full build push
 
 
