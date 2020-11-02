@@ -38,3 +38,12 @@ setup-develop:
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-tokens && python3 setup.py develop  
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-world && python3 setup.py develop  
 	cd $(DT_ENV_DEVELOPER)/src/gym-duckietown   && python3 setup.py develop
+
+
+
+
+aido-staging:
+	zuper-make -o zuper-make-staging AI-DO-5.mk 
+aido-production:
+	env -u DTSERVER -u TWINE_USERNAME -u TWINE_PASSWORD -u AIDO_REGISTRY -u TWINE_REPOSITORY_URL -u PIP_INDEX_URL\
+		zuper-make -o zuper-make-production AI-DO-5.mk 

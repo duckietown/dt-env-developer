@@ -30,9 +30,6 @@ checkout = git clone 'git@github.com:duckietown/duckietown-shell.git' 'duckietow
 [duckietown-shell-commands]
 checkout = git clone 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'
 
-[duckietown-sim-server]
-checkout = git clone 'git@github.com:duckietown/duckietown-sim-server.git' 'duckietown-sim-server'
-
 
 [duckietown-unity]
 checkout = git clone 'git@github.com:duckietown/duckietown-unity.git' 'duckietown-unity'
@@ -73,12 +70,6 @@ checkout = git clone 'git@github.com:duckietown/sim-duckiebot-lanefollowing-demo
 	 
 [duckietown-challenges-server]
 checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
-
-[gym-duckietown-agent]
-checkout = git clone 'git@github.com:duckietown/gym-duckietown-agent.git' 'gym-duckietown-agent'
-
-[duckiebot-interface]
-checkout = git clone 'git@github.com:duckietown/duckiebot-interface.git' 'duckiebot-interface'
 
 [duckietown-tokens]
 checkout = git clone 'git@github.com:duckietown/duckietown-tokens.git' 'duckietown-tokens'
@@ -123,3 +114,6 @@ checkout = git clone 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-dat
 
 [duckietown-utils]
 checkout = git clone 'git@github.com:duckietown/duckietown-utils.git' 'duckietown-utils'
+
+[duckietown-cloudflare-tunnel]
+checkout = git clone 'git@github.com:duckietown/duckietown-cloudflare-tunnel.git' 'duckietown-cloudflare-tunnel'

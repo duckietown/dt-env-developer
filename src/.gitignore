@@ -4,7 +4,6 @@ duckietown-challenges
 duckietown-challenges-server
 duckietown-shell-commands
 challenge-aido1_dummy_sim
-gym-duckietown-agent
 aido-protocols
 duckietown-challenges-runner
 duckietown-project-template
@@ -46,7 +45,6 @@ duckietown-project-template
 duckietown-serialization
 duckietown-shell
 duckietown-shell-commands
-duckietown-sim-server
 duckietown-tokens
 duckietown-unity
 duckietown-world
@@ -68,3 +66,4 @@ dt-commons
 lib-dt-data-api
 duckietown-utils
 duckietown-build-utils/
+duckietown-cloudflare-tunnel
