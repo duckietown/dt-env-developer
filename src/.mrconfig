@@ -117,3 +117,6 @@ checkout = git clone 'git@github.com:duckietown/duckietown-utils.git' 'duckietow
 
 [duckietown-cloudflare-tunnel]
 checkout = git clone 'git@github.com:duckietown/duckietown-cloudflare-tunnel.git' 'duckietown-cloudflare-tunnel'
+
+[dt-machine-learning-base-environment]
+checkout = git clone 'git@github.com:duckietown/dt-machine-learning-base-environment.git' 'dt-machine-learning-base-environment'

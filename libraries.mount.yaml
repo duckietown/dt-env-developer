@@ -1,6 +1,8 @@
 # TODO: '/opt/conda/lib/python3.7/site-packages
 
 
+- host: ${DT_ENV_DEVELOPER}/aido/challenge-aido_LF-simulator-gym/src/duckietown_simulator_gym
+  guest: /usr/local/lib/python3.8/site-packages/duckietown_simulator_gym
 
 - host: ${DT_ENV_DEVELOPER}/src/duckietown-challenges-cli/src/duckietown_challenges_cli
   guest: /usr/local/lib/python3.8/dist-packages/duckietown_challenges_cli

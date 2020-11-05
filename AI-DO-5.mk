@@ -18,10 +18,9 @@ ci: bases
 
 templates:  \
 	template-random \
-	template-ros
-
-#	template-pytorch \
-#	template-tensorflow
+	template-ros \
+	template-pytorch \
+	template-tensorflow
 #
 #templates-ONLY:  \
 #	template-pytorch-ONLY \
@@ -29,7 +28,7 @@ templates:  \
 #	template-ros-ONLY \
 #	template-tensorflow-ONLY
 
-template-pytorch: bases define-LF
+template-pytorch: bases define-LF build-dt-machine-learning-base-environment
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-pytorch push submit-bea
 
 template-random: bases define-LF
@@ -38,7 +37,7 @@ template-random: bases define-LF
 template-ros: bases define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-ros push submit-bea
 
-template-tensorflow: bases define-LF
+template-tensorflow: bases define-LF build-dt-machine-learning-base-environment
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-tensorflow push  submit-bea
 #
 #
@@ -167,13 +166,15 @@ build-experiment_manager: bases lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-experiment_manager  push
 
 
-
+build-dt-machine-learning-base-environment:
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/dt-machine-learning-base-environment  push
 
 build-aido-submission-ci-test: bases
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/aido-submission-ci-test  push
 
 build-mooc-fifos-connector: bases
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/mooc-fifos-connector  push
+	echo "Removed for now"
+	# $(MAKE) -C $(DT_ENV_DEVELOPER)/src/mooc-fifos-connector  push
 
 build-duckietown-challenges-cli: lib-duckietown-challenges-runner lib-duckietown-challenges lib-duckietown-docker-utils lib-duckietown-build-utils
 	# echo REMOVED TMP
