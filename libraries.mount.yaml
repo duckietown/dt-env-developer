@@ -34,8 +34,8 @@
 - host: ${DT_ENV_DEVELOPER}/src/aido-agents/src/aido_agents
   guest: /usr/local/lib/python3.8/dist-packages/aido_agents
 
-- host: ${DT_ENV_DEVELOPER}/src/duckietown-build-utils/src/aido_utils
-  guest: /usr/local/lib/python3.8/dist-packages/aido_utils
+- host: ${DT_ENV_DEVELOPER}/src/duckietown-build-utils/src/duckietown_build_utils
+  guest: /usr/local/lib/python3.8/dist-packages/duckietown_build_utils
 
 - host: ${DT_ENV_DEVELOPER}/src/aido-analyze/src/aido_analyze
   guest: /usr/local/lib/python3.8/dist-packages/aido_analyze

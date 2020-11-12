@@ -4,16 +4,16 @@ DT_ENV_DEVELOPER ?= .
 
 all:
 
-.PHONY: ci build define-challenges templates baselines
+#.PHONY: build-aido-submission-ci-test build define-challenges templates baselines
 
-aido: ci libs build define-challenges templates baselines mooc
+aido: build-aido-submission-ci-test libs build define-challenges templates baselines mooc
 
 
-bases: lib-aido-protocols
+build-aido-base-python3: lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/aido-base-python3 push
 
 
-ci: bases
+build-aido-submission-ci-test: build-aido-base-python3
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/aido-submission-ci-test push
 
 templates:  \
@@ -28,16 +28,16 @@ templates:  \
 #	template-ros-ONLY \
 #	template-tensorflow-ONLY
 
-template-pytorch: bases define-LF build-dt-machine-learning-base-environment
+template-pytorch: build-aido-base-python3 define-LF build-dt-machine-learning-base-environment
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-pytorch push submit-bea
 
-template-random: bases define-LF
+template-random: build-aido-base-python3 define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-random push  submit-bea
 
-template-ros: bases define-LF
+template-ros: build-aido-base-python3 define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-ros push submit-bea
 
-template-tensorflow: bases define-LF build-dt-machine-learning-base-environment
+template-tensorflow: build-aido-base-python3 define-LF build-dt-machine-learning-base-environment
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-tensorflow push  submit-bea
 #
 #
@@ -56,7 +56,8 @@ template-tensorflow: bases define-LF build-dt-machine-learning-base-environment
 baselines: \
 	baseline-duckietown \
 	baseline-minimal-agent \
-	baseline-minimal-agent-full
+	baseline-minimal-agent-full \
+	baseline-RPL-ros
 
 #baselines-ONLY: \
 #	baseline-duckietown-ONLY \
@@ -68,81 +69,55 @@ baselines: \
 #	# baseline-tensorflow-IL-sim \
 #	# baseline-pytorch \
 
-baseline-tensorflow-IL-logs: bases template-tensorflow define-LF
+
+# does not depend on the base but has same deps
+baseline-RPL-ros:  build-aido-base-python3
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-RPL-ros submit-bea
+
+baseline-tensorflow-IL-logs: build-aido-base-python3 template-tensorflow define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-logs-tensorflow submit-bea
 
-baseline-tensorflow-IL-sim: bases template-tensorflow define-LF
+baseline-tensorflow-IL-sim: build-aido-base-python3 template-tensorflow define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-sim-tensorflow  submit-bea
 
-baseline-pytorch: bases template-pytorch define-LF
+baseline-pytorch: build-aido-base-python3 template-pytorch define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-RL-sim-pytorch  submit-bea
 
-baseline-JBR: bases define-LF
+baseline-JBR: build-aido-base-python3 define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-JBR  submit-bea
 
-baseline-duckietown: bases define-LF
+baseline-duckietown: build-aido-base-python3 define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  submit-bea
 
-baseline-minimal-agent: bases lib-aido-analyze lib-aido-agents define-LF
+baseline-minimal-agent: build-aido-base-python3 lib-aido-analyze lib-aido-agents define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
 
-baseline-minimal-agent-full: bases  lib-aido-analyze lib-aido-agents define-LF
+baseline-minimal-agent-full: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
 
-#
-#baseline-tensorflow-IL-logs-ONLY:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-logs-tensorflow submit-bea
-#
-#baseline-tensorflow-IL-sim-ONLY:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-sim-tensorflow  submit-bea
-#
-#baseline-pytorch-ONLY:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-RL-sim-pytorch  submit-bea
-#
-#baseline-JBR-ONLY:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-JBR  submit-bea
-#
-#baseline-duckietown-ONLY:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  submit-bea
-#
-#baseline-minimal-agent-ONLY:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
-#
-#baseline-minimal-agent-full-ONLY:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
-#
-#
-#
 
-
-
-
-
-#other: define-LF bases
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full submit-bea
-
-build-minimal-agent-full: bases
+build-challenge-aido_LF-minimal-agent-full: build-aido-base-python3 lib-aido-agents lib-duckietown-world
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full push
 
 
 define-challenges: define-LF define-multistep define-prediction define-robotarium
 
-define-LF: build-scenario-maker  build-simulator-gym  build-experiment_manager build-minimal-agent-full build-duckietown-challenges-cli
+define-LF: build-scenario-maker  build-simulator-gym  build-challenge-aido_LF-experiment_manager build-challenge-aido_LF-minimal-agent-full build-duckietown-challenges-cli
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF define-challenge
 
-build-scenario-maker: bases lib-duckietown-world
+build-scenario-maker: build-aido-base-python3 lib-duckietown-world
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-scenario_maker push
 
-build-gym-duckietown: bases lib-duckietown-world
+build-gym-duckietown: build-aido-base-python3 lib-duckietown-world
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/gym-duckietown push
 
 build-simulator-gym: build-gym-duckietown lib-duckietown-gym lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-simulator-gym push
 
-define-multistep: bases
+define-multistep: build-aido-base-python3
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-multistep define-challenge
 
-define-prediction: bases
+define-prediction: build-aido-base-python3
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-prediction define-challenge
 
 define-robotarium: define-LF
@@ -155,37 +130,39 @@ build: \
 	build-simulator-gym \
 	build-mooc-fifos-connector\
 	build-aido-submission-ci-test\
-	build-experiment_manager \
+	build-challenge-aido_LF-experiment_manager \
 	build-duckietown-challenges-cli \
 	build-duckietown-challenges-runner \
-	build-minimal-agent-full \
+	build-challenge-aido_LF-minimal-agent-full \
 	build-server
 
 
-build-experiment_manager: bases lib-aido-protocols
+build-challenge-aido_LF-experiment_manager: build-aido-base-python3 \
+	lib-aido-protocols lib-aido-analyze lib-duckietown-world lib-duckietown-challenges
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-experiment_manager  push
 
 
-build-dt-machine-learning-base-environment:
+build-dt-machine-learning-base-environment:  lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/dt-machine-learning-base-environment  push
 
-build-aido-submission-ci-test: bases
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/aido-submission-ci-test  push
 
-build-mooc-fifos-connector: bases
+build-mooc-fifos-connector: build-aido-base-python3
 	echo "Removed for now"
 	# $(MAKE) -C $(DT_ENV_DEVELOPER)/src/mooc-fifos-connector  push
 
-build-duckietown-challenges-cli: lib-duckietown-challenges-runner lib-duckietown-challenges lib-duckietown-docker-utils lib-duckietown-build-utils
+build-duckietown-challenges-cli: lib-duckietown-challenges-runner lib-duckietown-challenges \
+	lib-duckietown-docker-utils lib-duckietown-build-utils
 	# echo REMOVED TMP
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-cli  push
 
 
-build-duckietown-challenges-runner: lib-duckietown-challenges lib-duckietown-challenges-runner
+build-duckietown-challenges-runner: lib-duckietown-challenges lib-duckietown-challenges-runner \
+	lib-duckietown-build-utils lib-duckietown-tokens lib-duckietown-docker-utils
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-runner push
 
 # note: build the evaluator first so that the servers can update before the server
-build-server: lib-duckietown-challenges lib-duckietown-challenges-runner lib-duckietown-tokens build-duckietown-challenges-runner
+build-server: lib-duckietown-challenges lib-duckietown-challenges-runner lib-duckietown-tokens \
+	build-duckietown-challenges-runner lib-duckietown-build-utils
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-server push
 
 libs_targets=
@@ -213,7 +190,7 @@ lib-duckietown-aido-ros-bridge:
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-aido-ros-bridge  upload
 
 
-lib-aido-agents:
+lib-aido-agents: lib-duckietown-world lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/aido-agents upload
 
 lib-aido-analyze:
