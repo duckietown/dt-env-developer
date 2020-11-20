@@ -49,3 +49,5 @@ src/pyrender/
 src/duckietown-rendering-pyrender/
 .vscode
 .compmake_history.txt
+db-staging
+db-production

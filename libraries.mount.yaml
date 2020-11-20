@@ -1,44 +1,51 @@
 # TODO: '/opt/conda/lib/python3.7/site-packages
-
-
+root: ${DT_ENV_DEVELOPER}
+entries:
 - host: ${DT_ENV_DEVELOPER}/aido/challenge-aido_LF-simulator-gym/src/duckietown_simulator_gym
-  guest: /usr/local/lib/python3.8/site-packages/duckietown_simulator_gym
+  guest: /packages/duckietown_simulator_gym
 
 - host: ${DT_ENV_DEVELOPER}/src/duckietown-challenges-cli/src/duckietown_challenges_cli
-  guest: /usr/local/lib/python3.8/dist-packages/duckietown_challenges_cli
+  guest: /packages/duckietown_challenges_cli
 
 - host: ${DT_ENV_DEVELOPER}/src/duckietown-challenges/src/duckietown_challenges
-  guest: /usr/local/lib/python3.8/dist-packages/duckietown_challenges
+  guest: /packages/duckietown_challenges
 
 - host: ${DT_ENV_DEVELOPER}/src/duckietown-challenges-runner/src/duckietown_challenges_runner
-  guest: /usr/local/lib/python3.8/dist-packages/duckietown_challenges_runner
+  guest: /packages/duckietown_challenges_runner
 
 - host: ${DT_ENV_DEVELOPER}/src/duckietown-docker-utils/src/duckietown_docker_utils
-  guest: /usr/local/lib/python3.8/dist-packages/duckietown_docker_utils
+  guest: /packages/duckietown_docker_utils
 
 - host: ${DT_ENV_DEVELOPER}/src/duckietown-world/src/duckietown_world
-  guest: /usr/local/lib/python3.8/dist-packages/duckietown_world
+  guest: /packages/duckietown_world
 
 - host: ${DT_ENV_DEVELOPER}/src/duckietown-shell/lib/dt_shell
-  guest: /usr/local/lib/python3.8/dist-packages/dt_shell
+  guest: /packages/dt_shell
 
 - host: ${DT_ENV_DEVELOPER}/src/duckietown-tokens/src/duckietown_tokens
-  guest: /usr/local/lib/python3.8/dist-packages/duckietown_tokens
+  guest: /packages/duckietown_tokens
 
 - host: ${DT_ENV_DEVELOPER}/src/duckietown-aido-ros-bridge/src/duckietown_aido_ros_bridge
-  guest: /usr/local/lib/python3.8/dist-packages/duckietown_aido_ros_bridge
+  guest: /packages/duckietown_aido_ros_bridge
 
 - host: ${DT_ENV_DEVELOPER}/src/gym-duckietown/src/gym_duckietown
-  guest: /usr/local/lib/python3.8/dist-packages/gym_duckietown
+  # guest: /packages/gym_duckietown
+  guest: /packages/gym_duckietown
 
 - host: ${DT_ENV_DEVELOPER}/src/aido-agents/src/aido_agents
-  guest: /usr/local/lib/python3.8/dist-packages/aido_agents
+  guest: /packages/aido_agents
 
 - host: ${DT_ENV_DEVELOPER}/src/duckietown-build-utils/src/duckietown_build_utils
-  guest: /usr/local/lib/python3.8/dist-packages/duckietown_build_utils
+  guest: /packages/duckietown_build_utils
 
 - host: ${DT_ENV_DEVELOPER}/src/aido-analyze/src/aido_analyze
-  guest: /usr/local/lib/python3.8/dist-packages/aido_analyze
+  guest: /packages/aido_analyze
 
 - host: ${DT_ENV_DEVELOPER}/src/aido-protocols/src/aido_schemas
-  guest: /usr/local/lib/python3.8/dist-packages/aido_schemas
+  guest: /packages/aido_schemas
+
+- host: ${DT_ENV_DEVELOPER}/aido/challenge-aido_LF-experiment_manager/src/duckietown_experiment_manager
+  guest: /packages/duckietown_experiment_manager  # confirmed site-packages
+
+- host: ${DT_ENV_DEVELOPER}/aido/challenge-aido_LF-simulator-gym/src/duckietown_simulator_gym
+  guest: /packages/duckietown_simulator_gym  # confirmed site-packages
