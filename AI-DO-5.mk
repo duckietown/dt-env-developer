@@ -234,3 +234,14 @@ root-images:
 	docker pull docker.io/pytorch/pytorch
 	docker tag  docker.io/pytorch/pytorch ${AIDO_REGISTRY}/pytorch/pytorch
 	docker push ${AIDO_REGISTRY}/pytorch/pytorch
+
+
+dt-base-images:
+	docker pull duckietown/dt-car-interface:daffy-amd64
+	docker tag duckietown/dt-car-interface:daffy-amd64  ${AIDO_REGISTRY}/duckietown/dt-car-interface:daffy-amd64
+	docker push ${AIDO_REGISTRY}/duckietown/dt-car-interface:daffy-amd64
+
+	docker pull duckietown/dt-core:daffy-amd64
+	docker tag duckietown/dt-core:daffy-amd64  ${AIDO_REGISTRY}/duckietown/dt-core:daffy-amd64
+	docker push ${AIDO_REGISTRY}/duckietown/dt-core:daffy-amd64
+
