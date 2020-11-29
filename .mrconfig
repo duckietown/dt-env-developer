@@ -22,3 +22,6 @@ chain = true
 skip = true
 chain = true
 
+
+[/Volumes/work/DT/dt-env/dt-env-developer]
+checkout = git clone 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'

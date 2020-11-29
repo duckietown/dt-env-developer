@@ -13,7 +13,7 @@ build-aido-base-python3: lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/aido-base-python3 push
 
 
-build-aido-submission-ci-test: build-aido-base-python3
+build-aido-submission-ci-test: build-aido-base-python3 lib-duckietown-docker-utils
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/aido-submission-ci-test push
 
 templates:  \
@@ -28,16 +28,16 @@ templates:  \
 #	template-ros-ONLY \
 #	template-tensorflow-ONLY
 
-template-pytorch: build-aido-base-python3 define-LF build-dt-machine-learning-base-environment
+template-pytorch: build-aido-base-python3 define-LF build-dt-machine-learning-base-environment lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-pytorch push submit-bea
 
-template-random: build-aido-base-python3 define-LF
+template-random: build-aido-base-python3 define-LF lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-random push  submit-bea
 
-template-ros: build-aido-base-python3 define-LF
+template-ros: build-aido-base-python3 define-LF lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-ros push submit-bea
 
-template-tensorflow: build-aido-base-python3 define-LF build-dt-machine-learning-base-environment
+template-tensorflow: build-aido-base-python3 define-LF build-dt-machine-learning-base-environment lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-tensorflow push  submit-bea
 #
 #
@@ -57,28 +57,24 @@ baselines: \
 	baseline-duckietown \
 	baseline-minimal-agent \
 	baseline-minimal-agent-full \
-	baseline-RPL-ros
-
-#baselines-ONLY: \
-#	baseline-duckietown-ONLY \
-#	baseline-minimal-agent-ONLY \
-#	baseline-minimal-agent-full-ONLY
-#	#	baseline-JBR
-#
-#	# baseline-tensorflow-IL-logs \
-#	# baseline-tensorflow-IL-sim \
-#	# baseline-pytorch \
+	baseline-RPL-ros \
+	baseline-behavior-cloning
 
 
 # does not depend on the base but has same deps
-baseline-RPL-ros:  build-aido-base-python3
+
+baseline-behavior-cloning:  build-aido-base-python3 define-LF
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-behavior-cloning submit-bea
+
+
+baseline-RPL-ros:  build-aido-base-python3 define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-RPL-ros submit-bea
 
-baseline-tensorflow-IL-logs: build-aido-base-python3 template-tensorflow define-LF
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-logs-tensorflow submit-bea
+# baseline-tensorflow-IL-logs: build-aido-base-python3 template-tensorflow define-LF
+# 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-logs-tensorflow submit-bea
 
-baseline-tensorflow-IL-sim: build-aido-base-python3 template-tensorflow define-LF
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-sim-tensorflow  submit-bea
+# baseline-tensorflow-IL-sim: build-aido-base-python3 template-tensorflow define-LF
+# 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-sim-tensorflow  submit-bea
 
 baseline-pytorch: build-aido-base-python3 template-pytorch define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-RL-sim-pytorch  submit-bea

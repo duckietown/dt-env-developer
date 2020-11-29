@@ -30,31 +30,17 @@ checkout = git clone 'git@github.com:duckietown/duckietown-shell.git' 'duckietow
 [duckietown-shell-commands]
 checkout = git clone 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'
 
-
-[duckietown-unity]
-checkout = git clone 'git@github.com:duckietown/duckietown-unity.git' 'duckietown-unity'
-
 [gym-duckietown]
 checkout = git clone 'git@github.com:duckietown/gym-duckietown.git' 'gym-duckietown'
 
 [gym-duckietown-ros-agent]
 checkout = git clone 'git@github.com:duckietown/gym-duckietown-ros-agent.git' 'gym-duckietown-ros-agent'
-
-[gym-gazebo]
-checkout = git clone 'git@github.com:duckietown/gym-gazebo.git' 'gym-gazebo'
  
-
-[Software]
-checkout = git clone 'git@github.com:duckietown/Software.git' 'Software'
-
-
-
 [duckietown-world]
 checkout = git clone 'git@github.com:duckietown/duckietown-world.git' 'duckietown-world'
 
 [duckietown-serialization]
 checkout = git clone 'git@github.com:duckietown/duckietown-serialization.git' 'duckietown-serialization'
-
 
 [duckietown-challenges-runner]
 checkout = git clone 'git@github.com:duckietown/duckietown-challenges-runner.git' 'duckietown-challenges-runner'
@@ -67,7 +53,7 @@ checkout = git clone 'git@github.com:duckietown/aido-base-python3.git' 'aido-bas
 
 [sim-duckiebot-lanefollowing-demo]
 checkout = git clone 'git@github.com:duckietown/sim-duckiebot-lanefollowing-demo.git' 'sim-duckiebot-lanefollowing-demo'
-	 
+
 [duckietown-challenges-server]
 checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
 
@@ -108,7 +94,6 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido_lf-ros-bridge.git
 [lib-dt-authentication]
 checkout = git clone 'git@github.com:duckietown/lib-dt-authentication.git' 'lib-dt-authentication'
 
-
 [lib-dt-data-api]
 checkout = git clone 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-data-api'
 
@@ -120,3 +105,6 @@ checkout = git clone 'git@github.com:duckietown/duckietown-cloudflare-tunnel.git
 
 [dt-machine-learning-base-environment]
 checkout = git clone 'git@github.com:duckietown/dt-machine-learning-base-environment.git' 'dt-machine-learning-base-environment'
+
+[duckietown-rendering-pyrender]
+checkout = git clone 'git@github.com:duckietown/duckietown-rendering-pyrender.git' 'duckietown-rendering-pyrender'

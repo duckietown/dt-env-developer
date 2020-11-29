@@ -1,18 +1,18 @@
 
 [template-ros]
-checkout =  git clone git@github.com:duckietown/template-ros.git
+checkout = git clone 'git@github.com:duckietown/template-ros.git' 'template-ros'
 
 [template-basic]
-checkout =  git clone git@github.com:duckietown/template-basic.git
+checkout = git clone 'git@github.com:duckietown/template-basic.git' 'template-basic'
 
 [template-ros-core]
-checkout =  git clone git@github.com:duckietown/template-ros-core.git
+checkout = git clone 'git@github.com:duckietown/template-ros-core.git' 'template-ros-core'
 
 [template-docs]
-checkout =  git clone git@github.com:duckietown/template-docs.git
+checkout = git clone 'git@github.com:duckietown/template-docs.git' 'template-docs'
 
 [template-compose]
-checkout =  git clone git@github.com:duckietown/template-compose.git
+checkout = git clone 'git@github.com:duckietown/template-compose.git' 'template-compose'
 
 
 [template-library]

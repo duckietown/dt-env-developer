@@ -27,7 +27,7 @@ checkout = git clone 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'd
 checkout = git clone 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
  
 [docs-opmanual_autolab]
-checkout = git clone 'git@github.com:duckietown/docs-opmanual_autolab.git' 'docs-opmanual_autolab 
+checkout = git clone 'git@github.com:duckietown/docs-opmanual_autolab.git' 'docs-opmanual_autolab'
 
 [docs-opmanual_sky]
 checkout = git clone 'git@github.com:duckietown/docs-opmanual_sky.git' 'docs-opmanual_sky'
@@ -71,29 +71,25 @@ checkout = git clone 'git@github.com:duckietown/docs-opmanual_developer.git' 'do
 
 [docs-duckiesky_high_school_student]
 checkout = git clone 'git@github.com:duckietown/docs-duckiesky_high_school_student.git' 'docs-duckiesky_high_school_student'
-
-
-[docs-duckiesky]
-checkout = git clone 'git@github.com:duckietown/docs-brown.git' 'docs-duckiesky'
-
  
 
-
-[docs-RH]
-checkout = git clone 'git@github.com:duckietown/course-RH.git' 'docs-RH'
- 
-
-[docs-CRA]
-checkout = git clone 'git@github.com:duckietown/course-CRA.git' 'docs-CRA'
- 
-
-[docs-LRA]
-checkout = git clone 'git@github.com:duckietown/course-LRA.git' 'docs-LRA'
- 
 
 [course-extra]
 checkout = git clone 'git@github.com:duckietown/course-extra.git' 'course-extra'
 
 
 [mooc-notes]
-checkout = git clone 'git@github.com:duckietown/mooc-notes.git'  --recurse-submodules
+checkout = git clone 'git@github.com:duckietown/mooc-notes.git' 'mooc-notes'
+
+[course-duckiesky]
+checkout = git clone 'git@github.com:duckietown/docs-brown.git' 'course-duckiesky'
+
+[course-RH]
+checkout = git clone 'git@github.com:duckietown/course-RH.git' 'course-RH'
+
+[course-LRA]
+checkout = git clone 'git@github.com:duckietown/course-LRA.git' 'course-LRA'
+ 
+
+[course-CRA]
+checkout = git clone 'git@github.com:duckietown/course-CRA.git' 'course-CRA'
