@@ -4,8 +4,6 @@ DT_ENV_DEVELOPER ?= .
 
 all:
 
-#.PHONY: build-aido-submission-ci-test build define-challenges templates baselines
-
 aido: build-aido-submission-ci-test libs build define-challenges templates baselines mooc
 
 
@@ -21,37 +19,21 @@ templates:  \
 	template-ros \
 	template-pytorch \
 	template-tensorflow
-#
-#templates-ONLY:  \
-#	template-pytorch-ONLY \
-#	template-random-ONLY \
-#	template-ros-ONLY \
-#	template-tensorflow-ONLY
 
-template-pytorch: build-aido-base-python3 define-LF build-dt-machine-learning-base-environment lib-aido-protocols
+define-LF-before-subs: # define-LF
+	echo "Uncomment above to first do all definitions"
+
+template-pytorch: build-aido-base-python3 define-LF-before-subs build-dt-machine-learning-base-environment lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-pytorch push submit-bea
 
-template-random: build-aido-base-python3 define-LF lib-aido-protocols
+template-random: build-aido-base-python3 define-LF-before-subs lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-random push  submit-bea
 
-template-ros: build-aido-base-python3 define-LF lib-aido-protocols
+template-ros: build-aido-base-python3 define-LF-before-subs lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-ros push submit-bea
 
-template-tensorflow: build-aido-base-python3 define-LF build-dt-machine-learning-base-environment lib-aido-protocols
+template-tensorflow: build-aido-base-python3 define-LF-before-subs build-dt-machine-learning-base-environment lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-tensorflow push  submit-bea
-#
-#
-#template-pytorch-ONLY:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-pytorch build push submit-bea
-#
-#template-random-ONLY:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-random build push  submit-bea
-#
-#template-ros-ONLY:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-ros build push submit-bea
-#
-#template-tensorflow-ONLY:
-#	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-tensorflow build push  submit-bea
 
 baselines: \
 	baseline-duckietown \
@@ -63,11 +45,11 @@ baselines: \
 
 # does not depend on the base but has same deps
 
-baseline-behavior-cloning:  build-aido-base-python3 define-LF
+baseline-behavior-cloning:  build-aido-base-python3 define-LF-before-subs
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-behavior-cloning submit-bea
 
 
-baseline-RPL-ros:  build-aido-base-python3 define-LF
+baseline-RPL-ros:  build-aido-base-python3 define-LF-before-subs
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-RPL-ros submit-bea
 
 # baseline-tensorflow-IL-logs: build-aido-base-python3 template-tensorflow define-LF
@@ -76,19 +58,19 @@ baseline-RPL-ros:  build-aido-base-python3 define-LF
 # baseline-tensorflow-IL-sim: build-aido-base-python3 template-tensorflow define-LF
 # 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-IL-sim-tensorflow  submit-bea
 
-baseline-pytorch: build-aido-base-python3 template-pytorch define-LF
+baseline-pytorch: build-aido-base-python3 template-pytorch define-LF-before-subs
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-RL-sim-pytorch  submit-bea
 
-baseline-JBR: build-aido-base-python3 define-LF
+baseline-JBR: build-aido-base-python3 define-LF-before-subs
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-JBR  submit-bea
 
-baseline-duckietown: build-aido-base-python3 define-LF
+baseline-duckietown: build-aido-base-python3 define-LF-before-subs
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  submit-bea
 
-baseline-minimal-agent: build-aido-base-python3 lib-aido-analyze lib-aido-agents define-LF
+baseline-minimal-agent: build-aido-base-python3 lib-aido-analyze lib-aido-agents define-LF-before-subs
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
 
-baseline-minimal-agent-full: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF
+baseline-minimal-agent-full: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF-before-subs
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
 
 
