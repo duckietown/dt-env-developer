@@ -90,7 +90,7 @@ build-gym-duckietown: build-aido-base-python3 lib-duckietown-world
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/gym-duckietown push
 
 build-simulator-gym: build-gym-duckietown lib-duckietown-gym lib-aido-protocols
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-simulator-gym push
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-simulator-gym upload push
 
 define-multistep: build-aido-base-python3
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-multistep define-challenge
@@ -117,11 +117,11 @@ build: \
 
 build-challenge-aido_LF-experiment_manager: build-aido-base-python3 \
 	lib-aido-protocols lib-aido-analyze lib-duckietown-world lib-duckietown-challenges
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-experiment_manager  push
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-experiment_manager upload  push
 
 
 build-dt-machine-learning-base-environment:  lib-aido-protocols
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/dt-machine-learning-base-environment  push
+	upload $(MAKE) -C $(DT_ENV_DEVELOPER)/src/dt-machine-learning-base-environment  push
 
 
 build-mooc-fifos-connector: build-aido-base-python3
@@ -141,7 +141,7 @@ build-duckietown-challenges-runner: lib-duckietown-challenges lib-duckietown-cha
 # note: build the evaluator first so that the servers can update before the server
 build-server: lib-duckietown-challenges lib-duckietown-challenges-runner lib-duckietown-tokens \
 	build-duckietown-challenges-runner lib-duckietown-build-utils
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-server push
+	# $(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-server push
 
 libs_targets=
 
