@@ -45,11 +45,11 @@ baselines: \
 
 # does not depend on the base but has same deps
 
-baseline-behavior-cloning:  build-aido-base-python3 define-LF-before-subs
+baseline-behavior-cloning:  build-aido-base-python3 define-LF-before-subs build-dt-machine-learning-base-environment
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-behavior-cloning submit-bea
 
 
-baseline-RPL-ros:  build-aido-base-python3 define-LF-before-subs
+baseline-RPL-ros:  build-aido-base-python3 define-LF-before-subs build-dt-machine-learning-base-environment
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-RPL-ros submit-bea
 
 # baseline-tensorflow-IL-logs: build-aido-base-python3 template-tensorflow define-LF
@@ -61,7 +61,7 @@ baseline-RPL-ros:  build-aido-base-python3 define-LF-before-subs
 baseline-pytorch: build-aido-base-python3 template-pytorch define-LF-before-subs
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-RL-sim-pytorch  submit-bea
 
-baseline-JBR: build-aido-base-python3 define-LF-before-subs
+baseline-JBR: build-aido-base-python3 define-LF-before-subs template-tensorflow
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-JBR  submit-bea
 
 baseline-duckietown: build-aido-base-python3 define-LF-before-subs
@@ -71,7 +71,7 @@ baseline-minimal-agent: build-aido-base-python3 lib-aido-analyze lib-aido-agents
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
 
 baseline-minimal-agent-full: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF-before-subs
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full  submit-bea
 
 
 build-challenge-aido_LF-minimal-agent-full: build-aido-base-python3 lib-aido-agents lib-duckietown-world
@@ -201,13 +201,13 @@ mooc: build-mooc-fifos-connector
 
 
 root-images:
-	docker pull docker.io/ubuntu:20.04
-	docker tag  docker.io/ubuntu:20.04 ${AIDO_REGISTRY}/ubuntu:20.04
-	docker push ${AIDO_REGISTRY}/ubuntu:20.04
+	docker pull docker.io/library/ubuntu:20.04
+	docker tag  docker.io/library/ubuntu:20.04 ${AIDO_REGISTRY}/library/ubuntu:20.04
+	docker push ${AIDO_REGISTRY}/library/ubuntu:20.04
 
-	docker pull docker.io/python:3.8
-	docker tag  docker.io/python:3.8 ${AIDO_REGISTRY}/python:3.8
-	docker push ${AIDO_REGISTRY}/python:3.8
+	docker pull docker.io/library/python:3.8
+	docker tag  docker.io/library/python:3.8 ${AIDO_REGISTRY}/library/python:3.8
+	docker push ${AIDO_REGISTRY}/library/python:3.8
 
 	docker pull docker.io/pytorch/pytorch
 	docker tag  docker.io/pytorch/pytorch ${AIDO_REGISTRY}/pytorch/pytorch

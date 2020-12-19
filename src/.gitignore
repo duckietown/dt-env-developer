@@ -1,5 +1,3 @@
-../aido/.gitignore 
-
 duckietown-challenges
 duckietown-challenges-server
 duckietown-shell-commands
@@ -12,7 +10,6 @@ duckietown-world
 gym-gazebo
 duckietown-serialization
 zuper_json
-sim-duckiebot-lanefollowing-demo
 simulator
 slimremote-experimental
 gym-duckietown-ros-agent
