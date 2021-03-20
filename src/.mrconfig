@@ -56,6 +56,9 @@ checkout = git clone 'git@github.com:duckietown/sim-duckiebot-lanefollowing-demo
 
 # [duckietown-challenges-server]
 # checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
+ 
+[duckietown-challenges-server]
+checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
 
 [duckietown-tokens]
 checkout = git clone 'git@github.com:duckietown/duckietown-tokens.git' 'duckietown-tokens'
@@ -108,3 +111,6 @@ checkout = git clone 'git@github.com:duckietown/dt-machine-learning-base-environ
 
 [duckietown-rendering-pyrender]
 checkout = git clone 'git@github.com:duckietown/duckietown-rendering-pyrender.git' 'duckietown-rendering-pyrender'
+
+[dt-exercises]
+checkout = git clone 'git@github.com:duckietown/dt-exercises.git' 'dt-exercises'
