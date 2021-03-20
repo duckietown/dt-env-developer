@@ -54,8 +54,8 @@ checkout = git clone 'git@github.com:duckietown/aido-base-python3.git' 'aido-bas
 [sim-duckiebot-lanefollowing-demo]
 checkout = git clone 'git@github.com:duckietown/sim-duckiebot-lanefollowing-demo.git' 'sim-duckiebot-lanefollowing-demo'
 
-[duckietown-challenges-server]
-checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
+# [duckietown-challenges-server]
+# checkout = git clone 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
 
 [duckietown-tokens]
 checkout = git clone 'git@github.com:duckietown/duckietown-tokens.git' 'duckietown-tokens'
