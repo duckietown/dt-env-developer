@@ -51,3 +51,4 @@ src/duckietown-rendering-pyrender/
 .compmake_history.txt
 db-staging
 db-production
+.python-version
