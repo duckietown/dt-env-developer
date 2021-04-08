@@ -12,7 +12,6 @@ setup-develop-nodeps:
 	cd $(DT_ENV_DEVELOPER)/src/aido-agents && python3 setup.py develop --no-deps
 	cd $(DT_ENV_DEVELOPER)/src/aido-analyze && python3 setup.py develop --no-deps
 	cd $(DT_ENV_DEVELOPER)/src/aido-protocols && python3 setup.py develop --no-deps
-	# cd $(DT_ENV_DEVELOPER)/src/aido-utils && python3 setup.py develop --no-deps
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-aido-ros-bridge && python3 setup.py develop --no-deps
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-challenges && python3 setup.py develop --no-deps
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-challenges-cli && python3 setup.py develop --no-deps
@@ -36,7 +35,6 @@ setup-develop:
 	cd $(DT_ENV_DEVELOPER)/src/aido-agents && python3 setup.py develop 
 	cd $(DT_ENV_DEVELOPER)/src/aido-analyze && python3 setup.py develop  
 	cd $(DT_ENV_DEVELOPER)/src/aido-protocols && python3 setup.py develop  
-	# cd $(DT_ENV_DEVELOPER)/src/aido-utils && python3 setup.py develop  
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-aido-ros-bridge && python3 setup.py develop  
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-challenges && python3 setup.py develop  
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-challenges-cli && python3 setup.py develop  
