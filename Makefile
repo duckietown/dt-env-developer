@@ -2,8 +2,11 @@ DT_ENV_DEVELOPER ?= .
 
 all:
 
-	echo "please see docs"
+	echo "Use 'make setup' to initialize the environment"
 
+setup:
+	$(MAKE) setup-develop-nodeps
+	$(MAKE) setup-develop
 
 setup-develop-nodeps:
 	cd $(DT_ENV_DEVELOPER)/src/aido-agents && python3 setup.py develop --no-deps
@@ -23,6 +26,11 @@ setup-develop-nodeps:
 	cd $(DT_ENV_DEVELOPER)/src/gym-duckietown   && python3 setup.py develop --no-deps
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-build-utils && python3 setup.py develop --no-deps
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-docker-utils && python3 setup.py develop --no-deps
+	cd $(DT_ENV_DEVELOPER)/src/duckietown-utils && python3 setup.py develop --no-deps
+	cd $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-experiment_manager && python3 setup.py develop --no-deps
+	cd $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-simulator-gym && python3 setup.py develop --no-deps
+	cd $(DT_ENV_DEVELOPER)/src/lib-dt-data-api && python3 setup.py develop --no-deps
+	cd $(DT_ENV_DEVELOPER)/src/lib-dt-authentication && python3 setup.py develop --no-deps
 
 setup-develop:
 	cd $(DT_ENV_DEVELOPER)/src/aido-agents && python3 setup.py develop 
@@ -43,6 +51,12 @@ setup-develop:
 
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-build-utils && python3 setup.py develop 
 	cd $(DT_ENV_DEVELOPER)/src/duckietown-docker-utils && python3 setup.py develop 
+	cd $(DT_ENV_DEVELOPER)/src/duckietown-utils && python3 setup.py develop 
+	cd $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-experiment_manager  && python3 setup.py develop  
+	cd $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-simulator-gym && python3 setup.py develop 
+	cd $(DT_ENV_DEVELOPER)/src/lib-dt-authentication && python3 setup.py develop 
+
+
 
 
 

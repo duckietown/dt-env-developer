@@ -66,7 +66,8 @@ baseline-JBR: build-aido-base-python3 define-LF-before-subs template-tensorflow
 
 baseline-duckietown: build-aido-base-python3 define-LF-before-subs
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  submit-bea
-
+build-baseline-duckietown: build-aido-base-python3 
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  push
 baseline-minimal-agent: build-aido-base-python3 lib-aido-analyze lib-aido-agents define-LF-before-subs
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
 
@@ -91,6 +92,7 @@ build-gym-duckietown: build-aido-base-python3 lib-duckietown-world
 
 build-simulator-gym: build-gym-duckietown lib-duckietown-gym lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-simulator-gym upload push
+
 
 define-multistep: build-aido-base-python3
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-multistep define-challenge
