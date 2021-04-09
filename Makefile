@@ -60,6 +60,5 @@ setup-develop:
 
 aido-staging:
 	z-make -o db-staging --retries 3  AI-DO-5.mk 
-aido-production:
-	env -u DTSERVER -u TWINE_USERNAME -u TWINE_PASSWORD -u AIDO_REGISTRY -u TWINE_REPOSITORY_URL -u PIP_INDEX_URL\
-		z-make --retries 3 -o db-production AI-DO-5.mk 
+aido-production: 
+	z-make --retries 3 -o db-production AI-DO-5.mk 

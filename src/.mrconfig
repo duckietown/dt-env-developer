@@ -114,3 +114,6 @@ checkout = git clone 'git@github.com:duckietown/duckietown-rendering-pyrender.gi
 
 [dt-exercises]
 checkout = git clone 'git@github.com:duckietown/dt-exercises.git' 'dt-exercises'
+
+[dt-activities]
+checkout = git clone 'git@github.com:duckietown/dt-activities.git' 'dt-activities'
