@@ -138,7 +138,7 @@ build-duckietown-challenges-cli: lib-duckietown-challenges-runner lib-duckietown
 
 build-duckietown-challenges-runner: lib-duckietown-challenges lib-duckietown-challenges-runner \
 	lib-duckietown-build-utils lib-duckietown-tokens lib-duckietown-docker-utils
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-runner push
+	# $(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-challenges-runner push
 
 # note: build the evaluator first so that the servers can update before the server
 build-server: lib-duckietown-challenges lib-duckietown-challenges-runner lib-duckietown-tokens \
