@@ -52,3 +52,5 @@ src/duckietown-rendering-pyrender/
 db-staging
 db-production
 .python-version
+/compmake-graph
+/compmake-graph.png
