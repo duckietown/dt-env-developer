@@ -40,10 +40,12 @@ entries:
 
 - host: ${DT_ENV_DEVELOPER}/src/aido-analyze/src/aido_analyze
   guest: /packages/aido_analyze
-
+- host: ${DT_ENV_DEVELOPER}/src/dt-protocols/src/dt_protocols
+  guest: /packages/dt_protocols
 - host: ${DT_ENV_DEVELOPER}/src/aido-protocols/src/aido_schemas
   guest: /packages/aido_schemas
-
+- host: ${DT_ENV_DEVELOPER}/src/dt-exercises/collision-solution/src/dt_collision
+  guest: /packages/dt_collision
 - host: ${DT_ENV_DEVELOPER}/aido/challenge-aido_LF-experiment_manager/src/duckietown_experiment_manager
   guest: /packages/duckietown_experiment_manager  # confirmed site-packages
 

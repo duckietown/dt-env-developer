@@ -120,3 +120,6 @@ checkout = git clone 'git@github.com:duckietown/dt-activities.git' 'dt-activitie
 
 [dt-gui-tools]
 checkout = git clone 'git@github.com:duckietown/dt-gui-tools.git' 'dt-gui-tools'
+
+[dt-protocols]
+checkout = git clone 'git@github.com:duckietown/dt-protocols.git' 'dt-protocols'
