@@ -4,10 +4,7 @@ checkout = git clone 'git@github.com:duckietown/template-ros.git' 'template-ros'
 
 [template-basic]
 checkout = git clone 'git@github.com:duckietown/template-basic.git' 'template-basic'
-
-[template-ros-core]
-checkout = git clone 'git@github.com:duckietown/template-ros-core.git' 'template-ros-core'
-
+ 
 [template-docs]
 checkout = git clone 'git@github.com:duckietown/template-docs.git' 'template-docs'
 
