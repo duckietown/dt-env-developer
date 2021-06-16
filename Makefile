@@ -59,6 +59,6 @@ setup-develop:
 
 
 aido-staging:
-	z-make -o db-staging --retries 3  AI-DO-5.mk 
+	z-make -o db-staging  AI-DO-5.mk 
 aido-production: 
-	z-make --retries 3 -o db-production AI-DO-5.mk 
+	z-make   -o db-production AI-DO-5.mk 
