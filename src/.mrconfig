@@ -71,10 +71,7 @@ checkout = git clone 'git@github.com:duckietown/aido-agents.git' 'aido-agents'
 
 [docs-sphinxapi]
 checkout = git clone 'git@github.com:duckietown/docs-sphinxapi.git' 'docs-sphinxapi'
-
-[mooc-exercises]
-checkout = git clone 'git@github.com:duckietown/mooc-exercises.git' 'mooc-exercises'
-
+ 
 [duckietown-build-utils]
 checkout = git clone 'git@github.com:duckietown/duckietown-build-utils.git' 'duckietown-build-utils'
 
@@ -112,8 +109,6 @@ checkout = git clone 'git@github.com:duckietown/dt-machine-learning-base-environ
 [duckietown-rendering-pyrender]
 checkout = git clone 'git@github.com:duckietown/duckietown-rendering-pyrender.git' 'duckietown-rendering-pyrender'
 
-[dt-exercises]
-checkout = git clone 'git@github.com:duckietown/dt-exercises.git' 'dt-exercises'
 
 [dt-activities]
 checkout = git clone 'git@github.com:duckietown/dt-activities.git' 'dt-activities'
