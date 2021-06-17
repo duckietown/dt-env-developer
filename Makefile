@@ -62,6 +62,9 @@ bump1:
 	PYENV_VERSION=3.8.8-z7-stage mr -j 4 run bash -c "zuper-cli bump && zuper-cli upload && git push"
 build-images:
 	PYENV_VERSION=3.8.8-z7-stage mr -j 4 run bash -c "zuper-cli image-build"
+
+build-images-slow:
+	PYENV_VERSION=3.8.8-z7-stage mr  run bash -c "zuper-cli image-build"
 aido-staging:
 	z-make -o db-staging  AI-DO-5.mk 
 aido-production: 
