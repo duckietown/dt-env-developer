@@ -39,6 +39,7 @@ baselines: \
 	baseline-duckietown \
 	baseline-minimal-agent \
 	baseline-minimal-agent-full \
+	baseline-minimal-agent-state \
 	baseline-RPL-ros \
 	baseline-behavior-cloning
 
@@ -75,6 +76,9 @@ baseline-minimal-agent-full: build-aido-base-python3  lib-aido-analyze lib-aido-
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full  submit-bea
 
 
+baseline-minimal-agent-state: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF-before-subs
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-state  submit-bea
+
 build-challenge-aido_LF-minimal-agent-full: build-aido-base-python3 lib-aido-agents lib-duckietown-world
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full push
 
@@ -93,7 +97,6 @@ build-gym-duckietown: build-aido-base-python3 lib-duckietown-world
 build-simulator-gym: build-gym-duckietown lib-duckietown-gym lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-simulator-gym upload push
 
-
 define-multistep: build-aido-base-python3
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-multistep define-challenge
 
@@ -103,6 +106,8 @@ define-prediction: build-aido-base-python3
 define-robotarium: define-LF
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/aido-robotarium-evaluation-form define-challenge
 
+define-collision: define-LF
+	$(MAKE) -C class/dt-exercises/collision-solution rebuild
 
 build: \
 	build-gym-duckietown \
@@ -123,7 +128,7 @@ build-challenge-aido_LF-experiment_manager: build-aido-base-python3 \
 
 
 build-dt-machine-learning-base-environment:  lib-aido-protocols
-	upload $(MAKE) -C $(DT_ENV_DEVELOPER)/src/dt-machine-learning-base-environment  push
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/dt-machine-learning-base-environment  push
 
 
 build-mooc-fifos-connector: build-aido-base-python3
@@ -197,9 +202,6 @@ lib-duckietown-tokens:
 
 mooc: build-mooc-fifos-connector
 
-#update-baselines-circleci:
-#	./update-circleci-baselines.sh
-
 
 
 root-images:
@@ -214,14 +216,3 @@ root-images:
 	docker pull docker.io/pytorch/pytorch
 	docker tag  docker.io/pytorch/pytorch ${AIDO_REGISTRY}/pytorch/pytorch
 	docker push ${AIDO_REGISTRY}/pytorch/pytorch
-
-
-dt-base-images:
-	docker pull duckietown/dt-car-interface:daffy-amd64
-	docker tag duckietown/dt-car-interface:daffy-amd64  ${AIDO_REGISTRY}/duckietown/dt-car-interface:daffy-amd64
-	docker push ${AIDO_REGISTRY}/duckietown/dt-car-interface:daffy-amd64
-
-	docker pull duckietown/dt-core:daffy-amd64
-	docker tag duckietown/dt-core:daffy-amd64  ${AIDO_REGISTRY}/duckietown/dt-core:daffy-amd64
-	docker push ${AIDO_REGISTRY}/duckietown/dt-core:daffy-amd64
-
