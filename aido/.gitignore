@@ -26,3 +26,8 @@ challenge-aido_LF-baseline-behavior-cloning
 challenge-aido_LF-experiment_manager
 challenge-aido_LF-baseline-RPL-ros
 challenge-aido_LF-minimal-agent-state
+dt-aido-autolab-evaluator
+dt-autolab-commons
+dt-autolab-device-interface
+dt-autolab-localization
+challenge-aido_LF-baseline-duckietown-ml

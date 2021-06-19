@@ -98,3 +98,18 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-RPL-r
 
 [challenge-aido_LF-minimal-agent-state]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-minimal-agent-state.git' 'challenge-aido_LF-minimal-agent-state'
+
+[challenge-aido_LF-baseline-duckietown-ml]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-duckietown-ml.git' 'challenge-aido_LF-baseline-duckietown-ml'
+
+[dt-aido-autolab-evaluator]
+checkout = git clone 'git@github.com:duckietown/dt-aido-autolab-evaluator.git' 'dt-aido-autolab-evaluator'
+
+[dt-autolab-commons]
+checkout = git clone 'git@github.com:duckietown/dt-autolab-commons.git' 'dt-autolab-commons'
+
+[dt-autolab-device-interface]
+checkout = git clone 'git@github.com:duckietown/dt-autolab-device-interface.git' 'dt-autolab-device-interface'
+
+[dt-autolab-localization]
+checkout = git clone 'git@github.com:duckietown/dt-autolab-localization.git' 'dt-autolab-localization'

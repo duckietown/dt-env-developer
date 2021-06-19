@@ -44,7 +44,6 @@ gym-duckietown
 gym-duckietown-agent
 mooc-exercises
 aido-utils
-mooc-fifos-connector
 dt-base-environment
 duckietown-docker-utils
 duckietown-challenges-cli
@@ -59,3 +58,18 @@ duckietown-cloudflare-tunnel
 dt-machine-learning-base-environment
 dt-protocols
 dt-gui-tools
+dt-system-monitor
+dt-statistics-server
+dt-rosbridge-websocket
+dt-firmware-upgrade
+dt-files-api
+dt-duckiebot-dashboard
+dt-drone-interface
+dt-device-proxy
+dt-device-online
+dt-device-health
+dt-device-dashboard
+dt-code-api
+dt-autolab-proxy
+acquisition-bridge
+dt-architecture-api
