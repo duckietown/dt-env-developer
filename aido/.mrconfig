@@ -29,12 +29,6 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-template-tenso
 [challenge-aido_LF-template-random]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-template-random.git' 'challenge-aido_LF-template-random'
 
-[challenge-aido_LF-baseline-IL-logs-tensorflow]
-checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-IL-logs-tensorflow.git' 'challenge-aido_LF-baseline-IL-logs-tensorflow'
-
-[challenge-aido_LF-baseline-IL-sim-tensorflow]
-checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-IL-sim-tensorflow.git' 'challenge-aido_LF-baseline-IL-sim-tensorflow'
-
 [challenge-aido_LF-baseline-RL-sim-pytorch]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-RL-sim-pytorch.git' 'challenge-aido_LF-baseline-RL-sim-pytorch'
 
@@ -113,3 +107,9 @@ checkout = git clone 'git@github.com:duckietown/dt-autolab-device-interface.git'
 
 [dt-autolab-localization]
 checkout = git clone 'git@github.com:duckietown/dt-autolab-localization.git' 'dt-autolab-localization'
+
+[challenge-aido_LF-baseline-simple-yield]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-simple-yield.git' 'challenge-aido_LF-baseline-simple-yield'
+
+[challenge-aido_LF-baseline-dagger-pytorch]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-dagger-pytorch' 'challenge-aido_LF-baseline-dagger-pytorch'
