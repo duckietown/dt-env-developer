@@ -45,11 +45,32 @@ template-pytorch: build-aido-base-python3 define-LF-before-subs build-dt-machine
 template-random: build-aido-base-python3 define-LF-before-subs lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-random build  submit-bea
 
-template-ros: build-aido-base-python3 define-LF-before-subs lib-aido-protocols
+template-ros: build-aido-base-python3 define-LF-before-subs lib-aido-protocols dt-ros-commons
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-ros build submit-bea
 
 template-tensorflow: build-aido-base-python3 define-LF-before-subs build-dt-machine-learning-base-environment lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-template-tensorflow build  submit-bea
+
+dt-base-environment:
+	dts devel build -C  $(DT_ENV_DEVELOPER)/src/dt-base-environment --arch amd64 --push
+
+dt-commons: dt-base-environment
+	dts devel build -C  $(DT_ENV_DEVELOPER)/src/dt-commons --arch amd64 --push
+
+dt-ros-commons: dt-commons
+	dts devel build -C  $(DT_ENV_DEVELOPER)/src/dt-ros-commons --arch amd64 --push
+
+dt-core: dt-ros-commons
+	dts devel build -C  $(DT_ENV_DEVELOPER)/src/dt-core --arch amd64 --push
+
+dt-car-interface: dt-ros-commons
+	dts devel build -C  $(DT_ENV_DEVELOPER)/src/dt-ros-commons --arch amd64 --push
+
+baseline-duckietown: build-aido-base-python3 define-LF-before-subs dt-car-interface template-ros dt-core
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  build submit-bea
+
+baseline-duckietown-ml: build-aido-base-python3 define-LF-before-subs  build-dt-machine-learning-base-environment baseline-duckietown  dt-car-interface dt-core
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown-ml  submit-bea
 
 
 
@@ -79,12 +100,16 @@ baseline-pytorch: build-aido-base-python3 template-pytorch define-LF-before-subs
 baseline-JBR: build-aido-base-python3 define-LF-before-subs template-tensorflow
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-JBR  submit-bea
 
-baseline-duckietown: build-aido-base-python3 define-LF-before-subs
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  submit-bea
-
-baseline-duckietown-ml: build-aido-base-python3 define-LF-before-subs
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown-ml  submit-bea
-
+#
+#FROM ${AIDO_REGISTRY}/duckietown/challenge-aido_lf-baseline-duckietown:${BASE_TAG} AS baseline
+#
+#FROM ${AIDO_REGISTRY}/duckietown/dt-machine-learning-base-environment:${BASE_TAG} AS base
+#
+#WORKDIR /code
+#
+#COPY --from=baseline ${CATKIN_WS_DIR}/src/dt-car-interface ${CATKIN_WS_DIR}/src/dt-car-interface
+#
+#COPY --from=baseline ${CATKIN_WS_DIR}/src/dt-core ${CATKIN_WS_DIR}/src/dt-core
 
 build-baseline-duckietown: build-aido-base-python3
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  build
