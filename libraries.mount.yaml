@@ -46,6 +46,8 @@ entries:
   guest: /packages/aido_schemas
 - host: ${DT_ENV_DEVELOPER}/class/dt-exercises/collision-solution/src/dt_collision
   guest: /packages/dt_collision
+- host: ${DT_ENV_DEVELOPER}/class/dt-exercises/planning-solution/src/dt_planning
+  guest: /packages/dt_planning
 - host: ${DT_ENV_DEVELOPER}/aido/challenge-aido_LF-experiment_manager/src/duckietown_experiment_manager
   guest: /packages/duckietown_experiment_manager  # confirmed site-packages
 
