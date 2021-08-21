@@ -48,8 +48,8 @@ checkout = git clone 'git@github.com:duckietown/challenge-prediction.git' 'chall
 [aido-robotarium-evaluation-form]
 checkout = git clone 'git@github.com:duckietown/aido-robotarium-evaluation-form.git' 'aido-robotarium-evaluation-form'
 
-[ETHZ-autolab-fleet-roster]
-checkout = git clone 'git@github.com:duckietown/ETHZ-autolab-fleet-roster.git' 'ETHZ-autolab-fleet-roster'
+# [ETHZ-autolab-fleet-roster]
+# checkout = git clone 'git@github.com:duckietown/ETHZ-autolab-fleet-roster.git' 'ETHZ-autolab-fleet-roster'
 
 [challenge-multistep]
 checkout = git clone 'git@github.com:duckietown/challenge-multistep.git' 'challenge-multistep'
@@ -66,8 +66,8 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-simulator-gym.
 [compose-pkg-lab_controls]
 checkout = git clone 'git@github.com:duckietown/compose-pkg-lab_controls.git' 'compose-pkg-lab_controls'
 
-[autolab_control_flask_scripts]
-checkout = git clone 'git@github.com:duckietown/autolab_control_flask_scripts.git' 'autolab_control_flask_scripts'
+# [autolab_control_flask_scripts]
+# checkout = git clone 'git@github.com:duckietown/autolab_control_flask_scripts.git' 'autolab_control_flask_scripts'
 
 [challenge-aido_LF-scenario_maker]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-scenario_maker.git' 'challenge-aido_LF-scenario_maker'

@@ -1,6 +1,5 @@
 aido-robotarium-evaluation-form
 aido-submission-ci-test
-autolab_control_flask_scripts
 challenge-aido_LF
 challenge-aido_LF-baseline-behavior-cloning
 challenge-aido_LF-baseline-dagger-pytorch
@@ -30,4 +29,4 @@ dt-aido-autolab-evaluator
 dt-autolab-commons
 dt-autolab-device-interface
 dt-autolab-localization
-ETHZ-autolab-fleet-roster
+# ETHZ-autolab-fleet-roster
