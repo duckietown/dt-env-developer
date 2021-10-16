@@ -1,4 +1,4 @@
-AIDO_REGISTRY ?= docker.io
+DOCKER_REGISTRY ?= docker.io
 PIP_INDEX_URL ?= https://pypi.org/simple
 DT_ENV_DEVELOPER ?= .
 
@@ -101,9 +101,9 @@ baseline-JBR: build-aido-base-python3 define-LF-before-subs template-tensorflow
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-JBR  submit-bea
 
 #
-#FROM ${AIDO_REGISTRY}/duckietown/challenge-aido_lf-baseline-duckietown:${BASE_TAG} AS baseline
+#FROM ${DOCKER_REGISTRY}/duckietown/challenge-aido_lf-baseline-duckietown:${BASE_TAG} AS baseline
 #
-#FROM ${AIDO_REGISTRY}/duckietown/dt-machine-learning-base-environment:${BASE_TAG} AS base
+#FROM ${DOCKER_REGISTRY}/duckietown/dt-machine-learning-base-environment:${BASE_TAG} AS base
 #
 #WORKDIR /code
 #
@@ -251,13 +251,13 @@ lib-duckietown-tokens:
 
 root-images:
 	docker pull docker.io/library/ubuntu:20.04
-	docker tag  docker.io/library/ubuntu:20.04 ${AIDO_REGISTRY}/library/ubuntu:20.04
-	docker push ${AIDO_REGISTRY}/library/ubuntu:20.04
+	docker tag  docker.io/library/ubuntu:20.04 ${DOCKER_REGISTRY}/library/ubuntu:20.04
+	docker push ${DOCKER_REGISTRY}/library/ubuntu:20.04
 
 	docker pull docker.io/library/python:3.8
-	docker tag  docker.io/library/python:3.8 ${AIDO_REGISTRY}/library/python:3.8
-	docker push ${AIDO_REGISTRY}/library/python:3.8
+	docker tag  docker.io/library/python:3.8 ${DOCKER_REGISTRY}/library/python:3.8
+	docker push ${DOCKER_REGISTRY}/library/python:3.8
 
 	docker pull docker.io/pytorch/pytorch
-	docker tag  docker.io/pytorch/pytorch ${AIDO_REGISTRY}/pytorch/pytorch
-	docker push ${AIDO_REGISTRY}/pytorch/pytorch
+	docker tag  docker.io/pytorch/pytorch ${DOCKER_REGISTRY}/pytorch/pytorch
+	docker push ${DOCKER_REGISTRY}/pytorch/pytorch
