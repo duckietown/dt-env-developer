@@ -70,4 +70,37 @@ build-images-slow:
 aido-staging:
 	z-make -o db-staging  AI-DO-5.mk 
 aido-production: 
-	z-make   -o db-production AI-DO-5.mk 
+	z-make -o db-production AI-DO-5.mk 
+
+
+images-transfer:
+	docker pull circleci/python:3.7 
+	docker pull circleci/python:3.8 
+	docker pull circleci/python:3.9 
+	docker pull library/python:3.7 
+	docker pull library/python:3.8 
+	docker pull library/python:3.9 
+	
+	docker tag circleci/python:3.7 ${DOCKER_REGISTRY}/circleci/python:3.7
+	docker push ${DOCKER_REGISTRY}/circleci/python:3.7
+	docker tag circleci/python:3.8 ${DOCKER_REGISTRY}/circleci/python:3.8
+	docker push ${DOCKER_REGISTRY}/circleci/python:3.8
+	docker tag circleci/python:3.9 ${DOCKER_REGISTRY}/circleci/python:3.9
+	docker push ${DOCKER_REGISTRY}/circleci/python:3.9
+	docker tag library/python:3.7 ${DOCKER_REGISTRY}/library/python:3.7
+	docker push ${DOCKER_REGISTRY}/circleci/python:3.7
+	docker tag library/python:3.8 ${DOCKER_REGISTRY}/library/python:3.8
+	docker push ${DOCKER_REGISTRY}/circleci/python:3.8
+	docker tag library/python:3.9 ${DOCKER_REGISTRY}/library/python:3.9
+	docker push ${DOCKER_REGISTRY}/circleci/python:3.9
+
+
+	docker pull library/ubuntu:20.04
+	docker pull library/ubuntu:21.04
+	docker pull library/ubuntu:21.10
+	docker tag library/ubuntu:20.04 ${DOCKER_REGISTRY}/library/ubuntu:20.04
+	docker push ${DOCKER_REGISTRY}/library/ubuntu:20.04
+	docker tag library/ubuntu:21.04 ${DOCKER_REGISTRY}/library/ubuntu:21.04
+	docker push ${DOCKER_REGISTRY}/library/ubuntu:21.04
+	docker tag library/ubuntu:21.10 ${DOCKER_REGISTRY}/library/ubuntu:21.10
+	docker push ${DOCKER_REGISTRY}/library/ubuntu:21.10
