@@ -16,7 +16,7 @@ agents:
 	agent-challenge-aido_LF-minimal-agent-full 
 	agent-minimal-agent-full 
 	agent-baseline-simple-yield
-	
+
 baselines: \
 	baseline-RL-sim-pytorch \
 	baseline-duckietown \
@@ -153,7 +153,7 @@ baseline-challenge-aido_LF-minimal-agent-full: build-aido-base-python3 lib-aido-
 
 define-challenges: define-LF define-multistep define-prediction define-robotarium
 
-define-LF: build-scenario-maker  build-simulator-gym  build-challenge-aido_LF-experiment_manager build-challenge-aido_LF-minimal-agent-full build-duckietown-challenges-cli agents
+define-LF: build-scenario-maker  build-simulator-gym  build-challenge-aido_LF-experiment_manager  build-duckietown-challenges-cli agents
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF define-challenge
 
 build-scenario-maker: build-aido-base-python3 lib-duckietown-world
@@ -185,7 +185,6 @@ build: \
 	build-challenge-aido_LF-experiment_manager \
 	build-duckietown-challenges-cli \
 	build-duckietown-challenges-runner \
-	build-challenge-aido_LF-minimal-agent-full \
 	build-server
 
 
