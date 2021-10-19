@@ -70,6 +70,8 @@ build-images-slow:
 	PYENV_VERSION=3.8.8-z7-stage mr  run bash -c "zuper-cli image-build"
 aido-staging:
 	z-make -o db-staging  AI-DO-5.mk 
+aido-staging2:
+	PYENV_VERSION=3.8.8-z7-stage zmake -o db-staging  AI-DO-5.mk 
 aido-production: 
 	z-make -o db-production AI-DO-5.mk 
 
