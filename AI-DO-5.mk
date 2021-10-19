@@ -11,6 +11,12 @@ templates:  \
 	template-pytorch \
 	template-tensorflow
 
+agents:
+	agent-minimal-agent-state 
+	agent-challenge-aido_LF-minimal-agent-full 
+	agent-minimal-agent-full 
+	agent-baseline-simple-yield
+	
 baselines: \
 	baseline-RL-sim-pytorch \
 	baseline-duckietown \
@@ -36,7 +42,7 @@ build-aido-base-python3: lib-aido-protocols
 build-aido-submission-ci-test: build-aido-base-python3 lib-duckietown-docker-utils
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/aido-submission-ci-test build
 
-define-LF-before-subs: # define-LF
+define-LF-before-subs: define-LF
 	echo "Uncomment above to first do all definitions"
 
 template-pytorch: build-aido-base-python3 define-LF-before-subs build-dt-machine-learning-base-environment lib-aido-protocols
@@ -117,24 +123,37 @@ build-baseline-duckietown: build-aido-base-python3
 baseline-minimal-agent: build-aido-base-python3 lib-aido-analyze lib-aido-agents define-LF-before-subs
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  build submit-bea
 
-baseline-minimal-agent-full: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF-before-subs
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full build submit-bea
+agent-minimal-agent-full: build-aido-base-python3  lib-aido-analyze lib-aido-agents 
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full build 
 
+baseline-minimal-agent-full: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF-before-subs
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full submit-bea
+
+agent-minimal-agent-state: build-aido-base-python3  lib-aido-analyze lib-aido-agents 
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-state build 
 
 baseline-minimal-agent-state: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF-before-subs
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-state build submit-bea
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-state submit-bea
+
+
+agent-baseline-simple-yield: build-aido-base-python3  lib-aido-analyze lib-aido-agents 
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-simple-yield  build 
+
 
 
 baseline-simple-yield: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF-before-subs
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-simple-yield  build submit-bea
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-simple-yield submit-bea
 
-build-challenge-aido_LF-minimal-agent-full: build-aido-base-python3 lib-aido-agents lib-duckietown-world
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full build submit-bea
+agent-challenge-aido_LF-minimal-agent-full: build-aido-base-python3 lib-aido-agents lib-duckietown-world
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full build 
+
+baseline-challenge-aido_LF-minimal-agent-full: build-aido-base-python3 lib-aido-agents lib-duckietown-world define-LF-before-subs
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full  submit-bea
 
 
 define-challenges: define-LF define-multistep define-prediction define-robotarium
 
-define-LF: build-scenario-maker  build-simulator-gym  build-challenge-aido_LF-experiment_manager build-challenge-aido_LF-minimal-agent-full build-duckietown-challenges-cli
+define-LF: build-scenario-maker  build-simulator-gym  build-challenge-aido_LF-experiment_manager build-challenge-aido_LF-minimal-agent-full build-duckietown-challenges-cli agents
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF define-challenge
 
 build-scenario-maker: build-aido-base-python3 lib-duckietown-world

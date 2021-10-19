@@ -1,6 +1,6 @@
 
 [dt-exercises]
-checkout = git clone 'git@github.com:duckietown/dt-exercises.git' dt-exercises
+checkout = git clone 'git@github.com:duckietown/dt-exercises.git' 'dt-exercises'
 
 [mooc-exercises]
 checkout = git clone 'git@github.com:duckietown/mooc-exercises.git' mooc-exercises
