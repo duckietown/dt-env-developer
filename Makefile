@@ -57,7 +57,8 @@ setup-develop:
 
 
 
-
+template:
+	PYENV_VERSION=3.8.8-z7-stage mr -j 4 run bash -c "zuper-cli template"
 bump1:
 	PYENV_VERSION=3.8.8-z7-stage mr -j 4 run bash -c "zuper-cli bump && zuper-cli upload"
 bump1-push:

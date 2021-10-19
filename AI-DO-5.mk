@@ -112,24 +112,24 @@ baseline-JBR: build-aido-base-python3 define-LF-before-subs template-tensorflow
 #COPY --from=baseline ${CATKIN_WS_DIR}/src/dt-core ${CATKIN_WS_DIR}/src/dt-core
 
 build-baseline-duckietown: build-aido-base-python3
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  build
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-duckietown  build submit-bea
 
 baseline-minimal-agent: build-aido-base-python3 lib-aido-analyze lib-aido-agents define-LF-before-subs
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  submit-bea
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent  build submit-bea
 
 baseline-minimal-agent-full: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF-before-subs
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full  submit-bea
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full build submit-bea
 
 
 baseline-minimal-agent-state: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF-before-subs
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-state  submit-bea
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-state build submit-bea
 
 
 baseline-simple-yield: build-aido-base-python3  lib-aido-analyze lib-aido-agents define-LF-before-subs
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-simple-yield  submit-bea
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-baseline-simple-yield  build submit-bea
 
 build-challenge-aido_LF-minimal-agent-full: build-aido-base-python3 lib-aido-agents lib-duckietown-world
-	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full build
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/aido/challenge-aido_LF-minimal-agent-full build submit-bea
 
 
 define-challenges: define-LF define-multistep define-prediction define-robotarium
@@ -248,6 +248,9 @@ lib-duckietown-tokens:
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-tokens upload
 
 
+
+cloudflare: 
+	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/duckietown-cloudflare-tunnel build
 
 root-images:
 	docker pull docker.io/library/ubuntu:20.04
