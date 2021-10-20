@@ -33,9 +33,6 @@ checkout = git clone 'git@github.com:duckietown/duckietown-shell-commands.git' '
 [gym-duckietown]
 checkout = git clone 'git@github.com:duckietown/gym-duckietown.git' 'gym-duckietown'
 
-[gym-duckietown-ros-agent]
-checkout = git clone 'git@github.com:duckietown/gym-duckietown-ros-agent.git' 'gym-duckietown-ros-agent'
- 
 [duckietown-world]
 checkout = git clone 'git@github.com:duckietown/duckietown-world.git' 'duckietown-world'
 
@@ -132,9 +129,6 @@ checkout = git clone 'git@github.com:duckietown/dt-device-proxy.git' 'dt-device-
 
 [dt-drone-interface]
 checkout = git clone 'git@github.com:duckietown/dt-drone-interface.git' 'dt-drone-interface'
-
-[dt-duckiebot-dashboard]
-checkout = git clone 'git@github.com:duckietown/dt-duckiebot-dashboard.git' 'dt-duckiebot-dashboard'
 
 [dt-files-api]
 checkout = git clone 'git@github.com:duckietown/dt-files-api.git' 'dt-files-api'

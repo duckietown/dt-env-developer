@@ -59,6 +59,8 @@ setup-develop:
 
 
 bump1:
+	PYENV_VERSION=3.8.8-z7-stage mr -j 4 run bash -c "zuper-cli bump && zuper-cli upload"
+bump1-push:
 	PYENV_VERSION=3.8.8-z7-stage mr -j 4 run bash -c "zuper-cli bump && zuper-cli upload && git push --tags"
 build-images:
 	PYENV_VERSION=3.8.8-z7-stage mr -j 4 run bash -c "zuper-cli image-build"

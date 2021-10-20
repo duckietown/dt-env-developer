@@ -29,12 +29,6 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-template-tenso
 [challenge-aido_LF-template-random]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-template-random.git' 'challenge-aido_LF-template-random'
 
-[challenge-aido_LF-baseline-IL-logs-tensorflow]
-checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-IL-logs-tensorflow.git' 'challenge-aido_LF-baseline-IL-logs-tensorflow'
-
-[challenge-aido_LF-baseline-IL-sim-tensorflow]
-checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-IL-sim-tensorflow.git' 'challenge-aido_LF-baseline-IL-sim-tensorflow'
-
 [challenge-aido_LF-baseline-RL-sim-pytorch]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-RL-sim-pytorch.git' 'challenge-aido_LF-baseline-RL-sim-pytorch'
 
@@ -54,8 +48,8 @@ checkout = git clone 'git@github.com:duckietown/challenge-prediction.git' 'chall
 [aido-robotarium-evaluation-form]
 checkout = git clone 'git@github.com:duckietown/aido-robotarium-evaluation-form.git' 'aido-robotarium-evaluation-form'
 
-[ETHZ-autolab-fleet-roster]
-checkout = git clone 'git@github.com:duckietown/ETHZ-autolab-fleet-roster.git' 'ETHZ-autolab-fleet-roster'
+# [ETHZ-autolab-fleet-roster]
+# checkout = git clone 'git@github.com:duckietown/ETHZ-autolab-fleet-roster.git' 'ETHZ-autolab-fleet-roster'
 
 [challenge-multistep]
 checkout = git clone 'git@github.com:duckietown/challenge-multistep.git' 'challenge-multistep'
@@ -72,8 +66,8 @@ checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-simulator-gym.
 [compose-pkg-lab_controls]
 checkout = git clone 'git@github.com:duckietown/compose-pkg-lab_controls.git' 'compose-pkg-lab_controls'
 
-[autolab_control_flask_scripts]
-checkout = git clone 'git@github.com:duckietown/autolab_control_flask_scripts.git' 'autolab_control_flask_scripts'
+# [autolab_control_flask_scripts]
+# checkout = git clone 'git@github.com:duckietown/autolab_control_flask_scripts.git' 'autolab_control_flask_scripts'
 
 [challenge-aido_LF-scenario_maker]
 checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-scenario_maker.git' 'challenge-aido_LF-scenario_maker'
@@ -113,3 +107,9 @@ checkout = git clone 'git@github.com:duckietown/dt-autolab-device-interface.git'
 
 [dt-autolab-localization]
 checkout = git clone 'git@github.com:duckietown/dt-autolab-localization.git' 'dt-autolab-localization'
+
+[challenge-aido_LF-baseline-simple-yield]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-simple-yield.git' 'challenge-aido_LF-baseline-simple-yield'
+
+[challenge-aido_LF-baseline-dagger-pytorch]
+checkout = git clone 'git@github.com:duckietown/challenge-aido_LF-baseline-dagger-pytorch' 'challenge-aido_LF-baseline-dagger-pytorch'
