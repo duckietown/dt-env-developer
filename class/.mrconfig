@@ -7,3 +7,6 @@ checkout = git clone 'git@github.com:duckietown/mooc-exercises.git' mooc-exercis
 
 [mooc-exercises-solutions]
 checkout = git clone 'git@github.com:duckietown/mooc-exercises-solutions.git' mooc-exercises-solutions
+
+[dt-exercise-solutions]
+checkout = git clone 'git@github.com:duckietown/mooc-exercise-solutions.git' 'dt-exercise-solutions'
