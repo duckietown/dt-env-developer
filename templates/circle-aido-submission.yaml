@@ -16,25 +16,29 @@ workflows:
             ignore: /daffy-staging.*/
 jobs:
   submit: &template
-    docker:
-    - image: ${DOCKER_REGISTRY}/duckietown/aido-submission-ci-test:daffy-amd64
-      auth:
-        username: $DOCKER_USERNAME
-        password: $DOCKER_PASSWORD
+    machine: # executor type
+      image: ubuntu-2004:202010-01 # # recommended linux image - includes Ubuntu 20.04, docker 19.03.13, docker-compose 1.27.4
     steps:
     - checkout
-    - setup_remote_docker:
-        docker_layer_caching: true
+
+    - run:
+        name: Install deps
+        # language=bash
+        command: |
+          python3 -m pip install -U pip
+          python3 -m pip install duckietown-shell
     - run:
         name: Python stats
         command: |
           mkdir -p build-stats
           env | sort | tee  build-stats/env.txt
-          pip list   | sort | tee  build-stats/pip-list.txt
-          pip freeze | sort | tee  build-stats/pip-freeze.txt
+
+          python3 -m pip list | sort | tee  build-stats/pip-list.txt
+          python3 -m pip freeze | sort | tee  build-stats/pip-freeze.txt
     - store_artifacts:
         path: build-stats
         destination: build-stats
+
     - run:
         name: Setup daffy commands
         # language=bash
@@ -72,66 +76,3 @@ jobs:
 
   submit-daffy-prod: *template
   submit-daffy-stage: *template
-
-#  submit:
-#    docker:
-#      - image: python:3.8
-#    environment:
-#      DOCKER_VER: "18.09.2"
-#      COMPOSE_VER: "1.23.2"
-##    machine: true
-#    steps:
-#      - checkout
-#      - run:
-#          name: Install Docker client
-#          # language=bash
-#          command: |
-#            set -x
-#            curl -L -o /tmp/docker-${DOCKER_VER}.tgz \
-#              https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VER}.tgz
-#            tar -xz -C /tmp -f /tmp/docker-${DOCKER_VER}.tgz
-#            mv /tmp/docker/* /usr/bin
-#      - run:
-#          name: Install Docker Compose
-#          # language=bash
-#          command: |
-#            plt=docker-compose-`uname -s`-`uname -m`
-#            curl -L https://github.com/docker/compose/releases/download/${COMPOSE_VER}/${plt} > ~/docker-compose
-#            chmod +x ~/docker-compose
-#            mv ~/docker-compose /usr/local/bin/docker-compose
-#      - setup_remote_docker:
-#          docker_layer_caching: true
-#      - run:
-#          name: Install deps
-#          # language=bash
-#          command: |
-#            pip install  duckietown-shell duckietown-challenges-daffy pipdeptree
-#            pipdeptree
-#            pip list
-#      - run:
-#          name: Setup daffy commands
-#          # language=bash
-#          command: |
-#            dts --set-version "$DTS_VERSION"
-#            dts update
-#      - run:
-#          name: Setup token
-#          # language=bash
-#          command: |
-#            dts tok verify ${token_dt1_bea}
-#            dts tok set ${token_dt1_bea}
-#            dts challenges config --docker-username bea
-#
-#      - run:
-#          name: "Challenges info"
-#          # language=bash
-#          command: |
-#            dts update
-#            dts challenges info
-#
-#      - run:
-#          name: Submit
-#          # language=bash
-#          command: |
-#            dts challenges evaluate --challenge aido-hello-sim-validation
-#      - jira/notify
