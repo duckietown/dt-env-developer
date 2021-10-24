@@ -102,10 +102,7 @@ checkout = git clone 'git@github.com:duckietown/dt-gui-tools.git' 'dt-gui-tools'
 
 [dt-protocols]
 checkout = git clone 'git@github.com:duckietown/dt-protocols.git' 'dt-protocols'
- 
-[acquisition-bridge]
-checkout = git clone 'git@github.com:duckietown/acquisition-bridge.git' 'acquisition-bridge'
-
+  
 [dt-autolab-proxy]
 checkout = git clone 'git@github.com:duckietown/dt-autolab-proxy.git' 'dt-autolab-proxy'
 
