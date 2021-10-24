@@ -72,7 +72,7 @@ jobs:
           name="$CIRCLE_BRANCH-$CIRCLE_SHA1"
           validation_challenge=$(shyaml get-value validation_challenge < submission.yaml)
           dts challenges submit --impersonate 1639 --challenge "$validation_challenge" --user-label "${name}"
-          dts challenges follow --label "${name}"
+          dts challenges follow --label "${name}" --exit-when-complete
 
   submit-daffy-prod: *template
   submit-daffy-stage: *template
