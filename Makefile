@@ -74,6 +74,8 @@ aido-staging2:
 	PYENV_VERSION=3.8.8-z7-stage zmake -o db-staging  AI-DO-5.mk
 aido-production:
 	z-make -o db-production AI-DO-5.mk
+aido-production2:
+	PYENV_VERSION=3.8.8-z7-stage zmake -o db-production2  AI-DO-5.mk
 
 
 images-transfer:
