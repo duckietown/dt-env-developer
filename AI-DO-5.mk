@@ -196,7 +196,7 @@ build-challenge-aido_LF-experiment_manager: build-aido-base-python3 \
 
 build-dt-machine-learning-base-environment:  lib-aido-protocols
 	$(MAKE) -C $(DT_ENV_DEVELOPER)/src/dt-machine-learning-base-environment  build
-
+	cd $(DT_ENV_DEVELOPER)/src/dt-machine-learning-base-environment && dts devel build --cloud --arch amd64 push --tag daffy
 
 
 build-duckietown-challenges-cli: lib-duckietown-challenges-runner lib-duckietown-challenges \
