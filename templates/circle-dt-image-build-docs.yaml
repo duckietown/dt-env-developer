@@ -27,6 +27,7 @@ jobs:
     - run:
         name: Install dts commands
         command: |
+          pip install -U duckietown-shell
           dts --debug --set-version "$DTS_VERSION" exit
     - run:
         name: config
@@ -67,5 +68,3 @@ jobs:
         destination: out/package.tgz
   build-daffy-prod: *build
   build-daffy-staging: *build
-
-
