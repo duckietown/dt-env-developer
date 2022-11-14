@@ -67,7 +67,7 @@ jobs:
   unit-tests-from-parent: &unit-tests
     resource_class: large
     docker:
-    - image: ${DOCKER_REGISTRY}/duckietown/dt-ros-commons:daffy-amd64
+    - image: ${DOCKER_REGISTRY}/duckietown/dt-ros-commons:daffy
 
     environment:
       DUCKIETOWN_DATA: /data
