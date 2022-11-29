@@ -1,5 +1,5 @@
 DOCKER_REGISTRY ?= docker.io
-PIP_INDEX_URL ?= https://pypi.org/simple
+PIP_INDEX_URL ?= https://pypi.org/simple/
 DT_ENV_DEVELOPER ?= .
 
 all:
