@@ -20,7 +20,7 @@ workflows:
 jobs:
   build-docs: &build-docs
     docker:
-    - image: ${DOCKER_REGISTRY}/duckietown/aido-submission-ci-test:daffy-amd64
+    - image: ${DOCKER_REGISTRY}/duckietown/aido-submission-ci-test:daffy
       auth:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
@@ -31,6 +31,7 @@ jobs:
     - run:
         name: Set dts version
         command: |
+          pip install -U duckietown-shell
           dts --set-version "$DTS_VERSION" exit
 
     - run:
@@ -66,7 +67,7 @@ jobs:
   unit-tests-from-parent: &unit-tests
     resource_class: large
     docker:
-    - image: ${DOCKER_REGISTRY}/duckietown/dt-ros-commons:daffy-amd64
+    - image: ${DOCKER_REGISTRY}/duckietown/dt-ros-commons:daffy
 
     environment:
       DUCKIETOWN_DATA: /data

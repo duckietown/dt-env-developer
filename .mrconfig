@@ -20,7 +20,16 @@ chain = true
 
 [docs]
 skip = true
-# chain = true
-chain = false 
+chain = true
+# chain = false 
 
 
+
+[lx/duckietown-lx]
+checkout = git clone 'git@github.com:duckietown/duckietown-lx.git' 'duckietown-lx'
+
+[lx/duckietown-lx-recipes]
+checkout = git clone 'git@github.com:duckietown/duckietown-lx-recipes.git' 'duckietown-lx-recipes'
+
+[lx/duckietown-lx-solutions]
+checkout = git clone 'git@github.com:duckietown/duckietown-lx-solutions.git' 'duckietown-lx-solutions'
