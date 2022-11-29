@@ -33,3 +33,6 @@ checkout = git clone 'git@github.com:duckietown/duckietown-lx-recipes.git' 'duck
 
 [lx/duckietown-lx-solutions]
 checkout = git clone 'git@github.com:duckietown/duckietown-lx-solutions.git' 'duckietown-lx-solutions'
+
+[jenkins-jobs]
+checkout = git clone 'git@github.com:duckietown/.jenkins-jobs' 'jenkins-jobs'
