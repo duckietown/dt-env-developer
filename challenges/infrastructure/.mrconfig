@@ -1,14 +1,14 @@
 [duckietown-challenges]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/duckietown-challenges.git' 'duckietown-challenges'
+checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/duckietown-challenges.git' 'duckietown-challenges'
 
 [duckietown-challenges-runner]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/duckietown-challenges-runner.git' 'duckietown-challenges-runner'
+checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/duckietown-challenges-runner.git' 'duckietown-challenges-runner'
 
 [duckietown-challenges-server]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
+checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/duckietown-challenges-server.git' 'duckietown-challenges-server'
 
 [duckietown-challenges-cli]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/duckietown-challenges-cli.git' 'duckietown-challenges-cli'
+checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/duckietown-challenges-cli.git' 'duckietown-challenges-cli'
 
 [dt-protocols]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-protocols.git' 'dt-protocols'
+checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/dt-protocols.git' 'dt-protocols'
