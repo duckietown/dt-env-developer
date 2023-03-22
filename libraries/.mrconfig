@@ -4,47 +4,41 @@ checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-authentication
 [lib-dt-data-api]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-data-api'
 
-[lib-dtproject]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dtproject.git' 'lib-dtproject'
-
-[lib-dtps]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dtps.git' 'lib-dtps'
-
-[lib-dt-data-api]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-data-api'
-
 [lib-dt-apriltags]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-apriltags.git' 'lib-dt-apriltags'
 
 [lib-dt-mooc]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-mooc.git' 'lib-dt-mooc'
 
-[lib-dt-authentication]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-authentication.git' 'lib-dt-authentication'
-
 [lib-dt-pip-utils]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-pip-utils.git' 'lib-dt-pip-utils'
 
-[lib-dt-state-estimation]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-state-estimation.git' 'lib-dt-state-estimation'
-
-[lib-dt-maps]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-maps.git' 'lib-dt-maps'
-
-[lib-dt-modeling]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-modeling.git' 'lib-dt-modeling'
-
-[lib-dt-duckiematrix-protocols]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-duckiematrix-protocols.git' 'lib-dt-duckiematrix-protocols'
-
-[lib-dt-computer-vision]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-computer-vision.git' 'lib-dt-computer-vision'
-
-[lib-dt-logic]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-logic.git' 'lib-dt-logic'
-
-[lib-dt-motion-planning]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-motion-planning.git' 'lib-dt-motion-planning'
-
 [lib-dt-vl53l0x]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/lib-dt-vl53l0x.git' 'lib-dt-vl53l0x'
+
+[lib-dt-state-estimation]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-state-estimation.git' 'lib-dt-state-estimation'
+
+[lib-dt-modeling]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-modeling.git' 'lib-dt-modeling'
+
+[lib-dt-computer-vision]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-computer-vision.git' 'lib-dt-computer-vision'
+
+[lib-dt-logic]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-logic.git' 'lib-dt-logic'
+
+[lib-dt-motion-planning]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-motion-planning.git' 'lib-dt-motion-planning'
+
+[lib-dt-maps]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-maps.git' 'lib-dt-maps'
+
+[lib-dt-duckiematrix-protocols]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-duckiematrix-protocols.git' 'lib-dt-duckiematrix-protocols'
+
+[lib-dtproject]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dtproject.git' 'lib-dtproject'
+
+[lib-dtps]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dtps.git' 'lib-dtps'

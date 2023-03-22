@@ -1,16 +1,15 @@
-
 # [.]
 # checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'
 
-[templates]
-skip = true
-chain = true
-
-[src]
-skip = true
-chain = true
-
 [aido]
+skip = true
+chain = true
+
+[autolab]
+skip = true
+chain = true
+
+[challenges]
 skip = true
 chain = true
 
@@ -21,18 +20,27 @@ chain = true
 [docs]
 skip = true
 chain = true
-# chain = false 
 
+[infra]
+skip = true
+chain = true
 
+[libraries]
+skip = true
+chain = true
 
-[lx/duckietown-lx]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/duckietown-lx.git' 'duckietown-lx'
+[lx]
+skip = true
+chain = true
 
-[lx/duckietown-lx-recipes]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/duckietown-lx-recipes.git' 'duckietown-lx-recipes'
+[robot]
+skip = true
+chain = true
 
-[lx/duckietown-lx-solutions]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/duckietown-lx-solutions.git' 'duckietown-lx-solutions'
+[shell]
+skip = true
+chain = true
 
-[jenkins-jobs]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/.jenkins-jobs' 'jenkins-jobs'
+[templates]
+skip = true
+chain = true

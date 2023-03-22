@@ -1,5 +1,5 @@
 [jenkins-jobs]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/.jenkins-jobs' 'jenkins-jobs'
+checkout = git clone -b 'production' 'git@github.com:duckietown/.jenkins-jobs' 'jenkins-jobs'
 
 [ci-jenkins]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/ci-jenkins' 'ci-jenkins'
+checkout = git clone -b 'master' 'git@github.com:duckietown/ci-jenkins' 'ci-jenkins'

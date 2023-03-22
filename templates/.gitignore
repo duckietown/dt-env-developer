@@ -1,7 +1,4 @@
-template-exercises
-template-ros
-template-basic
-template-ros-core
-template-docs
-template-compose
-template-library
+/*
+!.gitignore
+!.mrconfig
+!Makefile

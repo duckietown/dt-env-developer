@@ -61,7 +61,6 @@ checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-firmware-upgrade.g
 [dt-statistics-server]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-statistics-server.git' 'dt-statistics-server'
 
-
 [dt-autolab-commons]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-autolab-commons.git' 'dt-autolab-commons'
 

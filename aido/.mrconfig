@@ -1,8 +1,86 @@
-[dt-autolab-commons]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-autolab-commons.git' 'dt-autolab-commons'
+[challenge-aido_amod]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido1_test_amod.git' 'challenge-aido_amod'
 
-[dt-autolab-localization]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-autolab-localization.git' 'dt-autolab-localization'
+[challenge-aido_amod-template-java]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_amod-template-java.git' 'challenge-aido_amod-template-java'
+
+[challenge-aido_amod-template-python]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_amod-template-python.git' 'challenge-aido_amod-template-python'
+
+[challenge-aido_LF]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF.git' 'challenge-aido_LF'
+
+[challenge-aido_LF-template-pytorch]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-template-pytorch.git' 'challenge-aido_LF-template-pytorch'
+
+[challenge-aido_LF-template-tensorflow]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-template-tensorflow.git' 'challenge-aido_LF-template-tensorflow'
+
+[challenge-aido_LF-template-random]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-template-random.git' 'challenge-aido_LF-template-random'
+
+[challenge-aido_LF-baseline-RL-sim-pytorch]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-baseline-RL-sim-pytorch.git' 'challenge-aido_LF-baseline-RL-sim-pytorch'
+
+[challenge-aido_LF-baseline-duckietown]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-baseline-duckietown.git' 'challenge-aido_LF-baseline-duckietown'
+
+[challenge-aido_LF-template-pytorch]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-template-pytorch.git' 'challenge-aido_LF-template-pytorch'
+
+[challenge-aido_LF-template-ros]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-template-ros.git' 'challenge-aido_LF-template-ros'
+
+[challenge-prediction]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-prediction.git' 'challenge-prediction'
+
+[aido-robotarium-evaluation-form]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/aido-robotarium-evaluation-form.git' 'aido-robotarium-evaluation-form'
+
+[aido-submission-ci-test]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/aido-submission-ci-test.git' 'aido-submission-ci-test'
+
+[challenge-multistep]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-multistep.git' 'challenge-multistep'
+
+[challenge-aido_LF-minimal-agent]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-minimal-agent.git' 'challenge-aido_LF-minimal-agent'
+
+[challenge-aido_LF-duckiebot-bridge]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-duckiebot-bridge.git' 'challenge-aido_LF-duckiebot-bridge'
+
+[challenge-aido_LF-simulator-gym]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-simulator-gym.git' 'challenge-aido_LF-simulator-gym'
+
+[challenge-aido_LF-scenario_maker]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-scenario_maker.git' 'challenge-aido_LF-scenario_maker'
+
+[challenge-aido_LF-minimal-agent-full]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-minimal-agent-full.git' 'challenge-aido_LF-minimal-agent-full'
+
+[challenge-aido_LF-baseline-JBR]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-baseline-JBR.git' 'challenge-aido_LF-baseline-JBR'
+
+[challenge-aido_LF-experiment_manager]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-experiment_manager.git' 'challenge-aido_LF-experiment_manager'
+
+[challenge-aido_LF-baseline-behavior-cloning]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-baseline-behavior-cloning.git' 'challenge-aido_LF-baseline-behavior-cloning'
+
+[challenge-aido_LF-baseline-RPL-ros]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-baseline-RPL-ros.git' 'challenge-aido_LF-baseline-RPL-ros'
+
+[challenge-aido_LF-minimal-agent-state]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-minimal-agent-state.git' 'challenge-aido_LF-minimal-agent-state'
+
+[challenge-aido_LF-baseline-duckietown-ml]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-baseline-duckietown-ml.git' 'challenge-aido_LF-baseline-duckietown-ml'
 
 [dt-aido-autolab-evaluator]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-aido-autolab-evaluator.git' 'dt-aido-autolab-evaluator'
+
+[challenge-aido_LF-baseline-simple-yield]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-baseline-simple-yield.git' 'challenge-aido_LF-baseline-simple-yield'
+
+[challenge-aido_LF-baseline-dagger-pytorch]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF-baseline-dagger-pytorch' 'challenge-aido_LF-baseline-dagger-pytorch'

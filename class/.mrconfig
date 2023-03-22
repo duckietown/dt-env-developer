@@ -1,7 +1,7 @@
-[books]
+[mooc2021]
 skip = true
 chain = true
 
-[old]
+[mooc2022]
 skip = true
 chain = true

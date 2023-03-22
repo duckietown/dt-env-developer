@@ -1,3 +1,8 @@
+[infrastructure]
+skip = true
+chain = true
+
+
 [challenge-aido_LF]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/challenge-aido_LF.git' 'challenge-aido_LF'
 
