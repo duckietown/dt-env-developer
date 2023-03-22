@@ -1,3 +1,4 @@
-duckietown-lx
-duckietown-lx-recipes
-duckietown-lx-solutions
+/*
+!.gitignore
+!.mrconfig
+!Makefile

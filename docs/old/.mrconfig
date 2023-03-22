@@ -1,18 +1,6 @@
-
-[to-transfer-in-courses]
-skip = true
-chain = true
-
 [docs-AIDO]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
 
-[duckuments-presentation-config]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/duckuments-presentation-config.git' 'duckuments-presentation-config'
-
-[docs-build]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-build.git' 'docs-build'
-
- 
 [docs-AIDO]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
 
@@ -21,7 +9,6 @@ checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-opmanual_duckieb
  
 [docs-opmanual_duckietown]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-opmanual_duckietown'
- 
 
 [docs-duckumentation]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
@@ -32,36 +19,8 @@ checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-opmanual_autolab
 [docs-opmanual_sky]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-opmanual_sky.git' 'docs-opmanual_sky'
 
- 
-
- 
-
-
- 
-
- 
-
-# [docs-template]
-# checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-template.git' 'docs-template'
-
-
 [docs-duckumentation]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
- 
-[docs-opmanual_duckietown]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-opmanual_duckietown'
- 
-
-[docs-opmanual_sky]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-opmanual_sky.git' 'docs-opmanual_sky'
- 
-
-
-[docs-opmanual_autolab]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-opmanual_autolab.git' 'docs-opmanual_autolab'
- 
-[docs-opmanual_duckiebot]
-checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
 
 [docs-duckiesky_high_school]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/docs-duckiesky_high_school.git' 'docs-duckiesky_high_school'
