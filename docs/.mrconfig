@@ -5,3 +5,7 @@ chain = true
 [old]
 skip = true
 chain = true
+
+
+[docs.duckietown.com]
+checkout=git clone -b 'staging' 'git@github.com:duckietown/docs.duckietown.com.git' 'docs.duckietown.com'
