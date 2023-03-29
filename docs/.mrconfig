@@ -9,3 +9,6 @@ chain = true
 
 [docs.duckietown.com]
 checkout=git clone -b 'staging' 'git@github.com:duckietown/docs.duckietown.com.git' 'docs.duckietown.com'
+
+[dt-jupyter-book]
+checkout=git clone -b 'daffy-staging' 'git@github.com:duckietown/dt-jupyter-book.git' 'dt-jupyter-book'
