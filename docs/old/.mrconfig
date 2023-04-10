@@ -1,50 +1,50 @@
 [docs-AIDO]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
 
 [docs-AIDO]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-AIDO.git' 'docs-AIDO'
 
 [docs-opmanual_duckiebot]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-opmanual_duckiebot.git' 'docs-opmanual_duckiebot'
  
 [docs-opmanual_duckietown]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-opmanual_duckietown'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-opmanual_duckietown.git' 'docs-opmanual_duckietown'
 
 [docs-duckumentation]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
  
 [docs-opmanual_autolab]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-opmanual_autolab.git' 'docs-opmanual_autolab'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-opmanual_autolab.git' 'docs-opmanual_autolab'
 
 [docs-opmanual_sky]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-opmanual_sky.git' 'docs-opmanual_sky'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-opmanual_sky.git' 'docs-opmanual_sky'
 
 [docs-duckumentation]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-duckumentation.git' 'docs-duckumentation'
 
 [docs-duckiesky_high_school]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-duckiesky_high_school.git' 'docs-duckiesky_high_school'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-duckiesky_high_school.git' 'docs-duckiesky_high_school'
 
 [docs-opmanual_developer]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-opmanual_developer.git' 'docs-opmanual_developer'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-opmanual_developer.git' 'docs-opmanual_developer'
 
 [docs-duckiesky_high_school_student]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-duckiesky_high_school_student.git' 'docs-duckiesky_high_school_student'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-duckiesky_high_school_student.git' 'docs-duckiesky_high_school_student'
 
 [course-extra]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/course-extra.git' 'course-extra'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/course-extra.git' 'course-extra'
 
 [mooc-notes]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/mooc-notes.git' 'mooc-notes'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/mooc-notes.git' 'mooc-notes'
 
 [course-duckiesky]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/docs-brown.git' 'course-duckiesky'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/docs-brown.git' 'course-duckiesky'
 
 [course-RH]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/course-RH.git' 'course-RH'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/course-RH.git' 'course-RH'
 
 [course-LRA]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/course-LRA.git' 'course-LRA'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/course-LRA.git' 'course-LRA'
 
 [course-CRA]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/course-CRA.git' 'course-CRA'
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/course-CRA.git' 'course-CRA'
