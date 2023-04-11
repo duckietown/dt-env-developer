@@ -81,3 +81,6 @@ checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/challenge-aido
 
 [challenge-aido_LF-baseline-dagger-pytorch]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/challenge-aido_LF-baseline-dagger-pytorch' 'challenge-aido_LF-baseline-dagger-pytorch'
+
+[aido-protocols]
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/aido-protocols' 'aido-protocols'
