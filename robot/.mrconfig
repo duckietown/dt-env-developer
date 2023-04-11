@@ -49,6 +49,9 @@ checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-duckiebot-f
 [dt-machine-learning-base-environment]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-machine-learning-base-environment.git' 'dt-machine-learning-base-environment'
 
+[dt-machine-learning-base-pytorch]
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-machine-learning-base-pytorch.git' 'dt-machine-learning-base-pytorch'
+
 [dt-gui-tools]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-gui-tools.git' 'dt-gui-tools'
 
