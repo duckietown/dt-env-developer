@@ -76,9 +76,6 @@ checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/challenge-aid
 [challenge-aido_LF-baseline-duckietown-ml]
 checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/challenge-aido_LF-baseline-duckietown-ml.git' 'challenge-aido_LF-baseline-duckietown-ml'
 
-[dt-aido-autolab-evaluator]
-checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/dt-aido-autolab-evaluator.git' 'dt-aido-autolab-evaluator'
-
 [challenge-aido_LF-baseline-simple-yield]
 checkout = git clone -b 'daffy-staging' 'git@github.com:duckietown/challenge-aido_LF-baseline-simple-yield.git' 'challenge-aido_LF-baseline-simple-yield'
 
