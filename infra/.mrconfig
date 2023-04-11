@@ -9,3 +9,6 @@ checkout = git clone -b 'main' 'git@github.com:duckietown/hub.duckietown.com' 'h
 
 [dt-vscode]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-vscode' 'dt-vscode'
+
+[dt-virtual-device]
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-virtual-device' 'dt-virtual-device'

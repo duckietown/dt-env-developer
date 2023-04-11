@@ -69,3 +69,6 @@ checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-autolab-com
 
 [dt-autolab-device-interface]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-autolab-device-interface.git' 'dt-autolab-device-interface'
+
+[dt-wifi-access-point]
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-wifi-access-point.git' 'dt-wifi-access-point'
