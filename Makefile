@@ -8,6 +8,9 @@ setup:
 	$(MAKE) setup-develop-nodeps
 	$(MAKE) setup-develop
 
+mrtrust-all:
+	find "$(shell pwd)" -name '*.mrconfig' -print >> ~/.mrtrust
+
 setup-develop-nodeps:
 	cd $(DT_ENV_DEVELOPER)/src/aido-agents && python3 setup.py develop --no-deps
 	cd $(DT_ENV_DEVELOPER)/src/aido-analyze && python3 setup.py develop --no-deps
