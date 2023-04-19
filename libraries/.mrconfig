@@ -7,9 +7,6 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-data-api.git' '
 [lib-dt-apriltags]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-apriltags.git' 'lib-dt-apriltags'
 
-[lib-dt-mooc]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-mooc.git' 'lib-dt-mooc'
-
 [lib-dt-pip-utils]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-pip-utils.git' 'lib-dt-pip-utils'
 
