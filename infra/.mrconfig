@@ -12,3 +12,6 @@ checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-vscode' 'dt
 
 [dt-virtual-device]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-virtual-device' 'dt-virtual-device'
+
+[dt-statistics-server]
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-statistics-server.git' 'dt-statistics-server'

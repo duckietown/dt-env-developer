@@ -61,9 +61,6 @@ checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-autolab-pro
 [dt-firmware-upgrade]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-firmware-upgrade.git' 'dt-firmware-upgrade'
 
-[dt-statistics-server]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-statistics-server.git' 'dt-statistics-server'
-
 [dt-autolab-commons]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-autolab-commons.git' 'dt-autolab-commons'
 
