@@ -1,8 +1,0 @@
-[dt-exercises]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-exercises.git' 'dt-exercises'
-
-[mooc-exercises]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/mooc-exercises.git' mooc-exercises
-
-[mooc-grading]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/mooc-grading.git' mooc-grading

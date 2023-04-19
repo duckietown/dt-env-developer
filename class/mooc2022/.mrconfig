@@ -1,8 +1,0 @@
-[duckietown-lx]
-checkout = git clone -b 'mooc2022' 'git@github.com:duckietown/duckietown-lx.git' 'duckietown-lx'
-
-[duckietown-lx-recipes]
-checkout = git clone -b 'mooc2022' 'git@github.com:duckietown/duckietown-lx-recipes.git' 'duckietown-lx-recipes'
-
-[duckietown-lx-solutions]
-checkout = git clone -b 'mooc2022' 'git@github.com:duckietown/duckietown-lx-solutions.git' 'duckietown-lx-solutions'
