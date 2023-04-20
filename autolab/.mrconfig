@@ -1,6 +1,3 @@
-[dt-autolab-commons]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-autolab-commons.git' 'dt-autolab-commons'
-
 [dt-autolab-localization]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-autolab-localization.git' 'dt-autolab-localization'
 
