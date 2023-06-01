@@ -42,3 +42,6 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dtps.git' 'lib-dtp
 
 [dockertown]
 checkout = git clone -b 'master' 'git@github.com:duckietown/dockertown.git' 'dockertown'
+
+[duckietown-docker-utils]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/duckietown-docker-utils.git' 'duckietown-docker-utils'
