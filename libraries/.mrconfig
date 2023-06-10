@@ -31,9 +31,6 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-motion-planning
 [lib-dt-maps]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-maps.git' 'lib-dt-maps'
 
-[lib-dt-duckiematrix-protocols]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-duckiematrix-protocols.git' 'lib-dt-duckiematrix-protocols'
-
 [lib-dtproject]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dtproject.git' 'lib-dtproject'
 
