@@ -24,3 +24,6 @@ checkout=git clone -b 'ente' 'git@github.com:duckietown/book-opmanual-autolab' '
 
 [book-devmanual-software]
 checkout=git clone -b 'ente' 'git@github.com:duckietown/book-devmanual-software.git' 'book-devmanual-software'
+
+[book-devmanual-duckiematrix]
+checkout=git clone -b 'ente' 'git@github.com:duckietown/book-devmanual-duckiematrix.git' 'book-devmanual-duckiematrix'
