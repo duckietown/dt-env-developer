@@ -27,3 +27,6 @@ checkout=git clone -b 'ente' 'git@github.com:duckietown/book-devmanual-software.
 
 [book-devmanual-duckiematrix]
 checkout=git clone -b 'ente' 'git@github.com:duckietown/book-devmanual-duckiematrix.git' 'book-devmanual-duckiematrix'
+
+[book-instructor-manual]
+checkout=git clone -b 'daffy-staging' 'git@github.com:duckietown/book-instructor-manual.git' 'book-instructor-manual'
