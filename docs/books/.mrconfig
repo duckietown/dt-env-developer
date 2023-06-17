@@ -24,3 +24,7 @@ checkout=git clone -b 'daffy-staging' 'git@github.com:duckietown/book-opmanual-a
 
 [book-devmanual-software]
 checkout=git clone -b 'daffy-staging' 'git@github.com:duckietown/book-devmanual-software.git' 'book-devmanual-software'
+
+[book-instructor-manual]
+checkout=git clone -b 'daffy-staging' 'git@github.com:duckietown/book-instructor-manual.git' 'book-instructor-manual'
+
