@@ -15,3 +15,6 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-virtual-device' 'dt
 
 [dt-statistics-server]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-statistics-server.git' 'dt-statistics-server'
+
+[duckietown-world]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/duckietown-world.git' 'duckietown-world'
