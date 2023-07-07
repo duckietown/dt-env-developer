@@ -1,5 +1,5 @@
 [duckietown-shell]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/duckietown-shell.git' 'duckietown-shell'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/duckietown-shell.git' 'duckietown-shell'
 
 [duckietown-shell-commands]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'

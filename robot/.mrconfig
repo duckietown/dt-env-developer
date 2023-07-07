@@ -1,71 +1,71 @@
 [dt-base-environment]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-base-environment.git' 'dt-base-environment'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-base-environment.git' 'dt-base-environment'
 
 [dt-commons]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-commons.git' 'dt-commons'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-commons.git' 'dt-commons'
 
 [dt-ros-commons]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-ros-commons.git' 'dt-ros-commons'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-ros-commons.git' 'dt-ros-commons'
 
 [dt-duckiebot-interface]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-duckiebot-interface.git' 'dt-duckiebot-interface'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-duckiebot-interface.git' 'dt-duckiebot-interface'
 
 [dt-car-interface]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-car-interface.git' 'dt-car-interface'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-car-interface.git' 'dt-car-interface'
 
 [dt-code-api]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-code-api.git' 'dt-code-api'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-code-api.git' 'dt-code-api'
 
 [dt-device-dashboard]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-device-dashboard.git' 'dt-device-dashboard'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-device-dashboard.git' 'dt-device-dashboard'
 
 [dt-device-health]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-device-health.git' 'dt-device-health'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-device-health.git' 'dt-device-health'
 
 [dt-device-online]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-device-online.git' 'dt-device-online'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-device-online.git' 'dt-device-online'
 
 [dt-device-proxy]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-device-proxy.git' 'dt-device-proxy'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-device-proxy.git' 'dt-device-proxy'
 
 [dt-drone-interface]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-drone-interface.git' 'dt-drone-interface'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-drone-interface.git' 'dt-drone-interface'
 
 [dt-files-api]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-files-api.git' 'dt-files-api'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-files-api.git' 'dt-files-api'
 
 [dt-rosbridge-websocket]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-rosbridge-websocket.git' 'dt-rosbridge-websocket'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-rosbridge-websocket.git' 'dt-rosbridge-websocket'
 
 [dt-system-monitor]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-system-monitor.git' 'dt-system-monitor'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-system-monitor.git' 'dt-system-monitor'
 
 [dt-core]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-core.git' 'dt-core'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-core.git' 'dt-core'
 
 [dt-duckiebot-fifos-bridge]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-duckiebot-fifos-bridge.git' 'dt-duckiebot-fifos-bridge'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-duckiebot-fifos-bridge.git' 'dt-duckiebot-fifos-bridge'
 
 [dt-machine-learning-base-environment]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-machine-learning-base-environment.git' 'dt-machine-learning-base-environment'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-machine-learning-base-environment.git' 'dt-machine-learning-base-environment'
 
 [dt-machine-learning-base-pytorch]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-machine-learning-base-pytorch.git' 'dt-machine-learning-base-pytorch'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-machine-learning-base-pytorch.git' 'dt-machine-learning-base-pytorch'
 
 [dt-gui-tools]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-gui-tools.git' 'dt-gui-tools'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-gui-tools.git' 'dt-gui-tools'
 
 [dt-autolab-proxy]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-autolab-proxy.git' 'dt-autolab-proxy'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-autolab-proxy.git' 'dt-autolab-proxy'
 
 [dt-firmware-upgrade]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-firmware-upgrade.git' 'dt-firmware-upgrade'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-firmware-upgrade.git' 'dt-firmware-upgrade'
 
 [dt-autolab-commons]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-autolab-commons.git' 'dt-autolab-commons'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-autolab-commons.git' 'dt-autolab-commons'
 
 [dt-autolab-device-interface]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-autolab-device-interface.git' 'dt-autolab-device-interface'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-autolab-device-interface.git' 'dt-autolab-device-interface'
 
 [dt-wifi-access-point]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-wifi-access-point.git' 'dt-wifi-access-point'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-wifi-access-point.git' 'dt-wifi-access-point'

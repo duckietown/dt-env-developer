@@ -2,10 +2,10 @@
 checkout = git clone -b 'master' 'git@github.com:duckietown/duckiematrix.git' 'duckiematrix'
 
 [dt-duckiematrix]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-duckiematrix.git' 'dt-duckiematrix'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-duckiematrix.git' 'dt-duckiematrix'
 
 [duckiematrix-examples]
 checkout = git clone -b 'master' 'git@github.com:duckietown/duckiematrix-examples.git' 'duckiematrix-examples'
 
 [lib-dt-duckiematrix-protocols]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/lib-dt-duckiematrix-protocols.git' 'lib-dt-duckiematrix-protocols'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-duckiematrix-protocols.git' 'lib-dt-duckiematrix-protocols'

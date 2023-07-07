@@ -1,17 +1,17 @@
 [lib-dt-authentication]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/lib-dt-authentication.git' 'lib-dt-authentication'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-authentication.git' 'lib-dt-authentication'
 
 [lib-dt-data-api]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-data-api'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-data-api'
 
 [lib-dt-apriltags]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/lib-dt-apriltags.git' 'lib-dt-apriltags'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-apriltags.git' 'lib-dt-apriltags'
 
 [lib-dt-pip-utils]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/lib-dt-pip-utils.git' 'lib-dt-pip-utils'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-pip-utils.git' 'lib-dt-pip-utils'
 
 [lib-dt-vl53l0x]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/lib-dt-vl53l0x.git' 'lib-dt-vl53l0x'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-vl53l0x.git' 'lib-dt-vl53l0x'
 
 [lib-dt-state-estimation]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-state-estimation.git' 'lib-dt-state-estimation'

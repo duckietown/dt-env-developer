@@ -4,10 +4,10 @@ chain = true
 
 
 [docs.duckietown.com]
-checkout=git clone -b 'staging' 'git@github.com:duckietown/docs.duckietown.com.git' 'docs.duckietown.com'
+checkout=git clone -b 'production' 'git@github.com:duckietown/docs.duckietown.com.git' 'docs.duckietown.com'
 
 [dt-jupyter-book]
-checkout=git clone -b 'ente-staging' 'git@github.com:duckietown/dt-jupyter-book.git' 'dt-jupyter-book'
+checkout=git clone -b 'ente' 'git@github.com:duckietown/dt-jupyter-book.git' 'dt-jupyter-book'
 
 [book-instructor-manual]
 checkout=git clone -b 'main' 'git@github.com:duckietown/book-instructor-manual.git' 'book-instructor-manual'

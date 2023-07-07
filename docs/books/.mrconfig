@@ -1,32 +1,32 @@
 [book-devmanual-lx]
-checkout=git clone -b 'ente-staging' 'git@github.com:duckietown/book-devmanual-lx' 'book-devmanual-lx'
+checkout=git clone -b 'ente' 'git@github.com:duckietown/book-devmanual-lx' 'book-devmanual-lx'
 
 [book-opmanual-duckiebot]
-checkout=git clone -b 'ente-staging' 'git@github.com:duckietown/book-opmanual-duckiebot' 'book-opmanual-duckiebot'
+checkout=git clone -b 'ente' 'git@github.com:duckietown/book-opmanual-duckiebot' 'book-opmanual-duckiebot'
 
 [book-opmanual-duckiedrone]
-checkout=git clone -b 'ente-staging' 'git@github.com:duckietown/book-opmanual-duckiedrone' 'book-opmanual-duckiedrone'
+checkout=git clone -b 'ente' 'git@github.com:duckietown/book-opmanual-duckiedrone' 'book-opmanual-duckiedrone'
 
 [book-opmanual-duckietown]
-checkout=git clone -b 'ente-staging' 'git@github.com:duckietown/book-opmanual-duckietown' 'book-opmanual-duckietown'
+checkout=git clone -b 'ente' 'git@github.com:duckietown/book-opmanual-duckietown' 'book-opmanual-duckietown'
 
 [book-devmanual-docs]
-checkout=git clone -b 'ente-staging' 'git@github.com:duckietown/book-devmanual-docs' 'book-devmanual-docs'
+checkout=git clone -b 'ente' 'git@github.com:duckietown/book-devmanual-docs' 'book-devmanual-docs'
 
 [book-course-intro-to-drones]
-checkout=git clone -b 'ente-staging' 'git@github.com:duckietown/book-course-intro-to-drones' 'book-course-intro-to-drones'
+checkout=git clone -b 'ente' 'git@github.com:duckietown/book-course-intro-to-drones' 'book-course-intro-to-drones'
 
 [book-devmanual-shell]
-checkout=git clone -b 'ente-staging' 'git@github.com:duckietown/book-devmanual-shell' 'book-devmanual-shell'
+checkout=git clone -b 'ente' 'git@github.com:duckietown/book-devmanual-shell' 'book-devmanual-shell'
 
 [book-opmanual-autolab]
-checkout=git clone -b 'ente-staging' 'git@github.com:duckietown/book-opmanual-autolab' 'book-opmanual-autolab'
+checkout=git clone -b 'ente' 'git@github.com:duckietown/book-opmanual-autolab' 'book-opmanual-autolab'
 
 [book-devmanual-software]
-checkout=git clone -b 'ente-staging' 'git@github.com:duckietown/book-devmanual-software.git' 'book-devmanual-software'
+checkout=git clone -b 'ente' 'git@github.com:duckietown/book-devmanual-software.git' 'book-devmanual-software'
 
 [book-devmanual-duckiematrix]
 checkout=git clone -b 'ente' 'git@github.com:duckietown/book-devmanual-duckiematrix.git' 'book-devmanual-duckiematrix'
 
 [book-instructor-manual]
-checkout=git clone -b 'daffy-staging' 'git@github.com:duckietown/book-instructor-manual.git' 'book-instructor-manual'
+checkout=git clone -b 'daffy' 'git@github.com:duckietown/book-instructor-manual.git' 'book-instructor-manual'

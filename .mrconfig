@@ -1,5 +1,5 @@
 # [.]
-# checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'
+# checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'
 
 [aido]
 skip = true

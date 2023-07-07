@@ -1,5 +1,5 @@
 [jenkins-jobs]
-checkout = git clone -b 'staging' 'git@github.com:duckietown/.jenkins-jobs' 'jenkins-jobs'
+checkout = git clone -b 'production' 'git@github.com:duckietown/.jenkins-jobs' 'jenkins-jobs'
 
 [ci-jenkins]
 checkout = git clone -b 'master' 'git@github.com:duckietown/ci-jenkins' 'ci-jenkins'
@@ -8,13 +8,13 @@ checkout = git clone -b 'master' 'git@github.com:duckietown/ci-jenkins' 'ci-jenk
 checkout = git clone -b 'main' 'git@github.com:duckietown/hub.duckietown.com' 'hub.duckietown.com'
 
 [dt-vscode]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-vscode' 'dt-vscode'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-vscode' 'dt-vscode'
 
 [dt-virtual-device]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-virtual-device' 'dt-virtual-device'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-virtual-device' 'dt-virtual-device'
 
 [dt-statistics-server]
-checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-statistics-server.git' 'dt-statistics-server'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-statistics-server.git' 'dt-statistics-server'
 
 [duckietown-world]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/duckietown-world.git' 'duckietown-world'
