@@ -56,3 +56,5 @@ db-production
 jenkins-jobs
 .idea-old2
 db-production2
+
+/sandbox/*

@@ -8,3 +8,6 @@ checkout=git clone -b 'staging' 'git@github.com:duckietown/docs.duckietown.com.g
 
 [dt-jupyter-book]
 checkout=git clone -b 'ente-staging' 'git@github.com:duckietown/dt-jupyter-book.git' 'dt-jupyter-book'
+
+[book-instructor-manual]
+checkout=git clone -b 'main' 'git@github.com:duckietown/book-instructor-manual.git' 'book-instructor-manual'
