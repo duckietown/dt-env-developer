@@ -1,8 +1,8 @@
 [template-basic]
-checkout = git clone -b 'v3' 'git@github.com:duckietown/template-basic.git' 'template-basic'
+checkout = git clone -b 'v4' 'git@github.com:duckietown/template-basic.git' 'template-basic'
 
 [template-ros]
-checkout = git clone -b 'v3' 'git@github.com:duckietown/template-ros.git' 'template-ros'
+checkout = git clone -b 'v4' 'git@github.com:duckietown/template-ros.git' 'template-ros'
 
 [template-core]
 checkout = git clone -b 'v2' 'git@github.com:duckietown/template-core.git' 'template-core'
@@ -23,7 +23,7 @@ checkout = git clone -b 'v3' 'git@github.com:duckietown/template-lx-recipe.git' 
 checkout = git clone -b 'v3' 'git@github.com:duckietown/template-compose.git' 'template-compose'
 
 [template-library]
-checkout = git clone -b 'v1' 'git@github.com:duckietown/template-library.git' 'template-library'
+checkout = git clone -b 'v2' 'git@github.com:duckietown/template-library.git' 'template-library'
 
 [template-machine-learning]
 checkout = git clone -b 'v2' 'git@github.com:duckietown/template-machine-learning.git' 'template-machine-learning'
