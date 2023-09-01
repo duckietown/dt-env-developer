@@ -42,3 +42,6 @@ checkout = git clone -b 'master' 'git@github.com:duckietown/dockertown.git' 'doc
 
 [duckietown-docker-utils]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/duckietown-docker-utils.git' 'duckietown-docker-utils'
+
+[dt-machine-learning-libraries]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-machine-learning-libraries.git' 'dt-machine-learning-libraries'
