@@ -18,3 +18,6 @@ checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-statistics-
 
 [duckietown-world]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/duckietown-world.git' 'duckietown-world'
+
+[duckietown.com]
+checkout = git clone -b 'production' 'git@github.com:duckietown/duckietown.com' 'duckietown.com'
