@@ -8,7 +8,7 @@ checkout = git clone -b 'v4' 'git@github.com:duckietown/template-ros.git' 'templ
 checkout = git clone -b 'v2' 'git@github.com:duckietown/template-core.git' 'template-core'
 
 [template-book]
-checkout = git clone -b 'v2' 'git@github.com:duckietown/template-book.git' 'template-book'
+checkout = git clone -b 'v4' 'git@github.com:duckietown/template-book.git' 'template-book'
 
 [template-autolab]
 checkout = git clone -b 'v2' 'git@github.com:duckietown/template-autolab.git' 'template-autolab'
