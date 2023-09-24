@@ -4,77 +4,89 @@ This "environment" repository contains pointers to the most important repositori
 
 These are managed using a tool called [`mr`][mr].
 
-## Install `mr`
+Here we describe how to get started with the development workflow on the `ente-staging` distribution.
 
-Install `mr` on Linux:
+# Requirements
 
-    $ sudo apt install myrepos
+## Install tools
 
-Install `mr` on Mac:
+### **On Linux**
 
-    $ brew install mr
+Run the command,
 
-## Clone this repo
+``` 
+sudo apt install myrepos direnv
+```
 
-Clone this repository:
+### **On MacOS**
 
-    $ git clone git@github.com:duckietown/dt-env-developer.git
-    $ cd dt-env-developer
+Run the command,
 
-## Setup `mrtrust`
+``` 
+brew install mr direnv
+```
+
+## Install other tools
+
+Install utility tools,
+
+``` 
+pip3 install bump2version twine
+```
 
 
-    $ echo $PWD/.mrconfig >> ~/.mrtrust
-    $ echo $PWD/docs/.mrconfig >> ~/.mrtrust
+
+# Setup the developer environment
+
+All the repositories you will need to work with are indexed inside a repository called `dt-env-developer`.
+
+Let’s clone the `ente-staging` branch.
+
+``` 
+git clone -b ente-staging git@github.com:duckietown/dt-env-developer ./ente-staging
+cd ./ente-staging
+```
+
+## Setup `direnv`
+
+We need to tell `direnv` that we trust this workspace,
+
+``` 
+direnv allow .
+```
+
+## Setup `mr`
+
+We need to tell `mr` that we trust this workspace,
+
+``` 
+make mrtrust-all
+```
 
 ## Checkout
 
 Check out all the repos:
 
-    $ mr checkout
+``` 
+$ mr checkout
+```
 
-Note: you might not have permissions to access some of the repos.
-Please notify us promptly---every time we add a repo, we need to update the permissions for particular groups.
+> **NOTE:**  You might not have permissions to access some of the repos. Ask your manager.
 
-## Status
+### Complete docs
 
-You can check the status of the repos with this:
-
-    $ mr status
-
-This will tell you if you have modified files.
-
-## Update  
-
-Update:
-
-    $ mr update
+[See here for the complete documentation about ](http://myrepos.branchable.com/)`mr`.
 
 
-## Complete docs
 
-[See here for the complete documentation about `mr`][docs].
+# Setup shell
 
+Switch your shell to `ente` by running the following command,
 
-[mr]: https://github.com/RichiH/myrepos
-[docs]: http://myrepos.branchable.com/
+``` 
+dts --set-version ente-staging
+```
 
+# Keeping track of daffy VS ente
 
-# Setting up development environments
-
-## Environment variables
-
-
-You have to set the `DT_ENV_DEVELOPER` variables to the root of this folder.
-
-## Misc requirements
-
-    pip3 install bump2version twine
-
-## Setting up packages
-
-You have to run `python setup.py develop` in all the folders.
-
-Run:
-
-    make setup-develop-nodeps setup-develop
+Jenkins is setup to constantly check for repositories for which the `daffy` branch moves ahead wrt the `ente` branch. The idea is that every bug fix implemented in `daffy` should be ported to `ente` (the opposite is not true).
