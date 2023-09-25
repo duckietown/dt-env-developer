@@ -18,12 +18,24 @@ Run the command,
 sudo apt install myrepos direnv
 ```
 
+Add the following line at the end of the `~/.bashrc` file:
+
+```
+eval "$(direnv hook bash)"
+```
+
 ### **On MacOS**
 
 Run the command,
 
 ``` 
 brew install mr direnv
+```
+
+Add the following line at the end of the `~/.zshrc` file:
+
+```
+eval "$(direnv hook zsh)"
 ```
 
 ## Install other tools
