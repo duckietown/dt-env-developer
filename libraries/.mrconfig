@@ -1,5 +1,5 @@
 [lib-dt-authentication]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-authentication.git' 'lib-dt-authentication'
+checkout = git clone -b 'main' 'git@github.com:duckietown/lib-dt-authentication.git' 'lib-dt-authentication'
 
 [lib-dt-data-api]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-data-api'
