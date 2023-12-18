@@ -12,3 +12,6 @@ checkout=git clone -b 'staging' 'git@github.com:duckietown/docs.duckietown.com.g
 
 [dt-jupyter-book]
 checkout=git clone -b 'daffy' 'git@github.com:duckietown/dt-jupyter-book.git' 'dt-jupyter-book'
+
+[sphinx-book-theme]
+checkout=git clone -b 'daffy' 'git@github.com:duckietown/sphinx-book-theme.git' 'sphinx-book-theme'
