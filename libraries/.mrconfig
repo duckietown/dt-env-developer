@@ -32,7 +32,7 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-motion-planning
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-maps.git' 'lib-dt-maps'
 
 [lib-dtproject]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dtproject.git' 'lib-dtproject'
+checkout = git clone -b 'master' 'git@github.com:duckietown/lib-dtproject.git' 'lib-dtproject'
 
 [lib-dtps]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dtps.git' 'lib-dtps'
