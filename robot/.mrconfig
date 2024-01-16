@@ -69,3 +69,6 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-autolab-device-inte
 
 [dt-wifi-access-point]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-wifi-access-point.git' 'dt-wifi-access-point'
+
+[dt-compose-commons]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-compose-commons.git' 'dt-compose-commons'
