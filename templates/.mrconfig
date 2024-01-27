@@ -1,3 +1,6 @@
+[template-legacy-py38]
+checkout = git clone -b 'v4' 'git@github.com:duckietown/template-legacy-py38.git' 'template-legacy-py38'
+
 [template-basic]
 checkout = git clone -b 'v4' 'git@github.com:duckietown/template-basic.git' 'template-basic'
 
