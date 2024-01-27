@@ -1,6 +1,9 @@
 [dt-base-environment]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-base-environment.git' 'dt-base-environment'
 
+[dt-legacy-py38-environment]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-legacy-py38-environment.git' 'dt-legacy-py38-environment'
+
 [dt-commons]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-commons.git' 'dt-commons'
 
