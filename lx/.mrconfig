@@ -6,3 +6,9 @@ checkout = git clone -b 'mooc2022' 'git@github.com:duckietown/duckietown-lx-reci
 
 [duckietown-lx-solutions]
 checkout = git clone -b 'mooc2022' 'git@github.com:duckietown/duckietown-lx-solutions.git' 'duckietown-lx-solutions'
+
+[lx-ros-basics]
+checkout = git clone -b 'main' 'git@github.com:duckietown/lx-ros-basics.git' 'lx-ros-basics'
+
+[lx-recipe-ros-basics]
+checkout = git clone -b 'main' 'git@github.com:duckietown/lx-recipe-ros-basics.git' 'lx-recipe-ros-basics'
