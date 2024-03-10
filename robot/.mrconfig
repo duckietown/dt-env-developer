@@ -10,6 +10,9 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-commons.git' 'dt-co
 [dt-ros-commons]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-ros-commons.git' 'dt-ros-commons'
 
+[dt-ros-interface]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-ros-interface.git' 'dt-ros-interface'
+
 [dt-duckiebot-interface]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-duckiebot-interface.git' 'dt-duckiebot-interface'
 
