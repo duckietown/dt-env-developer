@@ -54,3 +54,6 @@ checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-machine-learning-b
 
 [dt-machine-learning-base-pytorch]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-machine-learning-base-pytorch.git' 'dt-machine-learning-base-pytorch'
+
+[gym-duckietown]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/gym-duckietown.git' 'gym-duckietown'
