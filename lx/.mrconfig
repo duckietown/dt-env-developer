@@ -6,3 +6,6 @@ checkout = git clone -b 'mooc2022' 'git@github.com:duckietown/duckietown-lx-reci
 
 [duckietown-lx-solutions]
 checkout = git clone -b 'mooc2022' 'git@github.com:duckietown/duckietown-lx-solutions.git' 'duckietown-lx-solutions'
+
+[dt-vscode]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-vscode.git' 'dt-vscode'
