@@ -12,3 +12,6 @@ checkout = git clone -b 'main' 'git@github.com:duckietown/hub.duckietown.com' 'h
 
 [utility-dashboards]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/utility-dashboards.git' 'utility-dashboards'
+
+[duckietown-challenges-cli]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/duckietown-challenges-cli.git' 'duckietown-challenges-cli'
