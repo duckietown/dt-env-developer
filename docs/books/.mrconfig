@@ -24,3 +24,6 @@ checkout=git clone -b 'daffy' 'git@github.com:duckietown/book-opmanual-autolab' 
 
 [book-devmanual-software]
 checkout=git clone -b 'daffy' 'git@github.com:duckietown/book-devmanual-software.git' 'book-devmanual-software'
+
+[book-instructor-manual]
+checkout=git clone -b 'daffy' 'git@github.com:duckietown/book-instructor-manual' 'book-instructor-manual'
