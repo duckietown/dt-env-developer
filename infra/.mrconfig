@@ -9,3 +9,6 @@ checkout = git clone -b 'main' 'git@github.com:duckietown/dt-hub' 'dt-hub'
 
 [hub.duckietown.com]
 checkout = git clone -b 'main' 'git@github.com:duckietown/hub.duckietown.com' 'hub.duckietown.com'
+
+[utility-dashboards]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/utility-dashboards.git' 'utility-dashboards'
