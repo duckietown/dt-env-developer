@@ -6,3 +6,9 @@ checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-autolab-localizati
 
 [dt-aido-autolab-evaluator]
 checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-aido-autolab-evaluator.git' 'dt-aido-autolab-evaluator'
+
+[dt-autolab-device-interface]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-autolab-device-interface.git' 'dt-autolab-device-interface'
+
+[dt-autolab-proxy]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-autolab-proxy.git' 'dt-autolab-proxy'
