@@ -1,11 +1,20 @@
 [dt-base-environment]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-base-environment.git' 'dt-base-environment'
 
+[dt-legacy-py38-environment]
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-legacy-py38-environment.git' 'dt-legacy-py38-environment'
+
 [dt-commons]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-commons.git' 'dt-commons'
 
 [dt-ros-commons]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-ros-commons.git' 'dt-ros-commons'
+
+[dt-ros2-commons]
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-ros2-commons.git' 'dt-ros2-commons'
+
+[dt-ros-interface]
+checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-ros-interface.git' 'dt-ros-interface'
 
 [dt-duckiebot-interface]
 checkout = git clone -b 'ente-staging' 'git@github.com:duckietown/dt-duckiebot-interface.git' 'dt-duckiebot-interface'

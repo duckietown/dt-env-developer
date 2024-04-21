@@ -1,0 +1,5 @@
+[electronics]
+checkout=git clone 'git@github.com:duckietown/electronics.git' 'electronics'
+
+[hw]
+checkout=git clone 'git@github.com:duckietown/hw.git' 'hw'

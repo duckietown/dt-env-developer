@@ -22,6 +22,10 @@ chain = true
 skip = true
 chain = true
 
+[hardware]
+skip = true
+chain = true
+
 [infra]
 skip = true
 chain = true
