@@ -1,0 +1,5 @@
+[HS23-lx]
+checkout = git clone 'git@github.com:duckietown-ethz/HS23-lx.git' 'HS23-lx'
+
+[HS23-lx-recipe]
+checkout = git clone 'git@github.com:duckietown-ethz/HS23-lx-recipe.git' 'HS23-lx-recipe'

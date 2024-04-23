@@ -18,3 +18,15 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-statistics-server.g
 
 [duckietown-world]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/duckietown-world.git' 'duckietown-world'
+
+[dt-stackoverflow-slack-invite-bot]
+checkout = git clone -b 'main' 'git@github.com:duckietown/dt-stackoverflow-slack-invite-bot.git' 'dt-stackoverflow-slack-invite-bot'
+
+[dt-archimede-deployment]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-archimede-deployment.git' 'dt-archimede-deployment'
+
+[dt-davinci-deployment]
+checkout = git clone -b 'main' 'git@github.com:duckietown/dt-davinci-deployment.git' 'dt-davinci-deployment'
+
+
+
