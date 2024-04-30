@@ -19,9 +19,6 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-ros-interface.git' 
 [dt-duckiebot-interface]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-duckiebot-interface.git' 'dt-duckiebot-interface'
 
-[dt-car-interface]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-car-interface.git' 'dt-car-interface'
-
 [dt-code-api]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-code-api.git' 'dt-code-api'
 
@@ -36,9 +33,6 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-device-online.git' 
 
 [dt-device-proxy]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-device-proxy.git' 'dt-device-proxy'
-
-[dt-drone-interface]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-drone-interface.git' 'dt-drone-interface'
 
 [dt-files-api]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-files-api.git' 'dt-files-api'
