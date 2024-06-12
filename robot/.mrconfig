@@ -16,6 +16,9 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-ros2-commons.git' '
 [dt-ros-interface]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-ros-interface.git' 'dt-ros-interface'
 
+[dt-ros2-interface]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-ros2-interface.git' 'dt-ros2-interface'
+
 [dt-duckiebot-interface]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-duckiebot-interface.git' 'dt-duckiebot-interface'
 

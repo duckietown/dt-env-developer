@@ -1,5 +1,14 @@
+[dt-autolab-commons]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-autolab-commons.git' 'dt-autolab-commons'
+
 [dt-autolab-localization]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-autolab-localization.git' 'dt-autolab-localization'
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-autolab-localization.git' 'dt-autolab-localization'
 
 [dt-aido-autolab-evaluator]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-aido-autolab-evaluator.git' 'dt-aido-autolab-evaluator'
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-aido-autolab-evaluator.git' 'dt-aido-autolab-evaluator'
+
+[dt-autolab-device-interface]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-autolab-device-interface.git' 'dt-autolab-device-interface'
+
+[dt-autolab-proxy]
+checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-autolab-proxy.git' 'dt-autolab-proxy'
