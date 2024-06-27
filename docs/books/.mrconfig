@@ -10,6 +10,9 @@ checkout=git clone -b 'ente' 'git@github.com:duckietown/book-opmanual-duckiedron
 [book-opmanual-duckietown]
 checkout=git clone -b 'ente' 'git@github.com:duckietown/book-opmanual-duckietown' 'book-opmanual-duckietown'
 
+[book-opmanual-dd24]
+checkout=git clone -b 'ente' 'git@github.com:duckietown/book-opmanual-dd24' 'book-opmanual-dd24'
+
 [book-devmanual-docs]
 checkout=git clone -b 'ente' 'git@github.com:duckietown/book-devmanual-docs' 'book-devmanual-docs'
 
