@@ -1,0 +1,30 @@
+{
+	"name": "noetic desktop",
+	"dockerFile": "Dockerfile",
+	"runArgs": [
+		"--privileged",
+		"--net=host"
+	],
+	"workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
+	"workspaceFolder": "/${localWorkspaceFolderBasename}",
+  	"mounts": [
+    	"source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind",
+		"source=/var/run/dbus,target=/var/run/dbus,type=bind",
+		"source=/var/run/avahi-daemon/socket,target=/var/run/avahi-daemon/socket,type=bind"
+	],
+  	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"moby": true,
+			"azureDnsAutoDetection": true,
+			"installDockerBuildx": true,
+			"installDockerComposeSwitch": true,
+			"version": "latest",
+			"dockerDashComposeVersion": "latest"
+		},
+		"ghcr.io/devcontainers/features/git:1": {
+			"ppa": true,
+			"version": "os-provided"
+		},
+		"./feature-dts-devcontainer/src/duckietown-shell": {}
+	}
+}
