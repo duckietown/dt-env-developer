@@ -81,3 +81,6 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-wifi-access-point.g
 
 [dt-compose-commons]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-compose-commons.git' 'dt-compose-commons'
+
+[dt-duckietown-viewer]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-duckietown-viewer.git' 'dt-duckietown-viewer'
