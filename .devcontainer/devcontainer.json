@@ -10,7 +10,8 @@
   	"mounts": [
     	"source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind",
 		"source=/var/run/dbus,target=/var/run/dbus,type=bind",
-		"source=/var/run/avahi-daemon/socket,target=/var/run/avahi-daemon/socket,type=bind"
+		"source=/var/run/avahi-daemon/socket,target=/var/run/avahi-daemon/socket,type=bind",
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind"
 	],
   	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
