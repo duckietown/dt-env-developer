@@ -35,4 +35,5 @@ RUN sudo apt-get update \
     inetutils-ping \
     nano \
     net-tools \
+    rsync \
     && sudo rm -rf /var/lib/apt/lists/*
