@@ -32,8 +32,14 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 RUN sudo apt-get update \
     && sudo apt-get install -y \
     avahi-utils \
+    direnv \
+    dnsutils \
     inetutils-ping \
     nano \
     net-tools \
     rsync \
+    unzip \
     && sudo rm -rf /var/lib/apt/lists/*
+
+# Configure direnv shell hook (assuming bash)
+RUN echo 'eval "$(direnv hook bash)"' >> ~/.bashrc

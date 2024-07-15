@@ -26,6 +26,9 @@
 			"ppa": true,
 			"version": "os-provided"
 		},
+		"ghcr.io/devcontainers/features/git-lfs:1": {},
+		"./feature-dts-devcontainer/src/duckietown-shell": {}
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
