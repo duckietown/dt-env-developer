@@ -1,5 +1,11 @@
+[template-duckietown-shell-command-set]
+checkout = git clone -b 'main' 'git@github.com:duckietown/template-duckietown-shell-command-set.git' 'template-duckietown-shell-command-set'
+
 [duckietown-shell]
-checkout = git clone -b 'v6' 'git@github.com:duckietown/duckietown-shell.git' 'duckietown-shell'
+checkout = git clone -b 'main' 'git@github.com:duckietown/duckietown-shell.git' 'duckietown-shell'
 
 [duckietown-shell-commands]
-checkout = git clone -b 'v6' 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/duckietown-shell-commands.git' 'duckietown-shell-commands'
+
+[duckietown-shell-developer-commands]
+checkout = git clone -b 'main' 'git@github.com:duckietown/duckietown-shell-developer-commands.git' 'duckietown-shell-developer-commands'
