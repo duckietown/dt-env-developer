@@ -32,6 +32,7 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 RUN sudo apt-get update \
     && sudo apt-get install -y \
     avahi-utils \
+    bumpversion \
     direnv \
     dnsutils \
     inetutils-ping \
