@@ -1,80 +1,97 @@
 # `dt-env-developer`
 
-This "environment" repository contains pointers to the most important repositories in Duckietown. 
 
-These are managed using a tool called [`mr`][mr].
+## Installation
 
-## Install `mr`
+### **On Linux**
 
-Install `mr` on Linux:
+Run the command,
 
-    $ sudo apt install myrepos
+```
+sudo apt install myrepos direnv
+```
 
-Install `mr` on Mac:
+### **On MacOS**
 
-    $ brew install mr
+Run the command,
 
-## Clone this repo
+```
+brew install mr direnv
+```
 
-Clone this repository:
+## Install other tools
 
-    $ git clone git@github.com:duckietown/dt-env-developer.git
-    $ cd dt-env-developer
+Install utility tools,
 
-## Setup `mrtrust`
+```
+pip3 install bump2version twine
+```
 
+# Setup the developer environment
 
-    $ echo $PWD/.mrconfig >> ~/.mrtrust
-    $ echo $PWD/docs/.mrconfig >> ~/.mrtrust
+All the repositories you will need to work with are indexed inside a repository called `dt-env-developer`.
+
+Let’s clone the `ente` branch (the same applies to `ente-staging`).
+
+```
+git clone -b ente git@github.com:duckietown/dt-env-developer ./ente
+cd ./ente
+```
+
+## Setup `direnv`
+
+Hook `direnv` into your shell [REF](https://direnv.net/docs/hook.html)
+
+**Using bash (Linux):**
+
+Add the following line at the end of the `~/.bashrc` file:
+
+```
+eval "$(direnv hook bash)"
+```
+
+**Using zsh (macOS):**
+
+Add the following line at the end of the `~/.zshrc` file:
+
+```
+eval "$(direnv hook zsh)"
+```
+
+We need to tell `direnv` that we trust this workspace,
+
+```
+direnv allow .
+```
+
+## Setup `mr`
+
+We need to tell `mr` that we trust this workspace,
+
+```
+make mrtrust-all
+```
 
 ## Checkout
 
 Check out all the repos:
 
-    $ mr checkout
+```
+$ mr checkout
+```
 
-Note: you might not have permissions to access some of the repos.
-Please notify us promptly---every time we add a repo, we need to update the permissions for particular groups.
+> [!NOTE]
+> **NOTE:** You might not have permissions to access some of the repos. Ask your manager.
 
-## Status
+### Complete docs
 
-You can check the status of the repos with this:
+[See here for the complete documentation about](http://myrepos.branchable.com/) `mr`.
 
-    $ mr status
+# Setup shell
 
-This will tell you if you have modified files.
+Switch your shell to `ente` by running the following command,
 
-## Update  
+```
+dts --set-version ente
+```
 
-Update:
-
-    $ mr update
-
-
-## Complete docs
-
-[See here for the complete documentation about `mr`][docs].
-
-
-[mr]: https://github.com/RichiH/myrepos
-[docs]: http://myrepos.branchable.com/
-
-
-# Setting up development environments
-
-## Environment variables
-
-
-You have to set the `DT_ENV_DEVELOPER` variables to the root of this folder.
-
-## Misc requirements
-
-    pip3 install bump2version twine
-
-## Setting up packages
-
-You have to run `python setup.py develop` in all the folders.
-
-Run:
-
-    make setup-develop-nodeps setup-develop
