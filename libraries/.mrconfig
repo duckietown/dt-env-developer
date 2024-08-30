@@ -54,3 +54,6 @@ checkout = git clone -b 'v1' 'git@github.com:duckietown/duckietown-sdk.git' 'duc
 
 [duckietown-messages]
 checkout = git clone -b 'main' 'git@github.com:duckietown/duckietown-messages.git' 'duckietown-messages'
+
+[lib-dtps-http]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dtps-http.git' 'lib-dtps-http'

@@ -31,5 +31,11 @@ checkout = git clone -b 'daffy' 'git@github.com:duckietown/dt-archimede-deployme
 [dt-davinci-deployment]
 checkout = git clone -b 'main' 'git@github.com:duckietown/dt-davinci-deployment.git' 'dt-davinci-deployment'
 
+[utility-dashboards]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/utility-dashboards' 'utility-dashboards'
 
+[dt-duckietown-viewer]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-duckietown-viewer' 'dt-duckietown-viewer'
 
+[electron-viewer]
+checkout = git clone -b 'main' 'git@github.com:duckietown/electron-viewer' 'electron-viewer'
