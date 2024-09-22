@@ -8,7 +8,13 @@ checkout = git clone -b 'mooc2022' 'git@github.com:duckietown/duckietown-lx-reci
 checkout = git clone -b 'mooc2022' 'git@github.com:duckietown/duckietown-lx-solutions.git' 'duckietown-lx-solutions'
 
 [lx-ros-basics]
-checkout = git clone -b 'main' 'git@github.com:duckietown/lx-ros-basics.git' 'lx-ros-basics'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-ros-basics.git' 'lx-ros-basics'
 
 [lx-recipe-ros-basics]
-checkout = git clone -b 'main' 'git@github.com:duckietown/lx-recipe-ros-basics.git' 'lx-recipe-ros-basics'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-ros-basics.git' 'lx-recipe-ros-basics'
+
+[lx-modeling-control]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-modeling-control.git' 'lx-modeling-control'
+
+[lx-recipe-modeling-control]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-modeling-control.git' 'lx-recipe-modeling-control'
