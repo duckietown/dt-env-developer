@@ -13,8 +13,8 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-ros-basics.git' 'lx
 [lx-recipe-ros-basics]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-ros-basics.git' 'lx-recipe-ros-basics'
 
-[lx-modeling-control]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-modeling-control.git' 'lx-modeling-control'
+[lx-kinematics-odometry]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-kinematics-odometry.git' 'lx-kinematics-odometry'
 
-[lx-recipe-modeling-control]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-modeling-control.git' 'lx-recipe-modeling-control'
+[lx-recipe-kinematics-odometry]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-kinematics-odometry.git' 'lx-recipe-kinematics-odometry'
