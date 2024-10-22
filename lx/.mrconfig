@@ -18,3 +18,12 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-kinematics-odometry
 
 [lx-recipe-kinematics-odometry]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-kinematics-odometry.git' 'lx-recipe-kinematics-odometry'
+
+[lx-computer-vision]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-computer-vision.git' 'lx-computer-vision'
+
+[lx-recipe-computer-vision]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-computer-vision.git' 'lx-recipe-computer-vision'
+
+
+
