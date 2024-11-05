@@ -13,7 +13,8 @@
 		"source=/var/run/avahi-daemon/socket,target=/var/run/avahi-daemon/socket,type=bind",
 		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind"
 	],
-  	"features": {
+	"postCreateCommand": "catkin_make --pkg duckietown_msgs --source /ente/robot/dt-ros-commons/packages --build /home/vscode/build && source /ente/devel/setup.bash",
+	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
 			"moby": true,
 			"azureDnsAutoDetection": true,
@@ -43,7 +44,10 @@
 				"ms-toolsai.jupyter",
 				"ms-toolsai.jupyter-cell-tags",
 				"ms-toolsai.jupyter-renderers",
-				"ms-toolsai.vscode-jupyter-slideshow"
+				"ms-toolsai.vscode-jupyter-slideshow",
+				"Tyriar.luna-paint",
+				"eamodio.gitlens",
+				// "ms-iot.vscode-ros"
 			]
 		}
 	}

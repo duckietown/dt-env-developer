@@ -36,8 +36,11 @@ RUN sudo apt-get update \
     direnv \
     dnsutils \
     inetutils-ping \
+    inetutils-traceroute \
     nano \
     net-tools \
+    python3.8-venv \
+    pipx \
     rsync \
     unzip \
     && sudo rm -rf /var/lib/apt/lists/*
