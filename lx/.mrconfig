@@ -25,5 +25,14 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-computer-vision.git
 [lx-recipe-computer-vision]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-computer-vision.git' 'lx-recipe-computer-vision'
 
+[lx-object-detection]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-object-detection.git' 'lx-object-detection'
 
+[lx-recipe-object-detection]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-object-detection.git' 'lx-recipe-object-detection'
 
+[lx-recipe-estimation]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-estimation.git' 'lx-recipe-estimation'
+
+[lx-estimation]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-estimation.git' 'lx-estimation'
