@@ -13,7 +13,7 @@
 		"source=/var/run/avahi-daemon/socket,target=/var/run/avahi-daemon/socket,type=bind",
 		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind"
 	],
-	"postCreateCommand": "catkin_make --pkg duckietown_msgs --source /ente/robot/dt-ros-commons/packages --build /home/vscode/build && source /ente/devel/setup.bash",
+	"postCreateCommand": "./postCreateCommand.sh",
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
 			"moby": true,
