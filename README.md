@@ -95,3 +95,39 @@ Switch your shell to `ente` by running the following command,
 dts --set-version ente
 ```
 
+## Devcontainer usage
+
+This repository can be used as a devcontainer for development. This allows you to avoid installing anything on your local os. The only dependency is Docker. Follow the following steps to start the devcontainer:
+
+> [!IMPORTANT]
+> To utilize the full functionalities of the devcontainer (specifically host network) on macOS, you need to install `orbstack` rather than Docker. Follow the installation instructions [here](https://docs.orbstack.dev/quick-start).
+> After installing `orbstack`, make sure it is running before opening the repository in a devcontainer.
+
+### 1. Setup SSH Key Authentication
+
+Ensure you have SSH key authentication set up with GitHub. You can follow the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+
+### 2. Enable SSH Agent Forwarding
+
+Edit your `/etc/ssh/sshd_config` file to enable SSH agent forwarding. Add or modify the following lines:
+
+```
+AllowAgentForwarding yes
+```
+
+Restart the SSH service to apply the changes (**linux only**):
+
+```
+sudo systemctl restart sshd
+```
+
+### 3. Open the Repository in a Devcontainer
+
+
+1. Open Visual Studio Code.
+2. Install the "Remote - Containers" extension if you haven't already.
+3. Open the repository folder in Visual Studio Code.
+4. Press `F1` and select `Remote-Containers: Open Folder in Container...`.
+5. Select the repository folder.
+
+
