@@ -43,6 +43,7 @@ RUN sudo apt-get update \
     pipx \
     rsync \
     unzip \
+    myrepos \
     && sudo rm -rf /var/lib/apt/lists/*
 
 # Configure direnv shell hook (assuming bash)
