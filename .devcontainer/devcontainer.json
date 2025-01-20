@@ -13,7 +13,7 @@
 		"source=/var/run/avahi-daemon/socket,target=/var/run/avahi-daemon/socket,type=bind",
 		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind"
 	],
-	"postCreateCommand": "./postCreateCommand.sh",
+	"postCreateCommand": ".devcontainer/postCreateCommand.sh",
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
 			"moby": true,
