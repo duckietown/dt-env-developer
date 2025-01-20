@@ -9,9 +9,10 @@
 	"workspaceFolder": "/${localWorkspaceFolderBasename}",
   	"mounts": [
     	"source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind",
-		"source=/var/run/dbus,target=/var/run/dbus,type=bind",
-		"source=/var/run/avahi-daemon/socket,target=/var/run/avahi-daemon/socket,type=bind",
-		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind"
+		// +++++++++++++ NOTE: uncomment if running on linux host
+		// "source=/var/run/dbus,target=/var/run/dbus,type=bind",
+		// "source=/var/run/avahi-daemon/socket,target=/var/run/avahi-daemon/socket,type=bind",
+		// ++++++++++++++++++++++++
 	],
 	"postCreateCommand": ".devcontainer/postCreateCommand.sh",
 	"onCreateCommand": "git submodule update --init .devcontainer/feature-dts-devcontainer", // Make sure the dts feature is initialized
