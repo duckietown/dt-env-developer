@@ -127,6 +127,9 @@ sudo systemctl restart sshd
 1. Open Visual Studio Code.
 2. Install the "Remote - Containers" extension if you haven't already.
 3. Open the repository folder in Visual Studio Code.
+    > [!IMPORTANT]
+    > If running on a linux host open the `.devcontainer/devcontainer.json` file and uncomment lines 13-14.
+
 4. Download the dts module for the devcontainer by running:
 
         git submodule update --init .devcontainer/feature-dts-devcontainer
