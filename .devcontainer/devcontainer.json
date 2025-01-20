@@ -14,6 +14,7 @@
 		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind"
 	],
 	"postCreateCommand": ".devcontainer/postCreateCommand.sh",
+	"onCreateCommand": "git submodule update --init .devcontainer/feature-dts-devcontainer", // Make sure the dts feature is initialized
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
 			"moby": true,
