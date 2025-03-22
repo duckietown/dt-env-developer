@@ -36,3 +36,9 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-estimation.g
 
 [lx-estimation]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-estimation.git' 'lx-estimation'
+
+[lx-recipe-braitenberg]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-braitenberg.git' 'lx-recipe-braitenberg'
+
+[lx-braitenberg]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-braitenberg.git' 'lx-braitenberg'
