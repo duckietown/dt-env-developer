@@ -77,7 +77,7 @@ make mrtrust-all
 Check out all the repos:
 
 ```
-$ mr checkout
+mr checkout
 ```
 
 > [!NOTE]
