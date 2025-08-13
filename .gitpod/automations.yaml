@@ -1,0 +1,21 @@
+tasks:
+  - name: tailscale
+    command: |
+      sudo mkdir -p /workspace/.tailscale
+      sudo tailscaled \
+        --tun=userspace-networking \
+        --socket=/tmp/tailscaled.sock \
+        --state=/workspace/.tailscale/tailscaled.state \
+        --socks5-server=localhost:1055 \
+        --outbound-http-proxy-listen=localhost:1056 \
+        >/tmp/tailscaled.log 2>&1 &
+      # bring it up without hijacking DNS or routes
+      sleep 2
+      sudo tailscale --socket=/tmp/tailscaled.sock up \
+        --authkey="${TAILSCALE_AUTHKEY}" \
+        --accept-dns=false \
+        --accept-routes=false \
+        --ssh=true
+      # optional: make tools use SOCKS by default (comment if you don't want it)
+      echo 'export ALL_PROXY=socks5h://127.0.0.1:1055' >> ~/.bashrc
+      echo 'export NO_PROXY=localhost,127.0.0.1' >> ~/.bashrc
