@@ -1,10 +1,6 @@
 {
 	"name": "gitpod desktop",
 	"image": "gitpod/workspace-full-vnc",
-	"runArgs": [
-		"--privileged",
-		"--net=host"
-	],
 	"workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
 	"workspaceFolder": "/${localWorkspaceFolderBasename}",
   	"features": {
