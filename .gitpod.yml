@@ -1,3 +1,4 @@
-tasks:
+image: gitpod/workspace-full-vnc
+asks:
   - init: |
       git submodule update --init --recursive
