@@ -1,3 +1,0 @@
-[submodule ".devcontainer/feature-dts-devcontainer"]
-	path = .devcontainer/feature-dts-devcontainer
-	url = https://github.com/duckietown/feature-dts-devcontainer.git

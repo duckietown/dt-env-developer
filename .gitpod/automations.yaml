@@ -1,0 +1,11 @@
+tasks:
+    tailscale-connect:
+        name: Connect to a tailscale network
+        description: This task connects the workspace to a Tailscale network specified by the authkey in the environment variable TAILSCALE_AUTHKEY.
+        triggeredBy:
+            - postEnvironmentStart
+        command: |
+            sudo tailscale up --netfilter-mode=off --auth-key=${TS_AUTH_KEY} --reset
+            echo Connected to Tailscale network
+            echo Machine tailscale IP address: $(tailscale ip)
+            exit 0
