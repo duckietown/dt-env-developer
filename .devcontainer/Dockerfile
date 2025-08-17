@@ -40,7 +40,12 @@ RUN sudo apt-get update \
     net-tools \
     rsync \
     unzip \
+    pipx \
+    python3.8-venv \
     && sudo rm -rf /var/lib/apt/lists/*
 
 # Configure direnv shell hook (assuming bash)
-RUN echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
+RUN echo 'eval "$(direnv hook bash)"' >> ~/.bashrc \
+    && echo 'export PIPX_BIN_DIR="$HOME/.local/bin"' >> ~/.bashrc \
+    && echo 'export PATH="$PIPX_BIN_DIR:$PATH"' >> ~/.bashrc \
+    && echo 'export PATH=/home/vscode/.local/bin:$PATH'
