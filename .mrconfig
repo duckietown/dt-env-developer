@@ -1,21 +1,6 @@
 # [.]
 # checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-env-developer.git' 'dt-env-developer'
 
-[aido]
-skip = true
-chain = true
-
-[autolab]
-skip = true
-chain = true
-
-[challenges]
-skip = true
-chain = true
-
-[class]
-skip = true
-chain = true
 
 [docs]
 skip = true

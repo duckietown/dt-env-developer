@@ -2,7 +2,7 @@
 checkout = git clone -b 'main' 'git@github.com:duckietown/lib-dt-authentication.git' 'lib-dt-authentication'
 
 [lib-dt-data-api]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-data-api'
+checkout = git clone -b 'production' 'git@github.com:duckietown/lib-dt-data-api.git' 'lib-dt-data-api'
 
 [lib-dt-apriltags]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-apriltags.git' 'lib-dt-apriltags'
@@ -32,7 +32,7 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-motion-planning
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dt-maps.git' 'lib-dt-maps'
 
 [lib-dtproject]
-checkout = git clone -b 'master' 'git@github.com:duckietown/lib-dtproject.git' 'lib-dtproject'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dtproject.git' 'lib-dtproject'
 
 [lib-dtps]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dtps.git' 'lib-dtps'
@@ -50,10 +50,13 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/duckietown-docker-util
 checkout = git clone -b 'ente' 'git@github.com:duckietown/dt-machine-learning-libraries.git' 'dt-machine-learning-libraries'
 
 [duckietown-sdk]
-checkout = git clone -b 'v1' 'git@github.com:duckietown/duckietown-sdk.git' 'duckietown-sdk'
+checkout = git clone -b 'ente' 'git@github.com:duckietown/duckietown-sdk.git' 'duckietown-sdk'
 
 [duckietown-messages]
 checkout = git clone -b 'main' 'git@github.com:duckietown/duckietown-messages.git' 'duckietown-messages'
 
 [lib-dtps-http]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lib-dtps-http.git' 'lib-dtps-http'
+
+[gym-duckiematrix]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/gym-duckiematrix.git' 'gym-duckiematrix'
