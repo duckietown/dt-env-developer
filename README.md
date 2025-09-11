@@ -69,7 +69,7 @@ direnv allow .
 We need to tell `mr` that we trust this workspace,
 
 ```
-make mrtrust-all
+find "$(pwd)" -name '*.mrconfig' -print >> ~/.mrtrust
 ```
 
 ## Checkout
