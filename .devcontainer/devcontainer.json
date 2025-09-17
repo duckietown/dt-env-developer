@@ -17,6 +17,9 @@
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
 		"ghcr.io/tailscale/codespace/tailscale": {}
 	},
+	"containerEnv": {
+		"DTSHELL_PROFILE": "ente"
+	},
 	"postCreateCommand": "pipx install duckietown-shell",
 	"customizations": {
 		"vscode": {
