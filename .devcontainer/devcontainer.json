@@ -21,9 +21,9 @@
 		"--net=host"
 	],
 	"containerEnv": {
-		"DTSHELL_PROFILE": "ente"
+		"DTSHELL_PROFILE": "ente",
+		"DTSHELL_DISTRO": "ente",
 	},
-	"postCreateCommand": "pipx install duckietown-shell",
 	"customizations": {
 		"vscode": {
 			"extensions": [
