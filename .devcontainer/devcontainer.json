@@ -1,6 +1,8 @@
 {
 	"name": "noetic desktop",
 	"dockerFile": "Dockerfile",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
 			"moby": true,
@@ -17,7 +19,13 @@
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
 		"ghcr.io/tailscale/codespace/tailscale": {}
 	},
-	"postCreateCommand": "pipx install duckietown-shell",
+	"runArgs": [
+		"--net=host"
+	],
+	"containerEnv": {
+		"DTSHELL_PROFILE": "ente",
+		"DTSHELL_DISTRO": "ente",
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [

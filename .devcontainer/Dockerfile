@@ -44,6 +44,8 @@ RUN sudo apt-get update \
     python3.8-venv \
     && sudo rm -rf /var/lib/apt/lists/*
 
+RUN pipx ensurepath && pipx install duckietown-shell
+
 # Configure direnv shell hook (assuming bash)
 RUN echo 'eval "$(direnv hook bash)"' >> ~/.bashrc \
     && echo 'export PIPX_BIN_DIR="$HOME/.local/bin"' >> ~/.bashrc \
