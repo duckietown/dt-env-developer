@@ -26,6 +26,7 @@
 		"DTSHELL_PROFILE": "ente",
 		"DTSHELL_DISTRO": "ente",
 	},
+	"postCreateCommand": "direnv allow",
 	"customizations": {
 		"vscode": {
 			"extensions": [
