@@ -53,5 +53,9 @@ RUN echo 'eval "$(direnv hook bash)"' >> ~/.bashrc \
     && echo 'export PIPX_BIN_DIR="$HOME/.local/bin"' >> ~/.bashrc \
     && echo 'export PATH="$PIPX_BIN_DIR:$PATH"' >> ~/.bashrc
 
+# Install mutagen
+RUN curl -sS https://webi.sh/mutagen | sh \
+    && source ~/.config/envman/PATH.env
+
 RUN mkdir -p /home/vscode/.local/bin
 RUN sudo chown -R $USERNAME:$USERNAME /home/$USERNAME
