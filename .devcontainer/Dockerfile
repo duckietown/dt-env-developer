@@ -43,6 +43,8 @@ RUN sudo apt-get update \
     pipx \
     python3-venv \
     build-essential \
+    gcc \
+    python3-dev \
     && sudo rm -rf /var/lib/apt/lists/*
 
 # Configure direnv shell hook and PATH
