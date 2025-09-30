@@ -38,6 +38,7 @@ RUN sudo apt-get update \
     inetutils-ping \
     nano \
     net-tools \
+    openssh-client \
     rsync \
     unzip \
     pipx \
