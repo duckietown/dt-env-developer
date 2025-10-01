@@ -33,8 +33,10 @@ RUN sudo apt-get update \
     && sudo apt-get install -y \
     avahi-utils \
     bumpversion \
+    curl \
     direnv \
     dnsutils \
+    git \
     inetutils-ping \
     nano \
     net-tools \
@@ -55,7 +57,7 @@ RUN echo 'eval "$(direnv hook bash)"' >> ~/.bashrc \
 
 # Install mutagen
 RUN curl -sS https://webi.sh/mutagen | sh \
-    && source ~/.config/envman/PATH.env
+    && . ~/.config/envman/PATH.env
 
 RUN mkdir -p /home/vscode/.local/bin
 RUN sudo chown -R $USERNAME:$USERNAME /home/$USERNAME
