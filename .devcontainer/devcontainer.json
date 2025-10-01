@@ -2,21 +2,15 @@
 	"name": "noetic desktop",
 	"dockerFile": "Dockerfile",
   	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {
-			"moby": true,
-			"azureDnsAutoDetection": true,
-			"installDockerBuildx": true,
-			"installDockerComposeSwitch": true,
-			"version": "latest",
-			"dockerDashComposeVersion": "latest"
-		},
-		"ghcr.io/devcontainers/features/git:1": {
-			"ppa": true,
-			"version": "os-provided"
-		},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
-		"ghcr.io/tailscale/codespace/tailscale": {}
+		"ghcr.io/tailscale/codespace/tailscale": {},
+		"ghcr.io/devcontainers/features/desktop-lite:1": {
+			"webPort": 6080
+		}
 	},
+	"forwardPorts": [6080],
 	"postCreateCommand": "pipx install duckietown-shell",
 	"customizations": {
 		"vscode": {
