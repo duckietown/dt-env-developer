@@ -1,17 +1,18 @@
 {
 	"name": "noetic desktop",
 	"dockerFile": "Dockerfile",
-  	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+	"features": {
 		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
 		"ghcr.io/tailscale/codespace/tailscale": {},
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
 		"ghcr.io/devcontainers/features/desktop-lite:1": {
 			"webPort": 6080
 		}
 	},
 	"forwardPorts": [6080],
-	"postCreateCommand": "pipx install duckietown-shell",
+	"postStartCommand": ".devcontainer/postStartCommand.sh",
+	"runArgs": ["--net=host"],
 	"customizations": {
 		"vscode": {
 			"extensions": [
