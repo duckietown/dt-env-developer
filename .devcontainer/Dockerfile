@@ -38,6 +38,7 @@ RUN sudo apt-get update \
     dnsutils \
     git \
     inetutils-ping \
+    iproute2 \
     nano \
     net-tools \
     openssh-client \
