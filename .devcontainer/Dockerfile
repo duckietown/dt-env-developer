@@ -36,6 +36,7 @@ RUN sudo apt-get update \
     curl \
     direnv \
     dnsutils \
+    fuse \
     git \
     inetutils-ping \
     iproute2 \
