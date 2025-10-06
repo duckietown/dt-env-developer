@@ -10,6 +10,10 @@
 			"webPort": 6080
 		}
 	},
+	"containerEnv": { "CAROOT": "/caroot" },
+	"mounts": [
+		"source=${localEnv:HOME}/Library/Application Support/mkcert,target=/caroot,type=bind,consistency=cached,readonly"
+	],
 	"forwardPorts": [6080],
 	"postStartCommand": ".devcontainer/postStartCommand.sh",
 	"runArgs": ["--net=host"],
