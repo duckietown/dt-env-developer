@@ -75,7 +75,7 @@ RUN echo 'eval "$(direnv hook bash)"' >> ~/.bashrc \
 
 # Install mutagen
 RUN curl -sS https://webi.sh/mutagen | sh \
-    && . ~/.config/envman/PATH.env
+    && if [ -f ~/.config/envman/PATH.env ]; then . ~/.config/envman/PATH.env; fi
 
 RUN mkdir -p /home/vscode/.local/bin
 RUN sudo chown -R $USERNAME:$USERNAME /home/$USERNAME
