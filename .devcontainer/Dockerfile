@@ -52,6 +52,22 @@ RUN sudo apt-get update \
     python3-dev \
     && sudo rm -rf /var/lib/apt/lists/*
 
+
+# Install Firefox from Mozilla repository
+ARG DEBIAN_FRONTEND=noninteractive
+RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
+        ca-certificates wget gnupg lsb-release && \
+    sudo install -d -m 0755 /etc/apt/keyrings && \
+    wget -qO- https://packages.mozilla.org/apt/repo-signing-key.gpg \
+      | sudo gpg --dearmor -o /etc/apt/keyrings/packages.mozilla.org.gpg && \
+    echo "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.gpg] https://packages.mozilla.org/apt mozilla main" \
+      | sudo tee /etc/apt/sources.list.d/mozilla.list > /dev/null && \
+    echo 'Package: *\nPin: origin packages.mozilla.org\nPin-Priority: 1000' \
+      | sudo tee /etc/apt/preferences.d/mozilla > /dev/null && \
+    sudo apt-get update && \
+    sudo apt-get install -y --no-install-recommends firefox && \
+    sudo rm -rf /var/lib/apt/lists/*
+
 # Configure direnv shell hook and PATH
 RUN echo 'eval "$(direnv hook bash)"' >> ~/.bashrc \
     && echo 'export PIPX_BIN_DIR="$HOME/.local/bin"' >> ~/.bashrc \
