@@ -1,5 +1,5 @@
 {
-	"name": "noetic desktop",
+	"name": "duckietown",
 	"dockerFile": "Dockerfile",
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {},
