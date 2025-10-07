@@ -33,7 +33,10 @@
 				"ms-toolsai.jupyter-cell-tags",
 				"ms-toolsai.jupyter-renderers",
 				"ms-toolsai.vscode-jupyter-slideshow"
-			]
+			],
+			"settings": {
+				"dev.containers.dockerCredentialHelper": false,
+			}
 		}
 	}
 }
