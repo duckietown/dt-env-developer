@@ -11,6 +11,7 @@
 		}
 	},
 	"containerEnv": { "CAROOT": "/caroot" },
+	"initializeCommand": "mkdir -p \"$HOME/Library/Application Support/mkcert\"",
 	"mounts": [
 		"source=${localEnv:HOME}/Library/Application Support/mkcert,target=/caroot,type=bind,consistency=cached,readonly"
 	],
