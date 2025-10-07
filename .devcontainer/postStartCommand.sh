@@ -2,7 +2,7 @@
 
 # Install duckietown-shell
 pipx install duckietown-shell
-direnv allow /workspaces/dt-env-developer/.envrc
+direnv allow /workspaces/*/.envrc
 
 
 # Start dbus daemon
