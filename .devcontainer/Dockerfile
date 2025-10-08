@@ -41,6 +41,7 @@ RUN sudo apt-get update \
     inetutils-ping \
     iproute2 \
     libnss3-tools \
+    mr \
     nano \
     net-tools \
     openssh-client \
