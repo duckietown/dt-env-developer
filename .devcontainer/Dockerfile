@@ -41,6 +41,7 @@ RUN sudo apt-get update \
     inetutils-ping \
     iproute2 \
     libnss3-tools \
+    libnss-mdns \
     mr \
     nano \
     net-tools \
@@ -53,6 +54,10 @@ RUN sudo apt-get update \
     gcc \
     python3-dev \
     && sudo rm -rf /var/lib/apt/lists/*
+
+# Configure mDNS for fast .local resolution
+# Use mdns_minimal which only queries mDNS for .local domains, avoiding DNS timeouts
+RUN sudo sed -i 's/^hosts:.*/hosts: files mdns_minimal [NOTFOUND=return] dns/' /etc/nsswitch.conf
 
 
 # Install Firefox from Mozilla repository
