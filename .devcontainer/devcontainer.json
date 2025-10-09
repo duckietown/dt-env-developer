@@ -1,6 +1,7 @@
 {
 	"name": "duckietown",
-	"dockerFile": "Dockerfile",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "devcontainer",
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
@@ -17,7 +18,6 @@
 	],
 	"forwardPorts": [6080],
 	"postStartCommand": ".devcontainer/postStartCommand.sh",
-	"runArgs": ["--net=host"],
 	"customizations": {
 		"vscode": {
 			"extensions": [
