@@ -16,9 +16,6 @@ services:
     network_mode: host
     environment:
       - DOCKER_BUILDKIT=1
-    security_opt:
-      - seccomp:unconfined
-    privileged: true
 
 volumes:
   # Named volume to persist vscode home directory
