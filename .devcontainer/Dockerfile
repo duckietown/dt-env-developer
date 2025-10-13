@@ -34,7 +34,6 @@ RUN sudo apt-get update \
     avahi-utils \
     bumpversion \
     curl \
-    direnv \
     dnsutils \
     fuse \
     git \
@@ -75,9 +74,7 @@ RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
     sudo apt-get install -y --no-install-recommends firefox && \
     sudo rm -rf /var/lib/apt/lists/*
 
-# Configure direnv shell hook and PATH
-RUN echo 'eval "$(direnv hook bash)"' >> ~/.bashrc \
-    && echo 'export PIPX_BIN_DIR="$HOME/.local/bin"' >> ~/.bashrc \
+RUN echo 'export PIPX_BIN_DIR="$HOME/.local/bin"' >> ~/.bashrc \
     && echo 'export PATH="$PIPX_BIN_DIR:$PATH"' >> ~/.bashrc
 
 # Install mutagen
