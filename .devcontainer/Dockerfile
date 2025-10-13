@@ -54,10 +54,6 @@ RUN sudo apt-get update \
     python3-dev \
     && sudo rm -rf /var/lib/apt/lists/*
 
-# Configure mDNS for fast .local resolution
-RUN sudo sed -i 's/hosts:.*/hosts: files myhostname mdns4_minimal [NOTFOUND=return] dns/' /etc/nsswitch.conf
-
-
 # Install Firefox from Mozilla repository
 ARG DEBIAN_FRONTEND=noninteractive
 RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends \
