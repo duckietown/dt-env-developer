@@ -55,8 +55,7 @@ RUN sudo apt-get update \
     && sudo rm -rf /var/lib/apt/lists/*
 
 # Configure mDNS for fast .local resolution
-# Use mdns_minimal which only queries mDNS for .local domains, avoiding DNS timeouts
-RUN sudo sed -i 's/^hosts:.*/hosts: files mdns_minimal [NOTFOUND=return] dns/' /etc/nsswitch.conf
+RUN sudo sed -i 's/hosts:.*/hosts: files myhostname mdns4_minimal [NOTFOUND=return] dns/' /etc/nsswitch.conf
 
 
 # Install Firefox from Mozilla repository
