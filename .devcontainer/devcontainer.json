@@ -1,23 +1,24 @@
 {
-	"name": "noetic desktop",
-	"dockerFile": "Dockerfile",
-  	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {
-			"moby": true,
-			"azureDnsAutoDetection": true,
-			"installDockerBuildx": true,
-			"installDockerComposeSwitch": true,
-			"version": "latest",
-			"dockerDashComposeVersion": "latest"
-		},
-		"ghcr.io/devcontainers/features/git:1": {
-			"ppa": true,
-			"version": "os-provided"
-		},
+	"name": "duckietown",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "devcontainer",
+	"workspaceFolder": "/workspaces/dt-env-developer",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
-		"ghcr.io/tailscale/codespace/tailscale": {}
+		"ghcr.io/tailscale/codespace/tailscale": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/desktop-lite:1": {
+			"webPort": 6080
+		}
 	},
-	"postCreateCommand": "pipx install duckietown-shell",
+	"containerEnv": { "CAROOT": "/caroot" },
+	"initializeCommand": "mkdir -p \"$HOME/Library/Application Support/mkcert\"",
+	"mounts": [
+		"source=${localEnv:HOME}/Library/Application Support/mkcert,target=/caroot,type=bind,consistency=cached,readonly"
+	],
+	"forwardPorts": [6080],
+	"postStartCommand": "/workspaces/dt-env-developer/.devcontainer/postStartCommand.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -33,7 +34,10 @@
 				"ms-toolsai.jupyter-cell-tags",
 				"ms-toolsai.jupyter-renderers",
 				"ms-toolsai.vscode-jupyter-slideshow"
-			]
+			],
+			"settings": {
+				"dev.containers.dockerCredentialHelper": false,
+			}
 		}
 	}
 }
