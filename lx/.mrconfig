@@ -19,6 +19,9 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-kinematics-odometry
 [lx-recipe-kinematics-odometry]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-kinematics-odometry.git' 'lx-recipe-kinematics-odometry'
 
+[lx-kinematics-odometry-solution]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-kinematics-odometry-solution.git' 'lx-kinematics-odometry-solution'
+
 [lx-computer-vision]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-computer-vision.git' 'lx-computer-vision'
 
@@ -45,3 +48,12 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-braitenberg.git' 'l
 
 [lx-braitenberg-solution]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-braitenberg-solution.git' 'lx-braitenberg-solution'
+
+[lx-recipe-control]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-control.git' 'lx-recipe-control'
+
+[lx-control]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-control.git' 'lx-control'
+
+[lx-control-solution]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-control-solution.git' 'lx-control-solution'
