@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Clear up /tmp directory
+sudo rm -rf /tmp/*
+
 # Configure mDNS for fast .local resolution
 sudo sed -i 's/^hosts:.*/hosts: files mdns4_minimal [SUCCESS=return] mdns6_minimal [SUCCESS=return] dns/' /etc/nsswitch.conf
 sudo grep -q "single-request-reopen" /etc/resolv.conf || sudo echo "options timeout:1 attempts:1 single-request-reopen" | sudo tee -a /etc/resolv.conf

@@ -10,14 +10,13 @@ services:
       - vscode-home:/home/vscode
       # Mount the workspace
       - ../..:/workspaces:cached
-    
+      - /tmp        # Anonymous volume
+
     command: sleep infinity
     init: true
     network_mode: host
     environment:
       - DOCKER_BUILDKIT=1
-    tmpfs:
-      - /tmp:rw,exec,size=50g
 
 volumes:
   # Named volume to persist vscode home directory
