@@ -27,6 +27,38 @@ Install utility tools,
 pip3 install bump2version twine
 ```
 
+## Development Mode (VS Code Dev Container)
+
+If you're using the VS Code dev container setup, you can enable **Development Mode** to automatically configure `direnv` when the container starts.
+
+### Enabling Development Mode
+
+1. Copy the environment template file:
+   ```bash
+   cp .devcontainer/.env.example .devcontainer/.env
+   ```
+
+2. Edit `.devcontainer/.env` and set:
+   ```bash
+   ENABLE_DEVELOPMENT_MODE=true
+   ```
+
+3. Rebuild or restart your dev container
+
+### What Development Mode Does
+
+When `ENABLE_DEVELOPMENT_MODE=true`:
+- Automatically adds the `direnv` hook to your `~/.bashrc`
+- Runs `direnv allow` on container startup to trust the workspace
+- Sets up the development environment automatically
+
+When `ENABLE_DEVELOPMENT_MODE=false` (default):
+- You'll need to manually set up `direnv` (see "Setup `direnv`" section below)
+- Useful if you want more control over your environment setup
+
+> [!NOTE]
+> The `.devcontainer/.env` file is gitignored to prevent accidentally committing local configuration.
+
 # Setup the developer environment
 
 All the repositories you will need to work with are indexed inside a repository called `dt-env-developer`.

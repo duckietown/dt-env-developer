@@ -24,4 +24,27 @@ if ! grep -q "export DOCKER_CONFIG=" ~/.bashrc; then
 	echo "export DOCKER_CONFIG=\"$DOCKER_CONFIG\"" >> ~/.bashrc
 fi
 
+# Check if development mode is enabled and run direnv allow
+if [ "${ENABLE_DEVELOPMENT_MODE}" = "true" ]; then
+	echo "Development mode enabled. Setting up direnv..."
+	
+	# Add direnv hook to bashrc if not already present
+	if ! grep -q 'eval "$(direnv hook bash)"' ~/.bashrc; then
+		echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
+		echo "Direnv hook added to ~/.bashrc"
+	fi
+	
+	# Run direnv allow
+	cd /workspaces/dt-env-developer && direnv allow
+	echo "Direnv setup complete."
+else
+	echo "Development mode not enabled (set ENABLE_DEVELOPMENT_MODE=true in .devcontainer/.env to enable)."
+	
+	# Remove direnv hook from ~/.bashrc if present
+	if grep -q 'eval "$(direnv hook bash)"' ~/.bashrc; then
+		sed -i '/eval "$(direnv hook bash)"/d' ~/.bashrc
+		echo "Direnv hook removed from ~/.bashrc"
+	fi
+fi
+
 echo "Setup complete. Please open a new terminal."

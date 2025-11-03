@@ -34,6 +34,7 @@ RUN sudo apt-get update \
     avahi-utils \
     bumpversion \
     curl \
+    direnv \
     dnsutils \
     fuse \
     git \
