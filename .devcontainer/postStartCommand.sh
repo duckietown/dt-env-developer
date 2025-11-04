@@ -35,7 +35,8 @@ if [ "${ENABLE_DEVELOPMENT_MODE}" = "true" ]; then
 	fi
 	
 	# Run direnv allow
-	cd /workspaces/dt-env-developer && direnv allow
+	cd /workspaces/dt-env-developer || { echo 'Error: Cannot change to workspace directory'; exit 1; }
+	direnv allow
 	echo "Direnv setup complete."
 else
 	echo "Development mode not enabled (set ENABLE_DEVELOPMENT_MODE=true in .devcontainer/.env to enable)."
