@@ -43,7 +43,7 @@ If you're using the VS Code dev container setup, you can enable **Development Mo
    ENABLE_DEVELOPMENT_MODE=true
    ```
 
-3. Rebuild or restart your dev container
+3. Rebuild or restart your dev container (VS Code Command Palette: "Dev Containers: Rebuild Container" or "Dev Containers: Rebuild and Reopen in Container")
 
 ### What Development Mode Does
 
