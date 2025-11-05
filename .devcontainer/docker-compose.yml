@@ -5,6 +5,9 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
+    env_file:
+      - path: .env
+        required: false
     volumes:
       # Persist vscode user home directory
       - vscode-home:/home/vscode
