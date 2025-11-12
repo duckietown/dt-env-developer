@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Clear up /tmp directory
-sudo rm -rf /tmp/*
+sudo rm -rf /tmp/duckietown/*
 
 # Configure mDNS for fast .local resolution
 sudo sed -i 's/^hosts:.*/hosts: files mdns4_minimal [SUCCESS=return] mdns6_minimal [SUCCESS=return] dns/' /etc/nsswitch.conf
@@ -47,6 +47,7 @@ else
 		echo "Direnv hook removed from ~/.zshrc"
 	fi
 
+	sudo rm -rf /tmp/vscode-ssh-auth-* # This is a workaround to disable SSH agent forwarding in devcontainers
 	unset SSH_AUTH_SOCK
 	eval "$(ssh-agent -s)"
 	echo "SSH agent started. The container will not have access to your host's SSH keys."
