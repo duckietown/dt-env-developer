@@ -2,7 +2,7 @@
 	"name": "duckietown",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "devcontainer",
-	"workspaceFolder": "/workspaces/dt-env-developer",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
@@ -12,11 +12,6 @@
 			"webPort": 6080
 		}
 	},
-	"containerEnv": { "CAROOT": "/caroot" },
-	"initializeCommand": "mkdir -p \"$HOME/Library/Application Support/mkcert\"",
-	"mounts": [
-		"source=${localEnv:HOME}/Library/Application Support/mkcert,target=/caroot,type=bind,consistency=cached,readonly"
-	],
 	"forwardPorts": [6080],
 	"postStartCommand": "/workspaces/dt-env-developer/.devcontainer/postStartCommand.sh",
 	"customizations": {

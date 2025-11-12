@@ -14,12 +14,15 @@ services:
       # Mount the workspace
       - ../..:/workspaces:cached
       - /tmp        # Anonymous volume
-
+      # Mount mkcert CA root directory
+      - ${HOME}/Library/Application Support/mkcert:/caroot:ro,cached
+    user: vscode
     command: sleep infinity
     init: true
     network_mode: host
     environment:
       - DOCKER_BUILDKIT=1
+      - CAROOT=/caroot
 
 volumes:
   # Named volume to persist vscode home directory
