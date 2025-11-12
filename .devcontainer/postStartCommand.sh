@@ -46,6 +46,10 @@ else
 		sed -i '/eval "$(direnv hook bash)"/d' ~/.bashrc
 		echo "Direnv hook removed from ~/.bashrc"
 	fi
+
+	unset SSH_AUTH_SOCK
+	eval "$(ssh-agent -s)"
+	echo "SSH agent started. The container will not have access to your host's SSH keys."
 fi
 
 echo "Setup complete. Please open a new terminal."
