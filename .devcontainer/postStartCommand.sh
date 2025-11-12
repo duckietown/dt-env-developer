@@ -19,9 +19,9 @@ sudo avahi-daemon -D
 export DOCKER_CONFIG="$(mktemp -d)"
 printf '{}' > "$DOCKER_CONFIG/config.json"
 
-# Add DOCKER_CONFIG to ~/.bashrc for persistent access
-if ! grep -q "export DOCKER_CONFIG=" ~/.bashrc; then
-	echo "export DOCKER_CONFIG=\"$DOCKER_CONFIG\"" >> ~/.bashrc
+# Add DOCKER_CONFIG to ~/.zshrc for persistent access
+if ! grep -q "export DOCKER_CONFIG=" ~/.zshrc; then
+	echo "export DOCKER_CONFIG=\"$DOCKER_CONFIG\"" >> ~/.zshrc
 fi
 
 # Check if development mode is enabled and run direnv allow
@@ -29,9 +29,9 @@ if [ "${ENABLE_DEVELOPMENT_MODE}" = "true" ]; then
 	echo "Development mode enabled. Setting up direnv..."
 	
 	# Add direnv hook to bashrc if not already present
-	if ! grep -q 'eval "$(direnv hook bash)"' ~/.bashrc; then
-		echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
-		echo "Direnv hook added to ~/.bashrc"
+	if ! grep -q 'eval "$(direnv hook zsh)"' ~/.zshrc; then
+		echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
+		echo "Direnv hook added to ~/.zshrc"
 	fi
 	
 	# Run direnv allow
@@ -41,10 +41,10 @@ if [ "${ENABLE_DEVELOPMENT_MODE}" = "true" ]; then
 else
 	echo "Development mode not enabled (set ENABLE_DEVELOPMENT_MODE=true in .devcontainer/.env to enable)."
 	
-	# Remove direnv hook from ~/.bashrc if present
-	if grep -q 'eval "$(direnv hook bash)"' ~/.bashrc; then
-		sed -i '/eval "$(direnv hook bash)"/d' ~/.bashrc
-		echo "Direnv hook removed from ~/.bashrc"
+	# Remove direnv hook from ~/.zshrc if present
+	if grep -q 'eval "$(direnv hook zsh)"' ~/.zshrc; then
+		sed -i '/eval "$(direnv hook zsh)"/d' ~/.zshrc
+		echo "Direnv hook removed from ~/.zshrc"
 	fi
 
 	unset SSH_AUTH_SOCK
