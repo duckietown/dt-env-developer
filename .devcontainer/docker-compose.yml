@@ -15,7 +15,7 @@ services:
       - ../..:/workspaces:cached
       - /tmp        # Anonymous volume
       # Mount mkcert CA root directory
-      - ${HOME}/Library/Application Support/mkcert:/caroot:ro,cached
+      - ${MKCERT_PATH:-${HOME}/Library/Application Support/mkcert}:/caroot:ro,cached
     user: vscode
     command: sleep infinity
     init: true
