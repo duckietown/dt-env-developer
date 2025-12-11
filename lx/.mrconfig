@@ -72,3 +72,12 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-ekf-localiza
 
 [lx-ekf-localization-solution]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-ekf-localization-solution.git' 'lx-ekf-localization-solution'
+
+[lx-planning]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-planning.git' 'lx-planning'
+
+[lx-recipe-planning]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-planning.git' 'lx-recipe-planning'
+
+[lx-planning-solution]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-planning-solution.git' 'lx-planning-solution'
