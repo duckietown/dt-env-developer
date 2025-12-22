@@ -37,4 +37,3 @@ jobs:
           platform: linux/amd64,linux/arm64
           push: ${{ github.event_name == 'push' }}
           cacheFrom: ghcr.io/${{ github.repository_owner }}/dt-env-developer:ente
-          subFolder: .devcontainer
