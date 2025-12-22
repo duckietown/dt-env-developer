@@ -33,8 +33,8 @@ jobs:
       - name: Build (and optionally push) devcontainer multi-arch
         uses: devcontainers/ci@v0.3
         with:
-          imageName: ghcr.io/${{ github.repository_owner }}/dt-env-developer
+          imageName: ghcr.io/${{ github.repository_owner }}/dt-env-developer:ente
           platform: linux/amd64,linux/arm64
           push: ${{ github.event_name == 'push' }}
-          cacheFrom: ghcr.io/${{ github.repository_owner }}/dt-env-developer
+          cacheFrom: ghcr.io/${{ github.repository_owner }}/dt-env-developer:ente
           subFolder: .devcontainer
