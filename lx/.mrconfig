@@ -34,6 +34,9 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-object-detection.gi
 [lx-recipe-object-detection]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-object-detection.git' 'lx-recipe-object-detection'
 
+[lx-object-detection-solution]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-object-detection-solution.git' 'lx-object-detection-solution'
+
 [lx-recipe-estimation]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-estimation.git' 'lx-recipe-estimation'
 
@@ -56,10 +59,22 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-control.git'
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-control.git' 'lx-control'
 
 [lx-control-solution]
-checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-control-solution.git' 'lx-control-solution
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-control-solution.git' 'lx-control-solution'
 
 [lx-recipe-lane-following]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-lane-following.git' 'lx-recipe-lane-following'
 
 [lx-lane-following]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-lane-following.git' 'lx-lane-following'
+
+[lx-computer-vision-solution]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-computer-vision-solution.git' 'lx-computer-vision-solution'
+
+[lx-ekf-localization]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-ekf-localization.git' 'lx-ekf-localization'
+
+[lx-recipe-ekf-localization]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-ekf-localization.git' 'lx-recipe-ekf-localization'
+
+[lx-ekf-localization-solution]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-ekf-localization-solution.git' 'lx-ekf-localization-solution'
