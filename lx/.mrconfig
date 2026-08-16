@@ -61,6 +61,12 @@ checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-control.git' 'lx-co
 [lx-control-solution]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-control-solution.git' 'lx-control-solution'
 
+[lx-recipe-lane-following]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-recipe-lane-following.git' 'lx-recipe-lane-following'
+
+[lx-lane-following]
+checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-lane-following.git' 'lx-lane-following'
+
 [lx-computer-vision-solution]
 checkout = git clone -b 'ente' 'git@github.com:duckietown/lx-computer-vision-solution.git' 'lx-computer-vision-solution'
 
