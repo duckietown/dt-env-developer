@@ -1,0 +1,39 @@
+name: build
+
+on:
+  pull_request:
+  push:
+    branches: [ente]
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  devcontainer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GHCR
+        if: github.event_name == 'push'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build (and optionally push) devcontainer
+        uses: devcontainers/ci@v0.3
+        with:
+          imageName: ghcr.io/${{ github.repository_owner }}/dt-env-developer:ente
+          platform: linux/amd64,linux/arm64
+          push: ${{ github.event_name == 'push' }}
+          cacheFrom: ghcr.io/${{ github.repository_owner }}/dt-env-developer:ente
