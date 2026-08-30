@@ -12,7 +12,10 @@ pipx install duckietown-shell
 # Start dbus daemon
 sudo dbus-daemon --system --fork
 
-# Start avahi daemon
+# Start avahi daemon (idempotent: if a previous instance crashed and its pid got
+# recycled, the stale pidfile blocks restart — clear it out first)
+sudo pkill -x avahi-daemon 2>/dev/null || true
+sudo rm -f /var/run/avahi-daemon/pid
 sudo avahi-daemon -D
 
 # Docker credentials fix
