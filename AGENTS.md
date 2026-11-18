@@ -190,15 +190,15 @@ This syncs code and builds directly on the robot's Docker daemon.
 ### Step 7: Run Your DTProject
 
 ```bash
-# Run with a specific launcher, host networking, and ROS_DOMAIN_ID
-dts devel run -H ROBOT_NAME -L LAUNCHER_NAME --net host -- -e ROS_DOMAIN_ID=42
+# Run with a specific launcher and host networking
+dts devel run -H ROBOT_NAME -L LAUNCHER_NAME --net host
 
 # Run in detached mode (add -d flag)
-dts devel run -H ROBOT_NAME -L LAUNCHER_NAME --net host -d -- -e ROS_DOMAIN_ID=42
+dts devel run -H ROBOT_NAME -L LAUNCHER_NAME --net host -d
 ```
 
-**CRITICAL — `ROS_DOMAIN_ID=42`:**
-The ROS2 bridge stack uses `ROS_DOMAIN_ID=42`. Your DTProject container must use the same value, otherwise ROS2 nodes cannot discover each other. Pass it via `-- -e ROS_DOMAIN_ID=42` after the `dts devel run` arguments.
+**`ROS_DOMAIN_ID`:**
+The ROS2 stack runs on the default ROS domain. Do not set `ROS_DOMAIN_ID` in your DTProject container or in your shell; a different value hides the robot's nodes and topics.
 
 **Code-only changes (no rebuild needed):**
 If you only changed Python code (not Dockerfile, dependencies, or CMakeLists), you can skip the build step. Just run `dts devel run` again — it syncs the code automatically via rsync before launching.
@@ -210,17 +210,17 @@ Use `ros2 topic hz` and `ros2 topic echo` inside the running container to verify
 ```bash
 # Measure topic rate
 docker --context ROBOT_NAME exec CONTAINER_NAME bash -c \
-  'source /environment.sh && export ROS_DOMAIN_ID=42 && \
+  'source /environment.sh && \
    ros2 topic hz /ROBOT_NAME/TOPIC_NAME --window 10'
 
 # Echo a single message
 docker --context ROBOT_NAME exec CONTAINER_NAME bash -c \
-  'source /environment.sh && export ROS_DOMAIN_ID=42 && \
+  'source /environment.sh && \
    ros2 topic echo /ROBOT_NAME/TOPIC_NAME MSG_TYPE --once'
 
 # List all topics
 docker --context ROBOT_NAME exec CONTAINER_NAME bash -c \
-  'source /environment.sh && export ROS_DOMAIN_ID=42 && \
+  'source /environment.sh && \
    ros2 topic list'
 ```
 
@@ -299,7 +299,7 @@ dt-exec ros2 launch my_package my_launch.launch.py veh:="${VEHICLE_NAME}"
 |---|---|---|
 | Camera at ~1 Hz instead of ~30 Hz | `--force-opengl` under xvfb uses CPU software rendering (llvmpipe) | Remove `--force-opengl`, let Vulkan (default) use the GPU |
 | GPU at 0% utilization | OpenGL under xvfb falls back to Mesa software renderer | Use Vulkan (default) — it bypasses X11 and uses GPU directly |
-| Topics not visible between containers | Mismatched `ROS_DOMAIN_ID` | All ROS2 containers must use `ROS_DOMAIN_ID=42` |
+| Topics not visible between containers | Mismatched `ROS_DOMAIN_ID` | Leave `ROS_DOMAIN_ID` unset everywhere; the stack runs on the default domain |
 | Double namespace (`/bot/bot/topic`) | Both `namespace=veh` on Node and `PushRosNamespace(veh)` in GroupAction | Remove `namespace=` from Node declarations; let PushRosNamespace handle it |
 | Node topics not connecting | ROS1-style remappings (`node_name/topic`) | Use bare topic names (`topic`) — ROS2 doesn't prefix with node name |
 | `dts matrix attach` fails | Engine hostname not found | Engine auto-detects local IP; ensure robot can reach the host machine |
@@ -329,11 +329,11 @@ dts matrix attach mybot map_0/vehicle_0
 
 # 6. Build and run your project
 dts devel build -f -H mybot
-dts devel run -H mybot -L my_launcher --net host -d -- -e ROS_DOMAIN_ID=42
+dts devel run -H mybot -L my_launcher --net host -d
 
 # 7. Verify
 docker --context mybot exec dts-run-my-dtproject bash -c \
-  'source /environment.sh && export ROS_DOMAIN_ID=42 && \
+  'source /environment.sh && \
    ros2 topic list'
 ```
 
